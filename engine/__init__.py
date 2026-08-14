@@ -1,23 +1,25 @@
 """
 engine/__init__.py
 ==================
-Engine package for the Wholesale BI System.
+Engine package for the Wholesale BI System — Agent Edition.
 
-Exposes the primary public API from all seven engine modules so that
+Exposes the primary public API from all engine modules so that
 Streamlit pages and FastAPI routes can import with a single line:
 
-    from engine import standardize_sales, detect_dead_stock, forecast_demand
+    from engine import standardize_sales, detect_dead_stock, ask
 
 Modules:
-    data_cleaner     — Canonical schema standardizer
-    analytics        — Business analytics (dead stock, payments, margins)
-    scoring          — Urgency and risk scoring formulas
-    forecasting      — Facebook Prophet demand forecasting
-    segmentation     — RFM + K-Means customer segmentation
-    anomaly_detector — Isolation Forest anomaly detection
-    recommender      — Recommendation engine orchestrator
+    data_cleaner         — Canonical schema standardizer
+    analytics            — Business analytics (dead stock, payments, margins)
+    scoring              — Urgency and risk scoring formulas
+    forecasting          — Facebook Prophet demand forecasting
+    segmentation         — RFM + K-Means customer segmentation
+    anomaly_detector     — Isolation Forest anomaly detection
+    recommender          — Recommendation engine orchestrator
+    ai_agent             — ReAct-style agentic business intelligence
+    payment_intelligence — Payment collection risk scoring
 
-Author: Wholesale BI System
+Author: Wholesale BI System — Agent Edition
 Python: 3.12
 """
 
@@ -86,6 +88,23 @@ from engine.recommender import (
     ceo_morning_briefing,
     filter_by_category,
     recommendations_to_dataframe,
+)
+
+# AI Agent — ReAct-style agentic business intelligence
+from engine.ai_agent import (
+    WholesaleAgent,
+    AgentContext,
+    AgentResult,
+    AgentStep,
+    ask,
+    SUGGESTED_QUESTIONS,
+)
+
+# Payment Intelligence — collection risk scoring
+from engine.payment_intelligence import (
+    score_payment_risk,
+    generate_collection_message,
+    get_collection_summary,
 )
 
 __all__ = [

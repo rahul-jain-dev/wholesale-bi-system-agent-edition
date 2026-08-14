@@ -378,6 +378,7 @@ with st.sidebar:
             "👤 Customer Intelligence",
             "📈 Sales & Profitability",
             "🎯 Recommendations",
+            "🤖 AI Business Analyst",
         ],
         label_visibility="collapsed",
     )
@@ -1209,3 +1210,229 @@ elif page == "🎯 Recommendations":
                               coloraxis_showscale=False,
                               yaxis={"categoryorder": "total ascending"})
             st.plotly_chart(fig, use_container_width=True)
+
+# =============================================================================
+# PAGE 7 - AI BUSINESS ANALYST (Agent Edition)
+# =============================================================================
+if page == "\U0001f916 AI Business Analyst":
+    from engine.ai_agent import WholesaleAgent, AgentContext, SUGGESTED_QUESTIONS
+    from engine.payment_intelligence import (
+        score_payment_risk,
+        get_collection_summary,
+        generate_collection_message,
+    )
+    import os
+
+    st.markdown("""
+    <div class="page-header" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 40%, #1a1f2e 100%); border: 1px solid rgba(99,102,241,0.3);">
+        <h1>\U0001f916 AI Business Analyst</h1>
+        <p>ReAct-style agent &middot; reasons over your real business data &middot; grounded answers, no hallucinations</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # ── Check data ──────────────────────────────────────────────────────────────
+    data_ready = (
+        "sales_df" in st.session_state
+        and st.session_state["sales_df"] is not None
+        and not st.session_state["sales_df"].empty
+    )
+
+    # ── Layout: chat (left) + config sidebar (right) ────────────────────────────
+    chat_col, config_col = st.columns([3, 1])
+
+    with config_col:
+        st.markdown("**\u2699\ufe0f Agent Config**")
+        gemini_key = st.text_input(
+            "Gemini API Key", type="password",
+            placeholder="AIza... (free at aistudio.google.com)",
+            help="Get a free Gemini Flash key at aistudio.google.com — no credit card.",
+            key="gemini_key_input",
+        )
+        groq_key = st.text_input(
+            "Groq API Key", type="password",
+            placeholder="gsk_... (free at console.groq.com)",
+            help="Alternative free LLM via Groq.",
+            key="groq_key_input",
+        )
+        active_gemini = gemini_key or os.getenv("GEMINI_API_KEY", "")
+        active_groq   = groq_key   or os.getenv("GROQ_API_KEY",   "")
+
+        if active_gemini:
+            st.success("\u2705 Gemini Flash active")
+            backend_label = "Gemini 1.5 Flash"
+        elif active_groq:
+            st.success("\u2705 Groq Llama 3 active")
+            backend_label = "Groq Llama 3"
+        else:
+            st.info("\u2139\ufe0f Rule-based fallback \u2014 add a key for full LLM reasoning")
+            backend_label = "Rule-based fallback"
+
+        st.markdown(f"**LLM:** `{backend_label}`")
+        st.markdown("---")
+
+        # ── Payment risk mini-summary ───────────────────────────────────────────
+        st.markdown("**\U0001f4b3 Collection Risk**")
+        if data_ready:
+            _risk_df = score_payment_risk(
+                st.session_state["sales_df"],
+                st.session_state.get("customer_df"),
+            )
+            _summary = get_collection_summary(_risk_df)
+            if _summary["total_at_risk"] > 0:
+                st.metric("Total At Risk",   fmt_inr(_summary["total_at_risk"]))
+                st.metric("High Risk",       fmt_inr(_summary["high_risk_amount"]))
+                st.metric("Recovery Est.",   f"{_summary['recovery_probability_pct']:.0f}%")
+                if _summary["write_off_risk_count"] > 0:
+                    st.error(f"\u26a0\ufe0f {_summary['write_off_risk_count']} write-off risk customers")
+            else:
+                st.success("\u2705 No overdue amounts")
+        else:
+            st.caption("Load data to see risk scores.")
+
+    with chat_col:
+        # ── Quick question chips ────────────────────────────────────────────────
+        st.markdown("**\U0001f4a1 Quick questions \u2014 click to ask:**")
+        _chip_cols = st.columns(4)
+        for _i, _q in enumerate(SUGGESTED_QUESTIONS[:4]):
+            with _chip_cols[_i % 4]:
+                if st.button(_q, key=f"chip_{_i}", use_container_width=True):
+                    st.session_state["agent_prefill"] = _q
+        _chip_cols2 = st.columns(4)
+        for _i, _q in enumerate(SUGGESTED_QUESTIONS[4:]):
+            with _chip_cols2[_i % 4]:
+                if st.button(_q, key=f"chip2_{_i}", use_container_width=True):
+                    st.session_state["agent_prefill"] = _q
+
+        st.markdown("---")
+
+        # ── Chat history ────────────────────────────────────────────────────────
+        if "agent_chat_history" not in st.session_state:
+            st.session_state["agent_chat_history"] = []
+
+        for _msg in st.session_state["agent_chat_history"]:
+            with st.chat_message(_msg["role"]):
+                st.markdown(_msg["content"])
+                if _msg["role"] == "assistant" and _msg.get("steps"):
+                    _steps = _msg["steps"]
+                    _llm   = _msg.get("llm", "?")
+                    with st.expander(f"\U0001f50d Reasoning trace ({len(_steps)} steps \u00b7 LLM: {_llm})"):
+                        for _step in _steps:
+                            st.markdown(f"**Step {_step['step']} \u2014 Tool: `{_step['action']}`**")
+                            if _step.get("thought"):
+                                st.markdown(f"*Thought:* {_step['thought']}")
+                            st.code(_step["observation"][:600], language="text")
+                            st.markdown("---")
+
+        # ── Chat input ──────────────────────────────────────────────────────────
+        _prefill    = st.session_state.pop("agent_prefill", "")
+        _user_input = st.chat_input(
+            placeholder="Ask anything... e.g. 'Which customers won\u2019t pay me this month?'"
+        )
+        _question = _user_input or _prefill
+
+        if _question:
+            if not data_ready:
+                st.warning("\u26a0\ufe0f Please load data first \u2014 go to \U0001f3e0 Upload & Overview and click Load Demo Data.")
+            else:
+                with st.chat_message("user"):
+                    st.markdown(_question)
+
+                with st.chat_message("assistant"):
+                    with st.spinner("\U0001f916 Agent reasoning over your data..."):
+                        _ctx = AgentContext(
+                            sales_df     = st.session_state.get("sales_df"),
+                            inventory_df = st.session_state.get("inventory_df"),
+                            customer_df  = st.session_state.get("customer_df"),
+                        )
+                        _agent  = WholesaleAgent(
+                            context    = _ctx,
+                            gemini_key = active_gemini or None,
+                            groq_key   = active_groq   or None,
+                        )
+                        _result = _agent.run(_question)
+
+                    st.markdown(_result.answer)
+
+                    if _result.steps:
+                        _step_displays = [_s.to_display() for _s in _result.steps]
+                        with st.expander(
+                            f"\U0001f50d Reasoning trace \u00b7 {_result.step_count} step(s) \u00b7 "
+                            f"Tools: {', '.join(_result.tool_calls) or 'none'} \u00b7 "
+                            f"LLM: {_result.llm_used} \u00b7 {_result.total_ms}ms"
+                        ):
+                            for _step in _step_displays:
+                                st.markdown(f"**Step {_step['step']} \u2014 `{_step['action']}`**")
+                                if _step.get("thought"):
+                                    st.markdown(f"*Thought:* {_step['thought']}")
+                                st.code(_step["observation"], language="text")
+                                st.markdown("---")
+
+                    _conf_icon = {"HIGH": "\U0001f7e2", "MEDIUM": "\U0001f7e1", "LOW": "\U0001f534"}.get(
+                        _result.confidence, "\u26aa"
+                    )
+                    st.caption(
+                        f"{_conf_icon} Confidence: {_result.confidence} \u00b7 "
+                        f"Grounded in {len(_result.tool_calls)} data source(s)"
+                    )
+
+                st.session_state["agent_chat_history"].append(
+                    {"role": "user", "content": _question}
+                )
+                st.session_state["agent_chat_history"].append({
+                    "role":    "assistant",
+                    "content": _result.answer,
+                    "steps":   [_s.to_display() for _s in _result.steps],
+                    "llm":     _result.llm_used,
+                })
+
+        # ── Clear chat ──────────────────────────────────────────────────────────
+        if st.session_state.get("agent_chat_history"):
+            if st.button("\U0001f5d1\ufe0f Clear chat", key="clear_chat"):
+                st.session_state["agent_chat_history"] = []
+                st.rerun()
+
+        # ── Payment default risk table ──────────────────────────────────────────
+        if data_ready:
+            st.markdown("---")
+            st.markdown("### \U0001f4b3 Payment Default Risk \u2014 All Customers")
+            st.caption("Scored with Gradient Boosting classifier. Higher urgency = call first.")
+
+            _risk_df2 = score_payment_risk(
+                st.session_state["sales_df"],
+                st.session_state.get("customer_df"),
+            )
+
+            if not _risk_df2.empty:
+                _disp = _risk_df2.copy()
+                _disp["total_overdue_amount"]    = _disp["total_overdue_amount"].apply(fmt_inr)
+                _disp["collection_probability"]  = _disp["collection_probability"].apply(lambda x: f"{x:.0f}%")
+                _disp["sales_trend_3m"]          = _disp["sales_trend_3m"].apply(
+                    lambda x: f"\u25b2 {abs(x)*100:.0f}%" if x > 0 else f"\u25bc {abs(x)*100:.0f}%"
+                )
+                _disp.columns = [c.replace("_", " ").title() for c in _disp.columns]
+                st.dataframe(_disp, use_container_width=True, hide_index=True)
+
+                # Collection message generator
+                st.markdown("#### \u2709\ufe0f Generate Collection Message")
+                _sel = st.selectbox(
+                    "Select customer:", _risk_df2["customer_name"].tolist(), key="coll_msg_cust"
+                )
+                if _sel:
+                    _row = _risk_df2[_risk_df2["customer_name"] == _sel].iloc[0]
+                    _msg = generate_collection_message(
+                        customer_name       = _sel,
+                        overdue_amount      = float(_row["total_overdue_amount"]),
+                        days_overdue        = int(_row["max_days_overdue"]),
+                        recommended_action  = str(_row["recommended_action"]),
+                    )
+                    st.text_area(
+                        f"WhatsApp / call script for {_sel}:",
+                        value=_msg, height=180, key="coll_msg_output",
+                    )
+                    st.caption(
+                        f"Tone: **{_row['recommended_action']}** \u00b7 "
+                        f"Risk: **{_row['risk_tier']}** \u00b7 "
+                        f"Collection probability: **{_row['collection_probability']:.0f}%**"
+                    )
+            else:
+                st.success("\u2705 No customers with overdue amounts detected.")
