@@ -1,0 +1,35 @@
+product_name,category,company,size_variant,current_stock,last_purchase_date,last_sale_date,purchase_price,mrp,reorder_level
+Parle-G Biscuit,Snacks,Parle,800g,450,2026-07-04,2026-07-09,38.0,55,90
+Maggi Noodles,Snacks,Nestle,70g,800,2026-07-05,2026-07-10,11.0,16,160
+Colgate MaxFresh,Personal Care,Colgate,200g,300,2026-07-02,2026-07-07,62.0,95,60
+Surf Excel,Home Care,HUL,1kg,250,2026-07-01,2026-07-06,91.0,140,50
+Vim Dishwash Bar,Home Care,HUL,300g,600,2026-07-03,2026-07-08,18.0,28,120
+Lays Classic,Snacks,PepsiCo,26g,1200,2026-07-05,2026-07-10,9.0,13,240
+Kurkure Masala,Snacks,PepsiCo,90g,900,2026-07-04,2026-07-09,19.0,27,180
+Dettol Soap,Personal Care,Reckitt,125g,400,2026-06-30,2026-07-05,31.0,48,80
+Clinic Plus Shampoo,Personal Care,HUL,175ml,350,2026-06-28,2026-07-03,51.0,78,70
+Lifebuoy Soap,Personal Care,HUL,100g,500,2026-06-26,2026-07-01,18.0,28,100
+Dabur Honey,FMCG,Dabur,500g,180,2026-06-29,2026-07-04,176.0,225,36
+Hajmola Candy,FMCG,Dabur,100pcs,600,2026-07-01,2026-07-06,35.0,45,120
+Real Fruit Juice,Beverages,Dabur,1L,200,2026-06-24,2026-06-29,66.0,95,40
+Frooti Mango Drink,Beverages,Parle,200ml,800,2026-07-03,2026-07-08,9.0,13,160
+7UP PET Bottle,Beverages,PepsiCo,750ml,350,2026-07-02,2026-07-07,28.0,40,70
+Aashirvaad Atta,FMCG,ITC,5kg,120,2026-06-27,2026-07-02,203.0,260,24
+Sunfeast Dark Fantasy,Snacks,ITC,150g,420,2026-06-30,2026-07-05,31.0,45,84
+Yippee Noodles,Snacks,ITC,70g,650,2026-07-04,2026-07-09,12.0,17,130
+Amul Butter,Dairy,Amul,500g,90,2026-07-05,2026-07-10,211.0,270,18
+Amul Cheese Slice,Dairy,Amul,200g,75,2026-07-01,2026-07-06,129.0,165,15
+Good Day Biscuit,Snacks,Britannia,200g,380,2026-06-28,2026-07-03,27.0,38,76
+Marie Gold Biscuit,Snacks,Britannia,250g,290,2026-06-22,2026-06-27,24.0,34,58
+Tropicana Orange Juice,Beverages,PepsiCo,1L,110,2026-06-01,2026-06-06,77.0,110,22
+Cornetto Ice Cream,Dairy,HUL,65ml,200,2026-05-25,2026-05-30,31.0,40,40
+Knorr Soup,Snacks,HUL,44g,150,2026-05-17,2026-05-22,34.0,48,30
+Kissan Jam,FMCG,HUL,500g,80,2026-05-09,2026-05-14,94.0,120,16
+Boost Health Drink,Beverages,HUL,500g,85,2026-01-22,2026-01-27,248.0,355,17
+Horlicks Junior,Beverages,HUL,500g,60,2026-01-29,2026-02-03,326.0,465,12
+Ponds Face Wash,Personal Care,HUL,100ml,120,2026-02-16,2026-02-21,92.0,142,24
+Brylcreem Hair Cream,Personal Care,Reckitt,75ml,95,2026-02-26,2026-03-03,72.0,110,19
+Mortein Coil,Home Care,Reckitt,10pcs,200,2026-03-08,2026-03-13,38.0,58,40
+Harpic Toilet Cleaner,Home Care,Reckitt,500ml,75,2026-03-13,2026-03-18,81.0,125,15
+Eno Fruit Salt,FMCG,GSK,100g,150,2026-03-28,2026-04-02,61.0,78,30
+Vicks VapoRub,Personal Care,P&G,50ml,110,2026-05-02,2026-05-07,96.0,148,22

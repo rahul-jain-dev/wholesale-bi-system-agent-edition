@@ -1,0 +1,11 @@
+customer_id,customer_name,area,pincode,customer_type,credit_limit,outstanding_amount,last_order_date,last_payment_date,total_business_ytd
+CUST001,Gupta Supermarket,Vaishali Nagar,302001,Supermarket,200000,12000,2026-07-08,2026-07-01,580000
+CUST002,Sharma General Store,Mansarovar,302002,Retailer,80000,8500,2026-07-05,2026-06-29,320000
+CUST003,Verma Kirana,Malviya Nagar,302003,Retailer,60000,5200,2026-07-01,2026-06-23,195000
+CUST004,Jain Provisions,C-Scheme,302004,Retailer,75000,9800,2026-06-29,2026-06-21,210000
+CUST005,Mehta Provision Store,Sanganer,302005,Retailer,50000,18000,2026-05-10,2026-04-27,95000
+CUST006,Singh Brothers,Sitapura,302006,Wholesaler,150000,35000,2026-04-22,2026-04-07,180000
+CUST007,Joshi Traders,Sodala,302007,Retailer,40000,22000,2026-03-15,2026-03-03,48000
+CUST008,Patel Stores,Tonk Road,302008,Retailer,55000,48000,2026-04-02,2026-03-18,120000
+CUST009,Agarwal Mart,Raja Park,302009,Supermarket,90000,31000,2026-05-17,2026-05-04,210000
+CUST010,Rao Wholesale,Jhotwara,3020010,Wholesaler,120000,19500,2026-06-11,2026-06-01,310000

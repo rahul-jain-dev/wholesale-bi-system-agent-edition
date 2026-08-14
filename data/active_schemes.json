@@ -1,0 +1,14 @@
+[
+  {
+    "scheme_name": "Buy 5 get 1 ",
+    "company": "RSPL",
+    "buy_product": "",
+    "min_qty": 5,
+    "free_product": "1 bg gh-1kg",
+    "free_qty": 1,
+    "start_date": "2026-06-11",
+    "end_date": "2026-06-11",
+    "town_filter": "",
+    "is_active": true
+  }
+]

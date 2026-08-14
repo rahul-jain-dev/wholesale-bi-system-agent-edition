@@ -1,0 +1,81 @@
+Bill No.,Bill Date,Party Name,Place,Item Name,Product Cat,Brand,Pack,Qty,Rate (Cost),Rate (Sale),Disc%,Executive,Pay Status,Due Date
+KBR10000,2024-07-16,Krishna Traders,Uniara,Parachute Coconut Oil,Personal Care,Marico,500ml,9,64.01,81.28,0.5,Suresh,Paid,
+KBR10001,2024-07-11,Sharma Kirana,Tonk,Lizol Floor Cleaner,Household,Godrej Consumer,1L,15,189.52,234.35,2.9,Raju,Paid,
+KBR10002,2024-09-28,Meena Provisions,Niwai,Red Label Tea,Beverages,Hindustan Unilever,500g,29,55.89,70.07,2.3,Suresh,Paid,
+KBR10003,2024-07-05,Sharma Kirana,Tonk,Maggi Noodles,Snacks,Nestle,70g,10,109.74,134.74,2.2,Suresh,Paid,
+KBR10004,2024-04-21,Gupta Distributors,Tonk,Amul Ghee,Dairy,Amul,1L,16,118.17,133.74,3.9,Suresh,Paid,
+KBR10005,2024-01-13,Gupta Distributors,Tonk,Britannia Biscuits,Snacks,Britannia,400g,18,131.22,168.79,2.6,Vijay,Paid,
+KBR10006,2024-07-15,Krishna Traders,Uniara,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,4,43.8,50.51,0.6,Raju,Unpaid,2024-08-14
+KBR10007,2024-10-07,Krishna Traders,Uniara,Britannia Biscuits,Snacks,Britannia,400g,3,64.14,81.24,2.6,Raju,Paid,
+KBR10008,2024-11-04,Bajaj Traders,Deoli,Red Label Tea,Beverages,Hindustan Unilever,500g,3,90.15,113.34,0.5,Suresh,Overdue,2024-12-04
+KBR10009,2024-03-16,Krishna Traders,Uniara,Britannia Biscuits,Snacks,Britannia,400g,11,51.14,61.33,0.7,Vijay,Paid,
+KBR10010,2024-07-05,Patel Store,Sawai Madhopur,Colgate Toothpaste,FMCG,Local Brand,200g,29,161.0,191.33,1.0,Vijay,Overdue,2024-08-04
+KBR10011,2024-07-24,Sharma Kirana,Tonk,Lizol Floor Cleaner,Household,Godrej Consumer,1L,28,115.21,136.91,0.2,Raju,Paid,
+KBR10012,2024-07-10,Krishna Traders,Uniara,Red Label Tea,Beverages,Hindustan Unilever,500g,19,95.61,121.35,0.4,Suresh,Overdue,2024-08-09
+KBR10013,2024-06-09,Krishna Traders,Uniara,Red Label Tea,Beverages,Hindustan Unilever,500g,29,161.04,194.92,2.6,Vijay,Unpaid,2024-07-09
+KBR10014,2024-08-13,Patel Store,Sawai Madhopur,Red Label Tea,Beverages,Hindustan Unilever,500g,23,67.16,85.21,2.8,Vijay,Paid,
+KBR10015,2024-06-14,Gupta Distributors,Tonk,Colgate Toothpaste,FMCG,Local Brand,200g,4,101.59,121.78,2.0,Raju,Overdue,2024-07-14
+KBR10016,2024-11-09,Bajaj Traders,Deoli,Bournvita,Beverages,Nestle,500g,30,188.07,228.15,1.2,Vijay,Overdue,2024-12-09
+KBR10017,2024-07-14,Krishna Traders,Uniara,Dettol Handwash,FMCG,Hindustan Unilever,500ml,21,145.3,170.02,2.7,Raju,Paid,
+KBR10018,2024-12-07,Meena Provisions,Niwai,Colgate Toothpaste,FMCG,Local Brand,200g,24,88.72,104.34,1.2,Suresh,Overdue,2025-01-06
+KBR10019,2024-06-26,Suresh Wholesale,Malpura,Britannia Biscuits,Snacks,Britannia,400g,29,141.72,178.86,2.8,Suresh,Paid,
+KBR10020,2024-03-27,Ramesh General Store,Uniara,Parachute Coconut Oil,Personal Care,Marico,500ml,2,49.1,64.19,2.1,Suresh,Overdue,2024-04-26
+KBR10021,2024-09-29,Gupta Distributors,Tonk,Maggi Noodles,Snacks,Nestle,70g,29,188.63,228.96,3.0,Suresh,Paid,
+KBR10022,2024-01-18,Suresh Wholesale,Malpura,Parle-G Biscuits,Snacks,Parle,200g,5,64.05,76.17,3.2,Vijay,Paid,
+KBR10023,2024-02-22,Suresh Wholesale,Malpura,Parachute Coconut Oil,Personal Care,Marico,500ml,24,92.77,121.53,2.4,Raju,Paid,
+KBR10024,2024-12-22,Bajaj Traders,Deoli,Parachute Coconut Oil,Personal Care,Marico,500ml,30,75.02,96.46,0.5,Suresh,Paid,
+KBR10025,2024-10-21,Krishna Traders,Uniara,Parachute Coconut Oil,Personal Care,Marico,500ml,13,125.52,166.53,1.0,Suresh,Paid,
+KBR10026,2024-09-01,Bajaj Traders,Deoli,Parachute Coconut Oil,Personal Care,Marico,500ml,17,170.53,230.27,2.3,Suresh,Unpaid,2024-10-01
+KBR10027,2024-09-10,Sharma Kirana,Tonk,Britannia Biscuits,Snacks,Britannia,400g,18,120.38,155.02,0.1,Vijay,Paid,
+KBR10028,2024-05-14,Ramesh General Store,Uniara,Haldiram Namkeen,Snacks,Haldiram,400g,22,126.84,157.4,0.0,Vijay,Paid,
+KBR10029,2024-03-23,Ramesh General Store,Uniara,Britannia Biscuits,Snacks,Britannia,400g,18,97.53,116.26,0.9,Raju,Unpaid,2024-04-22
+KBR10030,2024-07-06,Krishna Traders,Uniara,Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,17,69.03,78.06,0.7,Vijay,Paid,
+KBR10031,2024-02-12,Meena Provisions,Niwai,Bournvita,Beverages,Nestle,500g,13,161.85,194.98,2.6,Suresh,Unpaid,2024-03-13
+KBR10032,2024-09-20,Sharma Kirana,Tonk,Lizol Floor Cleaner,Household,Godrej Consumer,1L,6,153.21,194.63,2.2,Suresh,Paid,
+KBR10033,2024-11-09,Bajaj Traders,Deoli,Parachute Coconut Oil,Personal Care,Marico,500ml,9,90.16,120.26,2.5,Vijay,Unpaid,2024-12-09
+KBR10034,2024-02-27,Ramesh General Store,Uniara,Haldiram Namkeen,Snacks,Haldiram,400g,15,181.82,230.69,0.8,Vijay,Paid,
+KBR10035,2024-05-01,Ramesh General Store,Uniara,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,27,69.29,83.12,0.4,Suresh,Unpaid,2024-05-31
+KBR10036,2024-07-11,Sharma Kirana,Tonk,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,30,178.99,201.95,3.4,Raju,Unpaid,2024-08-10
+KBR10037,2024-05-27,Ramesh General Store,Uniara,Haldiram Namkeen,Snacks,Haldiram,400g,7,129.34,153.82,0.5,Suresh,Paid,
+KBR10038,2024-12-16,Suresh Wholesale,Malpura,Dettol Handwash,FMCG,Hindustan Unilever,500ml,4,51.01,58.83,0.2,Raju,Paid,
+KBR10039,2024-04-27,Patel Store,Sawai Madhopur,Red Label Tea,Beverages,Hindustan Unilever,500g,3,142.88,181.23,1.5,Suresh,Paid,
+KBR10040,2024-04-27,Ramesh General Store,Uniara,Britannia Biscuits,Snacks,Britannia,400g,25,159.83,204.88,1.6,Vijay,Paid,
+KBR10041,2024-02-19,Krishna Traders,Uniara,Bournvita,Beverages,Nestle,500g,22,198.58,240.0,1.0,Raju,Unpaid,2024-03-20
+KBR10042,2024-05-11,Ramesh General Store,Uniara,Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,7,172.4,194.03,2.5,Vijay,Paid,
+KBR10043,2024-08-17,Krishna Traders,Uniara,Parle-G Biscuits,Snacks,Parle,200g,3,55.3,70.85,2.0,Vijay,Overdue,2024-09-16
+KBR10044,2024-04-30,Meena Provisions,Niwai,Britannia Biscuits,Snacks,Britannia,400g,21,88.02,105.67,0.4,Suresh,Paid,
+KBR10045,2024-03-30,Gupta Distributors,Tonk,Parle-G Biscuits,Snacks,Parle,200g,15,65.43,83.32,2.4,Vijay,Overdue,2024-04-29
+KBR10046,2024-09-16,Meena Provisions,Niwai,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,7,59.3,69.85,2.6,Suresh,Unpaid,2024-10-16
+KBR10047,2024-02-08,Meena Provisions,Niwai,Amul Ghee,Dairy,Amul,1L,24,70.89,80.42,1.7,Vijay,Paid,
+KBR10048,2024-01-21,Patel Store,Sawai Madhopur,Dettol Handwash,FMCG,Hindustan Unilever,500ml,8,160.41,183.6,0.4,Raju,Unpaid,2024-02-20
+KBR10049,2024-12-10,Patel Store,Sawai Madhopur,Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,11,62.24,69.57,0.7,Raju,Overdue,2025-01-09
+KBR10050,2024-06-06,Suresh Wholesale,Malpura,Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,7,63.36,72.7,1.4,Suresh,Paid,
+KBR10051,2024-02-11,Meena Provisions,Niwai,Dettol Handwash,FMCG,Hindustan Unilever,500ml,2,106.91,128.52,1.4,Raju,Paid,
+KBR10052,2024-01-13,Patel Store,Sawai Madhopur,Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,9,190.03,227.48,2.2,Vijay,Unpaid,2024-02-12
+KBR10053,2024-08-11,Meena Provisions,Niwai,Britannia Biscuits,Snacks,Britannia,400g,26,67.76,84.68,3.8,Vijay,Unpaid,2024-09-10
+KBR10054,2024-07-12,Krishna Traders,Uniara,Lizol Floor Cleaner,Household,Godrej Consumer,1L,25,43.76,55.67,1.5,Suresh,Paid,
+KBR10055,2024-01-19,Suresh Wholesale,Malpura,Colgate Toothpaste,FMCG,Local Brand,200g,5,85.6,98.06,1.1,Vijay,Paid,
+KBR10056,2024-08-15,Patel Store,Sawai Madhopur,Dettol Handwash,FMCG,Hindustan Unilever,500ml,11,135.56,154.35,2.5,Suresh,Paid,
+KBR10057,2024-05-25,Ramesh General Store,Uniara,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,26,132.33,150.56,1.5,Raju,Unpaid,2024-06-24
+KBR10058,2024-12-22,Gupta Distributors,Tonk,Maggi Noodles,Snacks,Nestle,70g,12,102.39,131.15,2.0,Suresh,Paid,
+KBR10059,2024-08-21,Sharma Kirana,Tonk,Colgate Toothpaste,FMCG,Local Brand,200g,8,185.74,213.72,0.3,Suresh,Overdue,2024-09-20
+KBR10060,2024-03-08,Patel Store,Sawai Madhopur,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,2,199.34,223.47,0.2,Raju,Paid,
+KBR10061,2024-06-14,Krishna Traders,Uniara,Tata Tea Premium,Beverages,Tata Consumer,500g,20,180.14,225.8,0.1,Vijay,Paid,
+KBR10062,2024-12-20,Sharma Kirana,Tonk,Tata Tea Premium,Beverages,Tata Consumer,500g,30,32.16,39.57,1.1,Raju,Unpaid,2025-01-19
+KBR10063,2024-02-10,Krishna Traders,Uniara,Britannia Biscuits,Snacks,Britannia,400g,26,47.8,60.8,1.7,Raju,Unpaid,2024-03-11
+KBR10064,2024-01-19,Suresh Wholesale,Malpura,Bournvita,Beverages,Nestle,500g,7,72.53,93.32,3.0,Suresh,Unpaid,2024-02-18
+KBR10065,2024-09-14,Sharma Kirana,Tonk,Parle-G Biscuits,Snacks,Parle,200g,30,72.64,89.1,1.2,Raju,Paid,
+KBR10066,2024-06-18,Gupta Distributors,Tonk,Red Label Tea,Beverages,Hindustan Unilever,500g,7,72.89,88.39,1.8,Suresh,Paid,
+KBR10067,2024-03-16,Meena Provisions,Niwai,Britannia Biscuits,Snacks,Britannia,400g,4,134.32,167.61,0.9,Suresh,Paid,
+KBR10068,2024-02-16,Patel Store,Sawai Madhopur,Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,20,153.24,181.18,3.2,Raju,Paid,
+KBR10069,2024-02-29,Sharma Kirana,Tonk,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,4,44.22,50.03,3.1,Vijay,Paid,
+KBR10070,2024-11-12,Suresh Wholesale,Malpura,Harpic Toilet Cleaner,FMCG,Hindustan Unilever,1L,19,150.37,169.82,2.7,Vijay,Paid,
+KBR10071,2024-11-29,Ramesh General Store,Uniara,Haldiram Namkeen,Snacks,Haldiram,400g,14,194.17,234.79,1.3,Raju,Paid,
+KBR10072,2024-12-11,Patel Store,Sawai Madhopur,Vim Dish Wash,FMCG,Hindustan Unilever,500ml,24,67.1,75.51,1.3,Vijay,Overdue,2025-01-10
+KBR10073,2024-03-25,Meena Provisions,Niwai,Red Label Tea,Beverages,Hindustan Unilever,500g,21,167.86,209.91,1.7,Suresh,Paid,
+KBR10074,2024-10-31,Bajaj Traders,Deoli,Haldiram Namkeen,Snacks,Haldiram,400g,19,153.84,195.74,1.2,Raju,Paid,
+KBR10075,2024-07-05,Bajaj Traders,Deoli,Britannia Biscuits,Snacks,Britannia,400g,12,104.14,124.35,3.8,Vijay,Paid,
+KBR10076,2024-12-08,Patel Store,Sawai Madhopur,Bournvita,Beverages,Nestle,500g,5,147.82,187.01,2.9,Raju,Paid,
+KBR10077,2024-10-06,Meena Provisions,Niwai,Parachute Coconut Oil,Personal Care,Marico,500ml,22,138.07,173.29,0.4,Suresh,Paid,
+KBR10078,2024-06-30,Patel Store,Sawai Madhopur,Parachute Coconut Oil,Personal Care,Marico,500ml,14,130.66,174.98,1.0,Vijay,Overdue,2024-07-30
+KBR10079,2024-10-31,Suresh Wholesale,Malpura,Amul Ghee,Dairy,Amul,1L,13,145.78,174.91,1.6,Vijay,Paid,

@@ -1,0 +1,181 @@
+product_name,category,company,size_variant,current_stock,last_purchase_date,last_sale_date,purchase_price,mrp,reorder_level
+Surf Excel Detergent,FMCG,Hindustan Unilever,500g,5,2024-12-18,2024-12-24,131.45,172.81,13
+Surf Excel Detergent,FMCG,Hindustan Unilever,1kg,9,2024-10-31,2024-11-30,66.68,88.36,8
+Surf Excel Detergent,FMCG,Hindustan Unilever,2kg,60,2024-11-27,2024-12-02,137.57,192.25,7
+Vim Dish Wash,FMCG,Hindustan Unilever,250ml,38,2024-10-19,2024-11-17,123.42,162.34,7
+Vim Dish Wash,FMCG,Hindustan Unilever,500ml,7,2024-12-10,2024-12-16,62.37,84.78,5
+Vim Dish Wash,FMCG,Hindustan Unilever,1L,63,2024-10-22,2024-11-16,118.61,163.66,27
+Rin Bar,FMCG,Hindustan Unilever,100g,66,2024-10-11,2024-10-20,115.94,154.49,23
+Rin Bar,FMCG,Hindustan Unilever,200g,24,2024-10-21,2024-11-18,72.15,100.66,29
+Rin Bar,FMCG,Hindustan Unilever,400g,88,2024-10-05,2024-10-13,158.76,218.79,15
+Wheel Detergent Powder,FMCG,Hindustan Unilever,500g,42,2024-12-15,2024-12-27,72.09,96.03,29
+Wheel Detergent Powder,FMCG,Hindustan Unilever,1kg,12,2024-11-19,2024-11-27,81.73,107.96,8
+Harpic Toilet Cleaner,FMCG,Hindustan Unilever,500ml,74,2024-12-07,2024-12-27,85.41,114.79,13
+Harpic Toilet Cleaner,FMCG,Hindustan Unilever,1L,29,2024-11-19,2024-12-08,158.97,219.57,22
+Colgate Toothpaste,FMCG,Hindustan Unilever,100g,27,2024-11-26,2024-12-24,46.97,65.79,7
+Colgate Toothpaste,FMCG,Hindustan Unilever,200g,25,2024-12-11,2024-12-29,117.11,162.91,24
+Colgate Toothpaste,FMCG,Hindustan Unilever,300g,39,2024-11-17,2024-12-02,171.84,231.25,11
+Pepsodent Toothpaste,FMCG,Hindustan Unilever,70g,54,2024-11-21,2024-11-28,142.14,187.14,12
+Pepsodent Toothpaste,FMCG,Hindustan Unilever,150g,37,2024-11-15,2024-11-24,153.39,215.83,12
+Pepsodent Toothpaste,FMCG,Hindustan Unilever,300g,24,2024-11-22,2024-12-06,168.72,227.33,19
+Lux Soap,FMCG,Hindustan Unilever,75g,69,2024-11-22,2024-12-01,130.83,176.1,16
+Lux Soap,FMCG,Hindustan Unilever,150g,25,2024-11-30,2024-12-29,84.8,116.63,27
+Lifebuoy Soap,FMCG,Hindustan Unilever,75g,29,2024-11-09,2024-12-08,180.24,247.5,24
+Lifebuoy Soap,FMCG,Hindustan Unilever,150g,45,2024-11-29,2024-12-08,130.72,178.05,12
+Lifebuoy Soap,FMCG,Hindustan Unilever,250g,44,2024-08-22,2024-09-21,53.3,71.82,25
+Dettol Handwash,FMCG,Godrej Consumer,200ml,12,2024-11-15,2024-11-27,139.45,181.17,15
+Dettol Handwash,FMCG,Godrej Consumer,500ml,33,2024-08-31,2024-09-16,164.84,221.08,12
+Dove Shampoo,Personal Care,Hindustan Unilever,200ml,55,2024-11-23,2024-12-23,312.18,487.21,17
+Dove Shampoo,Personal Care,Hindustan Unilever,400ml,111,2024-09-04,2024-09-18,130.27,194.95,23
+Head & Shoulders Shampoo,Personal Care,Hindustan Unilever,180ml,29,2024-11-27,2024-12-21,330.09,497.56,25
+Head & Shoulders Shampoo,Personal Care,Hindustan Unilever,360ml,56,2024-07-25,2024-08-08,206.27,323.78,25
+Pantene Shampoo,Personal Care,Hindustan Unilever,185ml,107,2024-09-09,2024-09-15,193.01,289.93,12
+Pantene Shampoo,Personal Care,Hindustan Unilever,370ml,31,2024-12-05,2024-12-26,286.97,439.42,28
+Clinic Plus Shampoo,Personal Care,Hindustan Unilever,175ml,49,2024-11-12,2024-11-19,234.3,368.13,17
+Clinic Plus Shampoo,Personal Care,Hindustan Unilever,350ml,51,2024-12-01,2024-12-15,161.22,255.15,9
+Patanjali Kesh Kanti,Personal Care,Patanjali,200ml,52,2024-11-13,2024-12-05,209.65,291.18,6
+Patanjali Kesh Kanti,Personal Care,Patanjali,450ml,75,2024-10-17,2024-11-16,325.08,453.31,10
+Parachute Coconut Oil,Personal Care,Marico,200ml,63,2024-11-23,2024-12-11,302.42,459.28,7
+Parachute Coconut Oil,Personal Care,Marico,500ml,92,2024-08-26,2024-09-07,168.69,259.37,19
+Parachute Coconut Oil,Personal Care,Marico,1L,70,2024-11-25,2024-12-12,216.09,341.33,5
+Marico Hair Oil,Personal Care,Marico,100ml,63,2024-12-12,2024-12-17,265.72,395.03,22
+Marico Hair Oil,Personal Care,Marico,300ml,18,2024-11-22,2024-12-19,288.89,449.69,15
+Fair & Lovely Cream,Personal Care,Hindustan Unilever,25g,20,2024-11-15,2024-12-05,78.99,120.07,19
+Fair & Lovely Cream,Personal Care,Hindustan Unilever,50g,22,2024-11-18,2024-12-18,43.43,67.38,28
+Fair & Lovely Cream,Personal Care,Hindustan Unilever,100g,66,2024-12-15,2024-12-25,128.84,196.75,10
+Nivea Body Lotion,Personal Care,Hindustan Unilever,200ml,51,2024-12-03,2024-12-19,209.05,310.59,25
+Nivea Body Lotion,Personal Care,Hindustan Unilever,400ml,90,2024-08-18,2024-09-17,140.35,216.45,24
+Veet Hair Removal Cream,Personal Care,Hindustan Unilever,25g,7,2024-12-01,2024-12-09,107.67,162.97,10
+Veet Hair Removal Cream,Personal Care,Hindustan Unilever,50g,79,2024-10-31,2024-11-23,219.46,341.85,21
+Tata Tea Premium,Beverages,Tata Consumer,250g,16,2024-11-16,2024-11-21,313.88,434.47,20
+Tata Tea Premium,Beverages,Tata Consumer,500g,26,2024-12-10,2024-12-27,37.76,53.25,30
+Tata Tea Premium,Beverages,Tata Consumer,1kg,10,2024-11-18,2024-11-23,126.22,169.56,23
+Red Label Tea,Beverages,Hindustan Unilever,250g,79,2024-12-19,2024-12-24,322.63,454.33,20
+Red Label Tea,Beverages,Hindustan Unilever,500g,77,2024-12-03,2024-12-16,282.41,423.62,22
+Red Label Tea,Beverages,Hindustan Unilever,1kg,36,2024-11-11,2024-11-25,266.99,377.09,20
+Nescafe Classic Coffee,Beverages,Nestle,50g,96,2024-09-28,2024-10-04,322.59,451.58,21
+Nescafe Classic Coffee,Beverages,Nestle,100g,62,2024-12-04,2024-12-30,299.74,427.11,11
+Nescafe Classic Coffee,Beverages,Nestle,200g,73,2024-12-07,2024-12-26,317.08,462.47,27
+Bournvita,Beverages,Hindustan Unilever,200g,96,2024-06-21,2024-07-11,93.55,133.82,26
+Bournvita,Beverages,Hindustan Unilever,500g,60,2024-09-22,2024-09-28,231.37,333.89,21
+Bournvita,Beverages,Hindustan Unilever,1kg,69,2024-10-29,2024-11-26,170.44,242.73,7
+Horlicks,Beverages,Hindustan Unilever,200g,41,2024-10-13,2024-10-26,135.61,197.79,12
+Horlicks,Beverages,Hindustan Unilever,500g,80,2024-11-21,2024-12-05,212.51,297.66,27
+Horlicks,Beverages,Hindustan Unilever,1kg,65,2024-12-03,2024-12-17,225.61,320.87,6
+Rooh Afza,Beverages,Dabur,300ml,82,2024-08-31,2024-09-20,295.8,406.52,12
+Rooh Afza,Beverages,Dabur,750ml,33,2024-11-23,2024-11-28,117.31,165.03,22
+Real Fruit Juice,Beverages,Dabur,1L,21,2024-11-11,2024-11-19,72.41,104.56,23
+Real Fruit Juice,Beverages,Dabur,2L,70,2024-12-07,2024-12-17,208.75,289.67,20
+Paperboat Drinks,Beverages,Local Brand,200ml,35,2024-12-08,2024-12-18,279.78,358.88,8
+Paperboat Drinks,Beverages,Local Brand,250ml,24,2024-07-25,2024-08-01,234.17,302.95,18
+Limca Syrup,Beverages,Local Brand,750ml,75,2024-11-18,2024-12-17,175.22,231.24,26
+Tang Powder,Beverages,Hindustan Unilever,50g,70,2024-10-22,2024-11-20,232.47,340.46,6
+Tang Powder,Beverages,Hindustan Unilever,100g,79,2024-09-01,2024-09-11,155.43,222.76,8
+Tang Powder,Beverages,Hindustan Unilever,500g,17,2024-11-27,2024-12-04,108.15,153.39,19
+Britannia Biscuits,Snacks,Britannia,100g,29,2024-11-24,2024-12-12,35.83,48.56,19
+Britannia Biscuits,Snacks,Britannia,200g,61,2024-08-13,2024-08-30,55.57,79.19,19
+Britannia Biscuits,Snacks,Britannia,400g,91,2024-08-13,2024-09-04,156.07,221.35,8
+Parle-G Biscuits,Snacks,Parle,100g,63,2024-09-05,2024-09-16,19.7,27.58,5
+Parle-G Biscuits,Snacks,Parle,200g,37,2024-11-12,2024-11-26,185.06,258.0,12
+Haldiram Namkeen,Snacks,Haldiram,200g,10,2024-11-22,2024-12-06,40.53,56.38,11
+Haldiram Namkeen,Snacks,Haldiram,400g,47,2024-12-01,2024-12-18,166.27,236.85,10
+Haldiram Namkeen,Snacks,Haldiram,1kg,82,2024-09-17,2024-09-25,78.83,112.83,13
+Lays Chips,Snacks,ITC,26g,75,2024-11-08,2024-12-03,177.41,256.27,14
+Lays Chips,Snacks,ITC,73g,65,2024-12-05,2024-12-24,86.75,126.85,30
+Kurkure,Snacks,ITC,73g,114,2024-08-05,2024-08-23,110.66,159.1,9
+Kurkure,Snacks,ITC,100g,51,2024-11-22,2024-12-05,44.78,62.2,6
+Good Day Cookies,Snacks,Britannia,75g,23,2024-09-09,2024-09-15,114.87,159.47,28
+Good Day Cookies,Snacks,Britannia,150g,71,2024-08-17,2024-09-14,67.05,90.09,20
+Monaco Crackers,Snacks,Britannia,80g,43,2024-11-26,2024-12-25,101.12,143.39,10
+Monaco Crackers,Snacks,Britannia,160g,34,2024-08-21,2024-09-03,20.83,28.85,10
+Bourbon Biscuits,Snacks,Britannia,80g,7,2024-12-10,2024-12-25,22.93,30.84,12
+Bourbon Biscuits,Snacks,Britannia,200g,15,2024-11-28,2024-12-09,83.29,118.83,23
+Hide & Seek,Snacks,Britannia,75g,34,2024-11-01,2024-11-28,54.93,76.52,24
+Hide & Seek,Snacks,Britannia,100g,67,2024-10-27,2024-11-23,25.36,35.47,23
+Sunfeast Dark Fantasy,Snacks,ITC,75g,24,2024-11-27,2024-12-21,104.71,152.87,11
+Sunfeast Dark Fantasy,Snacks,ITC,150g,89,2024-07-26,2024-08-01,131.17,183.4,13
+Lizol Floor Cleaner,Household,Godrej Consumer,500ml,52,2024-10-31,2024-11-26,117.59,167.21,14
+Lizol Floor Cleaner,Household,Godrej Consumer,1L,15,2024-11-14,2024-12-10,132.56,191.33,7
+Lizol Floor Cleaner,Household,Godrej Consumer,2L,80,2024-11-02,2024-11-28,23.45,33.25,23
+Colin Glass Cleaner,Household,Godrej Consumer,500ml,64,2024-12-05,2024-12-23,263.82,362.62,11
+Odonil Air Freshener,Household,Godrej Consumer,75g,59,2024-10-24,2024-11-23,144.41,199.14,16
+Odonil Air Freshener,Household,Godrej Consumer,150g,88,2024-09-20,2024-10-02,235.76,339.3,16
+Godrej Hit Cockroach Spray,Household,Godrej Consumer,200ml,60,2024-11-18,2024-11-27,90.61,127.12,22
+Godrej Hit Cockroach Spray,Household,Godrej Consumer,400ml,15,2024-11-05,2024-12-03,192.56,272.86,30
+Good Knight Mosquito Coil,Household,Godrej Consumer,10 pcs,11,2024-12-02,2024-12-09,180.48,247.16,22
+Good Knight Mosquito Coil,Household,Godrej Consumer,20 pcs,48,2024-12-24,2024-12-29,94.11,133.75,9
+All Out Liquid Refill,Household,Godrej Consumer,45ml,6,2024-12-03,2024-12-28,85.61,123.28,28
+All Out Liquid Refill,Household,Godrej Consumer,135ml,13,2024-11-27,2024-12-05,155.94,216.75,24
+Scotch Brite Scrub,Household,Local Brand,1 pc,7,2024-11-18,2024-12-14,72.49,93.72,26
+Scotch Brite Scrub,Household,Local Brand,2 pc,7,2024-11-20,2024-12-02,175.67,226.2,20
+Scotch Brite Scrub,Household,Local Brand,3 pc,64,2024-11-13,2024-11-18,82.36,109.73,6
+Garbage Bags,Household,Local Brand,30 pcs,70,2024-10-04,2024-10-15,43.67,56.7,13
+Garbage Bags,Household,Local Brand,50 pcs,57,2024-11-11,2024-12-11,31.92,41.25,9
+Candle Pack,Household,Local Brand,12 pcs,22,2024-11-25,2024-12-21,176.38,227.09,28
+Candle Pack,Household,Local Brand,24 pcs,62,2024-12-15,2024-12-28,128.81,169.78,22
+Tissue Box,Household,Local Brand,100 sheets,16,2024-11-27,2024-12-20,23.53,30.0,27
+Tissue Box,Household,Local Brand,200 sheets,36,2024-10-27,2024-11-24,241.37,315.43,16
+Amul Butter,Dairy,Amul,100g,45,2024-11-24,2024-12-17,376.8,461.71,9
+Amul Butter,Dairy,Amul,500g,55,2024-12-05,2024-12-26,41.8,51.82,30
+Amul Cheese Slices,Dairy,Amul,200g,61,2024-11-18,2024-11-24,618.23,753.23,16
+Amul Cheese Slices,Dairy,Amul,400g,80,2024-11-14,2024-11-23,146.04,179.92,8
+Mother Dairy Paneer,Dairy,Local Brand,200g,20,2024-12-02,2024-12-10,235.02,288.15,18
+Mother Dairy Paneer,Dairy,Local Brand,500g,42,2024-11-17,2024-12-14,619.25,766.99,12
+Nestle Milkmaid,Dairy,Nestle,400g,56,2024-09-27,2024-10-07,551.57,766.23,30
+Nestle Milkmaid,Dairy,Nestle,1kg,45,2024-11-06,2024-12-01,125.59,167.65,10
+Amul Ghee,Dairy,Amul,500ml,19,2024-11-20,2024-12-18,472.25,584.36,18
+Amul Ghee,Dairy,Amul,1L,35,2024-10-06,2024-10-25,512.94,653.33,30
+Britannia Cheese Spread,Dairy,Britannia,180g,28,2024-12-11,2024-12-30,169.65,215.22,27
+Amul Lassi,Dairy,Amul,200ml,21,2024-10-30,2024-11-17,82.86,105.59,20
+Yakult Probiotic,Dairy,Local Brand,5 bottles,24,2024-09-02,2024-09-26,153.7,191.05,19
+Classmate Notebook,Stationery,Local Brand,100 pages,51,2024-11-01,2024-11-18,44.67,59.16,12
+Classmate Notebook,Stationery,Local Brand,200 pages,5,2024-12-13,2024-12-25,34.92,45.91,17
+Reynolds Pen,Stationery,Local Brand,10 pcs,43,2024-11-26,2024-12-18,41.52,52.92,29
+Reynolds Pen,Stationery,Local Brand,20 pcs,51,2024-10-13,2024-10-24,41.58,54.62,17
+Natraj Pencil Box,Stationery,Local Brand,10 pcs,31,2024-11-10,2024-12-09,119.88,153.17,13
+Natraj Pencil Box,Stationery,Local Brand,20 pcs,65,2024-12-09,2024-12-23,29.66,39.63,13
+Fevicol Glue,Stationery,ITC,50ml,16,2024-12-03,2024-12-21,21.33,30.07,28
+Fevicol Glue,Stationery,ITC,100ml,69,2024-11-15,2024-11-23,101.76,143.47,21
+Fevicol Glue,Stationery,ITC,500ml,114,2024-06-30,2024-07-29,22.19,32.31,11
+Scotch Tape,Stationery,Local Brand,1 roll,16,2024-11-13,2024-11-24,13.74,17.85,21
+Scotch Tape,Stationery,Local Brand,3 rolls,61,2024-10-22,2024-11-17,118.26,154.49,28
+Stapler Machine,Stationery,ITC,Standard,48,2024-11-07,2024-11-19,51.67,71.07,26
+A4 Paper Ream,Stationery,Local Brand,500 sheets,23,2024-11-10,2024-12-02,82.39,108.35,8
+Bajaj LED Bulb 9W,Electronics Accessories,Local Brand,1 pc,50,2024-06-16,2024-07-10,257.35,338.5,15
+Bajaj LED Bulb 9W,Electronics Accessories,Local Brand,4 pcs,74,2024-11-09,2024-11-18,210.77,271.84,9
+Philips LED Bulb 12W,Electronics Accessories,Bajaj,1 pc,68,2024-11-26,2024-12-26,218.8,301.87,26
+Philips LED Bulb 12W,Electronics Accessories,Bajaj,4 pcs,68,2024-12-11,2024-12-19,364.57,482.28,23
+Extension Board 4-pin,Electronics Accessories,Local Brand,1.5m,46,2024-11-27,2024-12-25,212.4,281.89,14
+Extension Board 4-pin,Electronics Accessories,Local Brand,3m,46,2024-12-14,2024-12-20,159.4,207.03,23
+Syska LED Strip,Electronics Accessories,Local Brand,1m,40,2024-11-21,2024-12-17,238.62,310.14,11
+Syska LED Strip,Electronics Accessories,Local Brand,5m,113,2024-07-05,2024-07-13,259.15,343.19,30
+Anchor Switchboard,Electronics Accessories,Bajaj,4 switch,74,2024-11-26,2024-12-24,324.85,432.29,26
+Anchor Switchboard,Electronics Accessories,Bajaj,6 switch,115,2024-07-26,2024-08-25,313.33,418.12,29
+Rupa Underwear,Clothing Accessories,Local Brand,S,53,2024-10-03,2024-10-19,186.81,240.05,11
+Rupa Underwear,Clothing Accessories,Local Brand,M,10,2024-11-06,2024-12-01,61.59,78.41,20
+Rupa Underwear,Clothing Accessories,Local Brand,L,36,2024-12-01,2024-12-12,172.15,227.67,19
+Rupa Underwear,Clothing Accessories,Local Brand,XL,61,2024-09-19,2024-10-12,125.24,164.41,11
+VIP Socks,Clothing Accessories,Local Brand,2 pairs,42,2024-11-08,2024-11-19,144.28,185.59,25
+VIP Socks,Clothing Accessories,Local Brand,4 pairs,55,2024-07-20,2024-08-03,190.34,253.41,29
+Jockey Vest,Clothing Accessories,Local Brand,S,28,2024-11-11,2024-11-21,211.97,272.3,30
+Jockey Vest,Clothing Accessories,Local Brand,M,85,2024-08-08,2024-09-02,254.76,332.44,6
+Jockey Vest,Clothing Accessories,Local Brand,L,47,2024-12-01,2024-12-29,159.31,212.38,8
+Handkerchief Pack,Clothing Accessories,Local Brand,6 pcs,79,2024-11-03,2024-11-25,58.25,75.8,21
+Handkerchief Pack,Clothing Accessories,Local Brand,12 pcs,39,2024-10-25,2024-11-22,261.9,343.17,29
+MDH Haldi Powder,Agricultural,MDH,100g,15,2024-11-09,2024-11-26,379.37,541.44,28
+MDH Haldi Powder,Agricultural,MDH,250g,25,2024-11-19,2024-12-01,379.62,534.87,22
+MDH Haldi Powder,Agricultural,MDH,500g,56,2024-11-24,2024-12-17,197.71,273.55,20
+MDH Red Chilli Powder,Agricultural,MDH,100g,10,2024-12-05,2024-12-24,199.41,287.37,25
+MDH Red Chilli Powder,Agricultural,MDH,250g,13,2024-11-22,2024-12-07,128.96,186.18,20
+MDH Red Chilli Powder,Agricultural,MDH,500g,41,2024-11-22,2024-12-17,271.45,378.52,7
+Tata Salt,Agricultural,Tata Consumer,1kg,66,2024-11-03,2024-12-03,306.83,416.2,15
+Annapurna Atta,Agricultural,ITC,5kg,49,2024-12-12,2024-12-26,146.25,207.68,9
+Annapurna Atta,Agricultural,ITC,10kg,43,2024-12-12,2024-12-30,77.39,108.72,9
+Fortune Sunflower Oil,Agricultural,Local Brand,1L,67,2024-09-11,2024-09-26,303.93,387.31,18
+Fortune Sunflower Oil,Agricultural,Local Brand,5L,76,2024-10-31,2024-11-29,150.81,196.25,6
+Saffola Gold Oil,Agricultural,Marico,1L,82,2024-08-18,2024-08-26,100.22,144.45,29
+Saffola Gold Oil,Agricultural,Marico,5L,34,2024-11-25,2024-12-25,254.05,373.38,29
+MDH Garam Masala,Agricultural,MDH,50g,55,2024-12-19,2024-12-30,250.63,354.35,16
+MDH Garam Masala,Agricultural,MDH,100g,58,2024-10-24,2024-11-23,137.65,193.46,18
+Everest Sabji Masala,Agricultural,Local Brand,50g,80,2024-11-26,2024-12-19,235.34,310.68,30
+Everest Sabji Masala,Agricultural,Local Brand,100g,39,2024-06-25,2024-07-21,261.86,336.42,12

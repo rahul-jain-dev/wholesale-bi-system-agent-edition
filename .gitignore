@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Data files (keep .gitkeep)
+!data/.gitkeep
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+*.mlmodel
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+logs/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Docker
+.dockerignore

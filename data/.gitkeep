@@ -1,0 +1,2 @@
+# Data files are excluded from git via .gitignore
+# Run `python data/data_generator.py` to regenerate all CSVs

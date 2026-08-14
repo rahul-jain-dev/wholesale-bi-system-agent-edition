@@ -1,0 +1,12 @@
+invoice_no,date,customer_name,area,product_name,company,category,quantity,sale_price,discount_pct,payment_status,payment_due_date
+INV-001,2024-06-01,Sharma Provision,Jaipur,"Ghari Detergent",RSPL,Home Care,10,60,5,PAID,2024-06-08
+INV-002,2024-06-02,Verma Supermart,Jodhpur,"Parle-G",Parle,Snacks,500,4.5,10,PAID,2024-06-09
+INV-003,2024-03-10,Gupta General,Jaipur,"Axe Deo",Unilever,Personal Care,5,190,0,UNPAID,2024-03-25
+INV-004,2024-06-05,Singh Enterprises,Udaipur,"Tata Salt",Tata,Grocery,200,24,2,PARTIAL,2024-06-20
+INV-005,2024-01-05,Rao Stores,Kota,"Britannia Good Day",Britannia,Snacks,50,22,0,OVERDUE,2024-01-20
+INV-006,2024-05-10,Mehta Mart,Jaipur,"Lays Classic",PepsiCo,Snacks,100,9,0,PARTIAL,2024-05-25
+INV-007,2024-06-08,Sharma Provision,Jaipur,"Maggi",Nestle,Grocery,100,12,0,PAID,2024-06-15
+INV-008,2024-06-08,Verma Supermart,Jodhpur,"Ghari Detergent",RSPL,Home Care,50,58,8,PAID,2024-06-15
+INV-009,2024-04-10,Sharma Provision,Jaipur,"Red Bull",Red Bull,Beverages,20,110,5,PAID,2024-04-17
+INV-010,2024-03-20,Gupta General,Jaipur,"Dove Soap",Unilever,Personal Care,10,50,0,PAID,2024-03-27
+INV-011,2024-05-01,Rao Stores,Kota,"Tata Salt",Tata,Grocery,20,25,0,UNPAID,2024-05-15
