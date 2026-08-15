@@ -475,8 +475,8 @@ class LLMClient:
         if any(w in p for w in ["dead stock", "slow moving", "not sold", "capital blocked", "inventory"]):
             return 'Thought: I need to check inventory data for dead or slow-moving stock.\nAction: get_dead_stock\nAction Input: {}'
 
-        if any(w in p for w in ["pay", "overdue", "outstanding", "collection", "owes", "dues", "receivable"]):
-            if any(w in p for w in ["risk", "default", "won't pay", "predict", "probability"]):
+        if any(w in p for w in ["pay", "overdue", "outstanding", "collection", "owes", "dues", "receivable", "payment"]):
+            if any(w in p for w in ["risk", "default", "won't pay", "predict", "probability", "likely to not pay", "most likely"]):
                 return 'Thought: I need to score payment default risk for customers.\nAction: get_payment_risk_scores\nAction Input: {}'
             return 'Thought: I need to check outstanding payments and overdue invoices.\nAction: get_outstanding_payments\nAction Input: {}'
 
@@ -641,7 +641,10 @@ class WholesaleAgent:
         match = re.search(r"Final Answer:\s*(.+)", response, re.DOTALL | re.IGNORECASE)
         if match:
             return match.group(1).strip()
-        return response.strip()
+        # If it doesn't say "Final Answer:" but it doesn't have an Action either, treat it as the final answer
+        if "Action:" not in response and "Thought:" not in response:
+            return response.strip()
+        return ""
 
     def run(self, question: str) -> AgentResult:
         """
@@ -680,7 +683,13 @@ class WholesaleAgent:
                 observation = f"Tool '{action}' not found. Available: {list(self.tools.keys())}"
                 confidence  = "LOW"
             else:
-                observation = tool.call(**action_args)
+                # Prevent getting stuck in a loop calling the same tool with no args
+                if len(history) > 0 and history[-1].action == action and history[-1].action_args == action_args:
+                    observation = "I already called this tool and got the same result. I should stop and provide a Final Answer."
+                    # Force a stop on the next loop
+                    is_final = True
+                else:
+                    observation = tool.call(**action_args)
                 tool_calls.append(action)
 
             elapsed_ms = int((time.time() - t_step) * 1000)
@@ -742,6 +751,9 @@ class WholesaleAgent:
 
         parts = [f"Here's what I found about '{question}':\n"]
         for step in history:
+            # Don't show duplicate identical steps in the fallback synthesis
+            if step.step_num > 1 and history[step.step_num - 2].action == step.action:
+                continue
             tool_display = step.action.replace("_", " ").title()
             obs_short    = step.observation[:300]
             parts.append(f"**{tool_display}:** {obs_short}")
