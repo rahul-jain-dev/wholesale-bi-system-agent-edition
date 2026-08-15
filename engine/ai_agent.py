@@ -683,11 +683,8 @@ class WholesaleAgent:
                 observation = f"Tool '{action}' not found. Available: {list(self.tools.keys())}"
                 confidence  = "LOW"
             else:
-                # Prevent getting stuck in a loop calling the same tool with no args
                 if len(history) > 0 and history[-1].action == action and history[-1].action_args == action_args:
                     observation = "I already called this tool and got the same result. I should stop and provide a Final Answer."
-                    # Force a stop on the next loop
-                    is_final = True
                 else:
                     observation = tool.call(**action_args)
                 tool_calls.append(action)
@@ -704,6 +701,11 @@ class WholesaleAgent:
             )
             history.append(step)
             logger.debug("Step %d: action=%s elapsed=%dms", step_num, action, elapsed_ms)
+
+            # Forcefully break out if we are in a loop
+            if len(history) > 1 and history[-1].action == history[-2].action and history[-1].action_args == history[-2].action_args:
+                logger.warning("Agent is looping on %s. Breaking.", action)
+                break
 
             # After last allowed step, force final answer
             if step_num == MAX_REACT_STEPS:

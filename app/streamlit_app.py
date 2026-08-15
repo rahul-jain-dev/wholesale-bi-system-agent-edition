@@ -1275,7 +1275,7 @@ if page == "\U0001f916 AI Business Analyst":
         if data_ready:
             _risk_df = score_payment_risk(
                 st.session_state["sales_df"],
-                st.session_state.get("customer_df"),
+                st.session_state.get("cust_df"),
             )
             _summary = get_collection_summary(_risk_df)
             if _summary["total_at_risk"] > 0:
@@ -1341,8 +1341,8 @@ if page == "\U0001f916 AI Business Analyst":
                     with st.spinner("\U0001f916 Agent reasoning over your data..."):
                         _ctx = AgentContext(
                             sales_df     = st.session_state.get("sales_df"),
-                            inventory_df = st.session_state.get("inventory_df"),
-                            customer_df  = st.session_state.get("customer_df"),
+                            inventory_df = st.session_state.get("inv_df"),
+                            customer_df  = st.session_state.get("cust_df"),
                         )
                         _agent  = WholesaleAgent(
                             context    = _ctx,
@@ -1399,7 +1399,7 @@ if page == "\U0001f916 AI Business Analyst":
 
             _risk_df2 = score_payment_risk(
                 st.session_state["sales_df"],
-                st.session_state.get("customer_df"),
+                st.session_state.get("cust_df"),
             )
 
             if not _risk_df2.empty:
