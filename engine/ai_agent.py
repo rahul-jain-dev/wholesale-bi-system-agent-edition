@@ -247,10 +247,16 @@ def build_tool_registry(context: AgentContext) -> dict[str, Tool]:
 
     # ── Outstanding Payments ───────────────────────────────────────────────
     def _outstanding_payments():
-        from engine.analytics import get_outstanding_payments
-        if sales.empty:
-            return "No sales data loaded."
-        return get_outstanding_payments(sales, customers)
+        from pathlib import Path
+        import pandas as pd
+        recv_path = Path("data/raw/receivables.csv")
+        if not recv_path.exists():
+            return "Receivables data not available."
+        recv = pd.read_csv(recv_path)
+        unpaid = recv[pd.to_numeric(recv["outstanding_amount"], errors="coerce") > 0]
+        agg = unpaid.groupby(["customer_id", "party_name"])["outstanding_amount"].sum().reset_index()
+        agg = agg.sort_values("outstanding_amount", ascending=False).head(20)
+        return agg.to_json(orient="records")
 
     tools["get_outstanding_payments"] = Tool(
         name="get_outstanding_payments",
@@ -790,27 +796,57 @@ class LLMClient:
         """
         p_full = prompt.lower()
 
-        # If this is a "final answer" request (observation already in prompt)
-        if "observation:" in p_full and "based on" in p_full:
-            return "Final Answer: Based on the data retrieved, I have analyzed your business situation. Please review the detailed observations above for specific numbers and recommendations."
+        # If this is a "final answer" request, return empty string so _synthesize_from_history handles it
+        if "observation:" in p_full and "based on all the above data" in p_full:
+            return ""
 
-        # Extract only the original user question to prevent routing on stale observation keywords
         import re
         q_match = re.search(r"question:\s*(.+?)(?=\n|$)", prompt, re.IGNORECASE)
         p = q_match.group(1).lower() if q_match else p_full
 
-        # Tool selection heuristics
+        # "Show me the immutable ledger."
+        if any(w in p for w in ["audit trail", "audit log", "show audit", "recovery history", "decisions made", "immutable ledger", "ledger"]):
+            return 'Thought: I need to show the recovery audit trail.\nAction: get_recovery_audit_log\nAction Input: {}'
+
+        # "Which customers currently owe me the most?"
+        if any(w in p for w in ["pay", "overdue", "outstanding", "collection", "owes", "owe", "dues", "receivable", "payment"]):
+            if any(w in p for w in ["risk", "default", "won't pay", "predict", "probability", "likely to not pay", "most likely"]):
+                return 'Thought: I need to score payment default risk for customers.\nAction: get_payment_risk_scores\nAction Input: {}'
+            return 'Thought: I need to check outstanding payments and overdue invoices.\nAction: get_outstanding_payments\nAction Input: {}'
+
+        # "Who should I contact first for collections?"
+        if any(w in p for w in ["contact first", "who should i contact", "recovery batch", "who should we contact", "contact today", "revenue at risk", "contact"]):
+            return 'Thought: I need to identify the recovery batch and prioritize customers.\nAction: get_recovery_batch\nAction Input: {}'
+
+        # "Which products are approaching stockout?"
+        if any(w in p for w in ["stockout", "stock out", "running out", "restock", "order"]):
+            return 'Thought: I need demand forecasts and restock alerts.\nAction: get_restock_alerts\nAction Input: {}'
+
+        # "What should I buy before the next seasonal peak?"
+        if any(w in p for w in ["buy before", "seasonal peak", "buy", "demand", "forecast"]):
+            return 'Thought: I need demand forecasts and restock alerts.\nAction: get_restock_alerts\nAction Input: {}'
+
+        # "Which customers are declining?"
+        if any(w in p for w in ["declining", "churn", "segment", "loyal", "at risk", "lost customer", "retain"]):
+            return 'Thought: I need customer segmentation data to identify at-risk customers.\nAction: get_customer_segments\nAction Input: {}'
+
+        # "Which territory is underperforming?"
+        if any(w in p for w in ["territory", "underperforming", "area", "town", "region", "geography", "uniara", "tonk"]):
+            return 'Thought: I need area/town performance data.\nAction: get_area_performance\nAction Input: {}'
+
+        # "What is my current inventory value?" OR dead stock
+        if any(w in p for w in ["inventory value", "dead stock", "slow moving", "not sold", "capital blocked", "inventory"]):
+            return 'Thought: I need to check inventory data for dead or slow-moving stock.\nAction: get_dead_stock\nAction Input: {}'
+
+        # "Give me today's business briefing."
+        if any(w in p for w in ["today", "morning", "briefing", "priority", "what should", "what to do"]):
+            return 'Thought: The user wants an executive summary of today\'s priorities.\nAction: get_morning_briefing\nAction Input: {}'
+
         if any(w in p for w in ["recover", "campaign", "run recovery", "run today", "execute recovery", "maximize recovery"]):
             return 'Thought: The user wants to run a revenue recovery campaign.\nAction: execute_recovery_campaign\nAction Input: {}'
 
-        if any(w in p for w in ["recovery batch", "who should we contact", "contact today", "revenue at risk"]):
-            return 'Thought: I need to identify the recovery batch and prioritize customers.\nAction: get_recovery_batch\nAction Input: {}'
-
         if any(w in p for w in ["recovery metric", "how much recovered", "recovery rate", "what happened in", "campaign result"]):
             return 'Thought: I need to check the recovery campaign metrics.\nAction: get_recovery_metrics\nAction Input: {}'
-
-        if any(w in p for w in ["audit trail", "audit log", "show audit", "recovery history", "decisions made"]):
-            return 'Thought: I need to show the recovery audit trail.\nAction: get_recovery_audit_log\nAction Input: {}'
 
         if any(w in p for w in ["recovery status", "not contact", "low risk", "exclude", "should not contact"]):
             return 'Thought: I need to check recovery status for all customers.\nAction: get_customer_recovery_status\nAction Input: {}'
@@ -818,35 +854,12 @@ class LLMClient:
         if any(w in p for w in ["priority rank", "expected recovery value", "why priorit"]):
             return 'Thought: I need to show the full recovery priority ranking.\nAction: get_recovery_priority\nAction Input: {}'
 
-        if any(w in p for w in ["dead stock", "slow moving", "not sold", "capital blocked", "inventory"]):
-
-            return 'Thought: I need to check inventory data for dead or slow-moving stock.\nAction: get_dead_stock\nAction Input: {}'
-
-        if any(w in p for w in ["pay", "overdue", "outstanding", "collection", "owes", "dues", "receivable", "payment"]):
-            if any(w in p for w in ["risk", "default", "won't pay", "predict", "probability", "likely to not pay", "most likely"]):
-                return 'Thought: I need to score payment default risk for customers.\nAction: get_payment_risk_scores\nAction Input: {}'
-            return 'Thought: I need to check outstanding payments and overdue invoices.\nAction: get_outstanding_payments\nAction Input: {}'
-
-        if any(w in p for w in ["churn", "segment", "loyal", "at risk", "lost customer", "retain"]):
-            return 'Thought: I need customer segmentation data to identify at-risk customers.\nAction: get_customer_segments\nAction Input: {}'
-
         if any(w in p for w in ["fraud", "anomal", "suspicious", "unusual", "discount abuse"]):
             return 'Thought: I need to check for anomalous or suspicious transactions.\nAction: get_anomalies\nAction Input: {}'
-
-        if any(w in p for w in ["restock", "order", "stock out", "running out", "demand", "forecast"]):
-            return 'Thought: I need demand forecasts and restock alerts.\nAction: get_restock_alerts\nAction Input: {}'
-
-        if any(w in p for w in ["area", "town", "region", "geography", "uniara", "tonk"]):
-            return 'Thought: I need area/town performance data.\nAction: get_area_performance\nAction Input: {}'
-
-        if any(w in p for w in ["today", "morning", "briefing", "priority", "what should", "what to do"]):
-            return 'Thought: The user wants an executive summary of today\'s priorities.\nAction: get_morning_briefing\nAction Input: {}'
 
         # Default
         return 'Thought: Let me get an overview of the business priorities.\nAction: get_morning_briefing\nAction Input: {}'
 
-
-# ═════════════════════════════════════════════════════════════════════════════
 # 5. System Prompt
 # ═════════════════════════════════════════════════════════════════════════════
 
@@ -1121,31 +1134,100 @@ class WholesaleAgent:
     def _synthesize_from_history(self, question: str, history: list[AgentStep]) -> str:
         """
         Fallback synthesis when LLM doesn't produce a Final Answer.
-        Extracts key info from observations and builds a structured answer.
+        Extracts key info from observations and builds a structured, concrete business answer.
         """
         if not history:
-            return (
-                "I don't have enough data to answer that question. "
-                "Please make sure your sales, inventory, and customer data are loaded."
-            )
+            return "I don't have enough data to answer that question. Please make sure your data is loaded."
 
-        parts = [f"Here's what I found about '{question}':\n"]
-        for step in history:
-            # Don't show duplicate identical steps in the fallback synthesis
-            if step.step_num > 1 and history[step.step_num - 2].action == step.action:
-                continue
-            tool_display = step.action.replace("_", " ").title()
-            obs_short    = step.observation[:300]
-            parts.append(f"**{tool_display}:** {obs_short}")
+        import pandas as pd
+        import json
 
-        parts.append(
-            "\nReview the detailed observations above for specific numbers. "
-            "For a more precise answer, set a GEMINI_API_KEY in your environment."
-        )
-        return "\n\n".join(parts)
+        # Find the last valid observation
+        last_step = history[-1]
+        for step in reversed(history):
+            if step.observation and not step.observation.startswith("I already called this tool"):
+                last_step = step
+                break
 
+        action = last_step.action
+        obs = str(last_step.observation)
 
-# ═════════════════════════════════════════════════════════════════════════════
+        try:
+            if action == "get_outstanding_payments":
+                df = pd.read_json(obs, orient="records")
+                if df.empty:
+                    return "All invoices are fully paid. There are no outstanding customer balances."
+                
+                parts = ["**Top customers by outstanding balance:**\n"]
+                total_displayed = 0
+                for i, row in df.head(10).iterrows():
+                    amt = float(row.get('outstanding_amount', 0))
+                    name = row.get('party_name', 'Unknown')
+                    parts.append(f"{i+1}. {name} — ₹{amt:,.2f}")
+                    total_displayed += amt
+                
+                parts.append(f"\n**Total Outstanding (Top {len(df.head(10))}):** ₹{total_displayed:,.2f}")
+                parts.append("\n**Recommendation:** Prioritize the highest balances for immediate collection via the Revenue Recovery dashboard.")
+                return "\n".join(parts)
+
+            elif action == "get_dead_stock":
+                df = pd.read_json(obs) if obs.startswith("[") else None
+                if df is not None and not df.empty:
+                    df = df.sort_values("capital_blocked", ascending=False)
+                    parts = ["**Top Dead/Slow Moving Stock by Capital Blocked:**\n"]
+                    for i, row in df.head(5).iterrows():
+                        parts.append(f"- {row.get('item_name', 'Unknown')}: ₹{row.get('capital_blocked', 0):,.2f} ({row.get('days_unsold', 0)} days unsold)")
+                    parts.append("\n**Recommendation:** Consider offering discounts on these items to free up working capital.")
+                    return "\n".join(parts)
+                return "I reviewed the inventory and found no major dead stock issues."
+
+            elif action == "get_restock_alerts":
+                parts = [f"**Restock Alert Results:**\n{obs[:500]}"]
+                parts.append("\n**Recommendation:** Reorder these items immediately to avoid stockouts during the next peak.")
+                return "\n".join(parts)
+
+            elif action == "get_customer_segments":
+                parts = [f"**Customer Segmentation Summary:**\n{obs[:500]}"]
+                parts.append("\n**Recommendation:** Focus retention campaigns on At-Risk customers to prevent churn.")
+                return "\n".join(parts)
+
+            elif action == "get_area_performance":
+                parts = [f"**Territory Performance Summary:**\n{obs[:500]}"]
+                parts.append("\n**Recommendation:** Investigate underperforming territories and support local reps.")
+                return "\n".join(parts)
+                
+            elif action == "get_recovery_batch":
+                df = pd.read_json(obs, orient="records") if obs.startswith("[") else None
+                if df is not None and not df.empty:
+                    parts = ["**Top Customers for Collection (Recovery Batch):**\n"]
+                    total = 0
+                    for i, row in df.head(5).iterrows():
+                        amt = float(row.get('outstanding_amount', 0))
+                        name = row.get('customer_name', 'Unknown')
+                        risk = row.get('risk_tier', 'Unknown')
+                        parts.append(f"{i+1}. {name} — ₹{amt:,.2f} (Risk: {risk})")
+                        total += amt
+                    parts.append(f"\n**Total Targeted (Top 5):** ₹{total:,.2f}")
+                    parts.append("\n**Recommendation:** Proceed to contact these high-priority targets today.")
+                    return "\n".join(parts)
+                return "No actionable recovery batch found."
+
+            elif action == "get_morning_briefing":
+                parts = [f"**Today's Business Briefing:**\n\n{obs}"]
+                return "\n".join(parts)
+
+            elif action == "get_recovery_audit_log":
+                parts = [f"**Recent Immutable Ledger Activity:**\n\n{obs}"]
+                return "\n".join(parts)
+
+        except Exception as e:
+            # Fallback to safe printing if JSON parsing fails
+            pass
+
+        # Generic safe fallback if tool mapping above doesn't catch it
+        tool_display = action.replace("_", " ").title()
+        return f"**{tool_display} Results:**\n\n{obs[:500]}\n\n**Recommendation:** Review these figures in the Command Center for detailed analytics."
+
 # 7. Convenience Function — quick single-call interface
 # ═════════════════════════════════════════════════════════════════════════════
 
