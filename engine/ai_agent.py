@@ -52,8 +52,8 @@ logger = logging.getLogger(__name__)
 # ─── Constants ────────────────────────────────────────────────────────────────
 MAX_REACT_STEPS = 6          # safety ceiling on reasoning steps
 FALLBACK_MODEL  = "rule-based"
-GEMINI_MODEL    = "gemini-1.5-flash"
-GROQ_MODEL      = "llama3-8b-8192"
+GEMINI_MODEL    = "gemini-1.5-flash"      # primary; fallback list tried in _gemini()
+GROQ_MODEL      = "llama-3.1-8b-instant"
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -110,10 +110,13 @@ class AgentContext:
         sales_df:     Optional[pd.DataFrame] = None,
         inventory_df: Optional[pd.DataFrame] = None,
         customer_df:  Optional[pd.DataFrame] = None,
+        recovery_state: Optional[dict] = None,
     ):
         self.sales_df     = sales_df     if sales_df is not None     else pd.DataFrame()
         self.inventory_df = inventory_df if inventory_df is not None else pd.DataFrame()
         self.customer_df  = customer_df  if customer_df is not None  else pd.DataFrame()
+        self.recovery_state = recovery_state if recovery_state is not None else {}
+
 
     def is_empty(self) -> bool:
         return self.sales_df.empty and self.inventory_df.empty and self.customer_df.empty
@@ -379,7 +382,265 @@ def build_tool_registry(context: AgentContext) -> dict[str, Tool]:
         category="analytics",
     )
 
+    # ── Revenue Recovery Tools ─────────────────────────────────────────────
+    # These tools wrap the recovery_engine module for AI-driven revenue
+    # recovery campaigns.  The LLM may ORCHESTRATE these tools, but the
+    # deterministic Recovery Policy Engine enforces all state transitions,
+    # stopping rules, and intervention limits.
+
+    def _recovery_batch():
+        from engine.recovery_engine import build_recovery_batch
+        if sales.empty:
+            return "No sales data loaded."
+        campaign, records = build_recovery_batch(sales, customers)
+        if not records:
+            return "No customers eligible for recovery (all are LOW RISK or no outstanding amounts)."
+        lines = [f"Recovery Batch — Campaign {campaign.campaign_id} — {len(records)} customers prioritized by expected recovery value:\n"]
+        for i, r in enumerate(records, 1):
+            lines.append(
+                f"{i}. {r.customer_name}: Rs.{r.outstanding_amount:,.0f} outstanding, "
+                f"{r.collection_probability:.0f}% collection probability, "
+                f"{int(r.days_overdue)} days overdue, "
+                f"Priority Score: {r.priority_score:,.0f}, "
+                f"Expected Recovery: Rs.{r.expected_recovery:,.0f}, "
+                f"Risk: {r.risk_tier}"
+            )
+        total = sum(r.outstanding_amount for r in records)
+        expected = sum(r.expected_recovery for r in records)
+        lines.append(f"\nTotal targeted: Rs.{total:,.0f}")
+        lines.append(f"Total expected recovery: Rs.{expected:,.0f}")
+        return "\n".join(lines)
+
+    tools["get_recovery_batch"] = Tool(
+        name="get_recovery_batch",
+        description=(
+            "Identifies and prioritizes customers for revenue recovery today. "
+            "Returns a batch sorted by expected recoverable value (outstanding x probability x urgency). "
+            "Excludes LOW RISK customers by default. "
+            "Use when asked: who should we contact today, which customers to recover from, "
+            "maximize recovery, build recovery batch, revenue at risk."
+        ),
+        fn=_recovery_batch,
+        category="recovery",
+    )
+
+    def _execute_campaign():
+        from engine.recovery_engine import run_recovery_campaign
+        if sales.empty:
+            return "No sales data loaded."
+        
+        # Don't run again if already run
+        if "campaign" in context.recovery_state and context.recovery_state["campaign"].status == "COMPLETED":
+            campaign = context.recovery_state["campaign"]
+            records = context.recovery_state["records"]
+            metrics = context.recovery_state["metrics"]
+            prefix = f"Recovery Campaign {campaign.campaign_id} was already run today. Showing results:\n\n"
+        else:
+            campaign, records, metrics = run_recovery_campaign(sales, customers)
+            context.recovery_state["campaign"] = campaign
+            context.recovery_state["records"] = records
+            context.recovery_state["metrics"] = metrics
+            prefix = f"Recovery Campaign {campaign.campaign_id} COMPLETED\n\n"
+
+        if not records:
+            return "No customers eligible for recovery campaign."
+
+        lines = [prefix]
+        lines.append("=== CAMPAIGN METRICS ===")
+        lines.append(f"Amount at Risk:         Rs.{metrics['amount_at_risk']:,.0f}")
+        lines.append(f"Amount Targeted:        Rs.{metrics['amount_targeted']:,.0f}")
+        lines.append(f"Expected Recovery:      Rs.{metrics['expected_recovery']:,.0f}")
+        lines.append(f"Actual Recovery:        Rs.{metrics['actual_recovery']:,.0f}")
+        lines.append(f"Remaining Outstanding:  Rs.{metrics['remaining_outstanding']:,.0f}")
+        lines.append(f"Recovery Rate:          {metrics['recovery_rate_pct']:.1f}%")
+        lines.append(f"Recovery Performance:   {metrics['recovery_performance_pct']:.1f}% (actual vs expected)")
+        lines.append(f"Customers Targeted:     {metrics['customers_targeted']}")
+        lines.append(f"Customers Contacted:    {metrics['customers_contacted']}")
+        lines.append(f"Customers Recovered:    {metrics['customers_recovered']}")
+        lines.append(f"Customers Escalated:    {metrics['customers_escalated']}")
+        lines.append(f"Customers Excluded:     {metrics.get('customers_excluded', 0)} (low risk)")
+        lines.append(f"Avg Attempts to Recover: {metrics.get('average_attempts_to_recovery', 0):.1f}")
+        lines.append(f"\n=== CUSTOMER RESULTS ===")
+        for r in records:
+            status_icon = "RECOVERED" if r.simulation_result == "PAID" else ("ESCALATED" if r.simulation_result == "ESCALATED" else "WAITING")
+            lines.append(
+                f"  {r.customer_name}: {status_icon} — "
+                f"Rs.{r.outstanding_amount:,.0f} outstanding, "
+                f"intervention={r.intervention}, "
+                f"recovered=Rs.{r.amount_recovered:,.0f}"
+            )
+        lines.append(f"\nAll actions logged to canonical audit trail.")
+        return "\n".join(lines)
+
+    tools["execute_recovery_campaign"] = Tool(
+        name="execute_recovery_campaign",
+        description=(
+            "Runs a complete revenue recovery campaign (or returns results if already run today): "
+            "identifies at-risk customers, scores risks, prioritizes by expected recovery value, "
+            "chooses bounded interventions, simulates payment outcomes, updates recovery states, "
+            "and logs audit trail. Returns campaign metrics."
+            "Use when asked to: run recovery campaign, recover outstanding, collect payments, "
+            "execute collection today, maximize revenue recovery."
+        ),
+        fn=_execute_campaign,
+        category="recovery",
+    )
+
+    def _recovery_metrics():
+        if "metrics" in context.recovery_state:
+            return context.recovery_state["metrics"]
+        return "No campaign has been run yet. Please run execute_recovery_campaign first."
+
+    tools["get_recovery_metrics"] = Tool(
+        name="get_recovery_metrics",
+        description=(
+            "Returns detailed campaign performance metrics: amount recovered, recovery rate, "
+            "recovery performance (actual vs expected), customers recovered/escalated/excluded. "
+            "Use when asked: how much recovered, what was the recovery rate, campaign results, "
+            "what happened in recovery."
+        ),
+        fn=_recovery_metrics,
+        category="recovery",
+    )
+
+    def _recovery_audit():
+        from engine.audit_logger import get_audit_log
+        audit_df = get_audit_log()
+        if audit_df.empty:
+            return "No audit records found. Run a recovery campaign first."
+        return audit_df
+
+    tools["get_recovery_audit_log"] = Tool(
+        name="get_recovery_audit_log",
+        description=(
+            "Returns the full audit trail of all recovery actions, state transitions, "
+            "and payment outcomes. Shows timestamp, customer, action, state changes, "
+            "and simulation results. "
+            "Use when asked about: audit trail, audit log, what decisions were made, "
+            "show recovery history, compliance, what happened."
+        ),
+        fn=_recovery_audit,
+        category="recovery",
+    )
+
+    def _customer_recovery_status():
+        from engine.recovery_engine import build_recovery_batch
+        if sales.empty:
+            return "No sales data loaded."
+        _, records = build_recovery_batch(sales, customers, exclude_low_risk=False)
+        if not records:
+            return "No customers with outstanding amounts."
+        lines = ["Customer Recovery Status:\n"]
+        for r in records:
+            lines.append(
+                f"  {r.customer_name}: State={r.state.value}, "
+                f"Rs.{r.outstanding_amount:,.0f} outstanding, "
+                f"Risk={r.risk_tier}, Probability={r.collection_probability:.0f}%"
+            )
+        return "\n".join(lines)
+
+    tools["get_customer_recovery_status"] = Tool(
+        name="get_customer_recovery_status",
+        description=(
+            "Shows the current recovery state for all customers with outstanding balances, "
+            "including LOW RISK customers. Shows state, amount, risk tier, probability. "
+            "Use when asked: customer status, recovery status, which customers not to contact, "
+            "who is low risk, show all customers."
+        ),
+        fn=_customer_recovery_status,
+        category="recovery",
+    )
+
+    def _choose_action():
+        from engine.recovery_engine import build_recovery_batch, choose_intervention
+        if sales.empty:
+            return "No sales data loaded."
+        _, records = build_recovery_batch(sales, customers, exclude_low_risk=False)
+        if not records:
+            return "No customers with outstanding amounts."
+        lines = ["Recommended Recovery Actions:\n"]
+        for r in records:
+            action = choose_intervention(r)
+            reason = f"Risk: {r.risk_tier}, {int(r.days_overdue)} days overdue, {r.collection_probability:.0f}% probability"
+            if action == "WAIT":
+                reason += " — no contact needed"
+            lines.append(f"  {r.customer_name}: ACTION={action} ({reason})")
+        return "\n".join(lines)
+
+    tools["choose_recovery_action"] = Tool(
+        name="choose_recovery_action",
+        description=(
+            "Shows the deterministic intervention recommendation for each customer "
+            "based on risk tier, attempts, and policy rules. "
+            "Use when asked: what action to take, what should we do about a customer, "
+            "why was this action chosen, intervention recommendation."
+        ),
+        fn=_choose_action,
+        category="recovery",
+    )
+
+    def _check_payment():
+        from engine.audit_logger import get_audit_log
+        audit_df = get_audit_log()
+        if audit_df.empty:
+            return "No recovery campaigns have been run yet. Run a campaign first to check payment status."
+        outcomes = audit_df[audit_df["event_type"] == "PAYMENT_OUTCOME"]
+        if outcomes.empty:
+            return "No payment outcomes recorded yet."
+        lines = ["Payment Status (Simulated):\n"]
+        for _, row in outcomes.iterrows():
+            lines.append(
+                f"  {row.get('customer_name', 'Unknown')}: {row.get('simulation_result', 'Unknown')} — "
+                f"Rs.{float(row.get('amount_recovered', 0)):,.0f} recovered"
+            )
+        return "\n".join(lines)
+
+    tools["check_payment_status"] = Tool(
+        name="check_payment_status",
+        description=(
+            "Checks simulated payment outcomes from the audit trail. "
+            "Shows which customers paid (RECOVERED) and which did not. "
+            "Use when asked: did they pay, payment status, who paid, check payments."
+        ),
+        fn=_check_payment,
+        category="recovery",
+    )
+
+    def _recovery_priority():
+        from engine.recovery_engine import build_recovery_batch
+        if sales.empty:
+            return "No sales data loaded."
+        _, records = build_recovery_batch(sales, customers, exclude_low_risk=False)
+        if not records:
+            return "No customers with outstanding amounts."
+        lines = ["Recovery Priority Ranking (ALL customers, including excluded):\n"]
+        lines.append(f"{'#':<3} {'Customer':<25} {'Outstanding':>12} {'Prob':>6} {'Days':>5} {'Priority':>10} {'Expected':>12} {'Risk Tier':<15}")
+        lines.append("-" * 95)
+        for i, r in enumerate(records, 1):
+            lines.append(
+                f"{i:<3} {r.customer_name:<25} Rs.{r.outstanding_amount:>10,.0f} {r.collection_probability:>5.0f}% {int(r.days_overdue):>4}d "
+                f"{r.priority_score:>10,.0f} Rs.{r.expected_recovery:>10,.0f} {r.risk_tier:<15}"
+            )
+        targeted = [r for r in records if r.risk_tier != "LOW RISK"]
+        excluded = [r for r in records if r.risk_tier == "LOW RISK"]
+        lines.append(f"\nTargeted: {len(targeted)} customers | Excluded (Low Risk): {len(excluded)} customers")
+        return "\n".join(lines)
+
+    tools["get_recovery_priority"] = Tool(
+        name="get_recovery_priority",
+        description=(
+            "Shows the full priority ranking of ALL customers by expected recoverable value, "
+            "including LOW RISK customers that would be excluded from a campaign. "
+            "Explains the priority score formula: outstanding x probability x urgency multiplier. "
+            "Use when asked: why is this customer prioritized, priority ranking, "
+            "expected recovery value, which customers have highest expected value."
+        ),
+        fn=_recovery_priority,
+        category="recovery",
+    )
+
     return tools
+
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -388,60 +649,121 @@ def build_tool_registry(context: AgentContext) -> dict[str, Tool]:
 
 class LLMClient:
     """
-    Tries LLM providers in priority order:
-      1. Google Gemini Flash  (GEMINI_API_KEY)
-      2. Groq Llama 3         (GROQ_API_KEY)
-      3. Rule-based fallback  (always works, no key needed)
+    Tries LLM providers in priority order dynamically:
+      1. Google Gemini (discovers models)
+      2. Groq Llama 3
+      3. Rule-based fallback
     """
 
     def __init__(self, gemini_key: Optional[str] = None, groq_key: Optional[str] = None):
         self.gemini_key = gemini_key or os.getenv("GEMINI_API_KEY", "")
         self.groq_key   = groq_key   or os.getenv("GROQ_API_KEY",   "")
-        self.backend    = self._detect_backend()
-        logger.info("LLMClient: using backend '%s'", self.backend)
-
-    def _detect_backend(self) -> str:
-        if self.gemini_key:
-            try:
-                import google.generativeai  # noqa: F401
-                return "gemini"
-            except ImportError:
-                logger.warning("google-generativeai not installed. Trying Groq.")
-        if self.groq_key:
-            try:
-                import groq  # noqa: F401
-                return "groq"
-            except ImportError:
-                logger.warning("groq not installed. Using rule-based fallback.")
-        return FALLBACK_MODEL
+        self.backend_used = FALLBACK_MODEL
+        self._gemini_model_cache = []
 
     @property
     def name(self) -> str:
-        return self.backend
+        return self.backend_used
 
     def generate(self, prompt: str, system: str = "") -> str:
         """Generate a completion. Returns plain text."""
-        if self.backend == "gemini":
-            return self._gemini(prompt, system)
-        if self.backend == "groq":
-            return self._groq(prompt, system)
+        if self.gemini_key:
+            res = self._try_gemini(prompt, system)
+            if not res.startswith("AGENT_ERROR:"):
+                return res
+            logger.warning("Gemini failed (%s), falling back to Groq/RuleBased", res)
+
+        if self.groq_key:
+            res = self._try_groq(prompt, system)
+            if not res.startswith("AGENT_ERROR:"):
+                return res
+            logger.warning("Groq failed (%s), falling back to RuleBased", res)
+
+        self.backend_used = FALLBACK_MODEL
         return self._fallback(prompt)
 
-    def _gemini(self, prompt: str, system: str) -> str:
-        try:
-            import google.generativeai as genai
-            genai.configure(api_key=self.gemini_key)
-            model = genai.GenerativeModel(
-                GEMINI_MODEL,
-                system_instruction=system or _SYSTEM_PROMPT,
-            )
-            resp = model.generate_content(prompt)
-            return resp.text.strip()
-        except Exception as exc:
-            logger.error("Gemini error: %s. Falling back.", exc)
-            return self._fallback(prompt)
+    def _get_gemini_models(self, client) -> list[str]:
+        if self._gemini_model_cache:
+            return self._gemini_model_cache
 
-    def _groq(self, prompt: str, system: str) -> str:
+        try:
+            models = client.models.list()
+            valid_models = []
+            for m in models:
+                name = m.name.lower()
+                # Filter out embeddings, vision, audio, aqa
+                if "gemini" not in name:
+                    continue
+                if any(x in name for x in ["vision", "embedding", "audio", "aqa", "learnmath"]):
+                    continue
+                # Check method if available
+                if hasattr(m, 'supported_generation_methods'):
+                    if 'generateContent' not in m.supported_generation_methods:
+                        continue
+                valid_models.append(m.name)
+            
+            def rank_score(model_name: str) -> int:
+                score = 0
+                n = model_name.lower()
+                if "exp" in n or "preview" in n:
+                    score -= 50
+                if "flash" in n:
+                    score += 20
+                if "pro" in n:
+                    score += 10
+                if "2.5" in n:
+                    score += 30
+                elif "2.0" in n:
+                    score += 20
+                elif "1.5" in n:
+                    score += 10
+                return score
+            
+            valid_models.sort(key=rank_score, reverse=True)
+            self._gemini_model_cache = valid_models
+            return valid_models
+        except Exception as e:
+            logger.error("Model discovery failed: %s", str(e))
+            return []
+
+    def _try_gemini(self, prompt: str, system: str) -> str:
+        try:
+            from google import genai
+            client = genai.Client(api_key=self.gemini_key)
+            models_to_try = self._get_gemini_models(client)
+            if not models_to_try:
+                return "AGENT_ERROR: No compatible Gemini models discovered."
+            
+            full_prompt = f"{system}\n\n{prompt}" if system else prompt
+            last_err = None
+
+            for model_name in models_to_try:
+                try:
+                    resp = client.models.generate_content(
+                        model=model_name,
+                        contents=full_prompt,
+                    )
+                    raw = resp.text.strip()
+                    logger.debug("Gemini [%s] responded OK", model_name)
+                    
+                    # Clean up model name for UI presentation
+                    ui_name = model_name.replace("models/", "")
+                    self.backend_used = f"Gemini — {ui_name}"
+                    return raw
+                except Exception as model_exc:
+                    err_str = str(model_exc)
+                    if any(k in err_str.lower() for k in ["404", "not_found", "decommissioned", "no longer available", "503", "overloaded", "quota"]):
+                        logger.warning("Gemini model %s unavailable, trying next.", model_name)
+                        last_err = model_exc
+                        continue
+                    # Other exceptions (like bad auth) surface immediately to trigger fallback
+                    return f"AGENT_ERROR: {str(model_exc)}"
+
+            return f"AGENT_ERROR: All discovered Gemini models failed. Last error: {last_err}"
+        except Exception as exc:
+            return f"AGENT_ERROR: Gemini API error — {str(exc)}"
+
+    def _try_groq(self, prompt: str, system: str) -> str:
         try:
             from groq import Groq
             client = Groq(api_key=self.groq_key)
@@ -455,24 +777,49 @@ class LLMClient:
                 max_tokens=1024,
                 temperature=0.3,
             )
-            return resp.choices[0].message.content.strip()
+            raw = resp.choices[0].message.content.strip()
+            self.backend_used = f"Groq — {GROQ_MODEL}"
+            return raw
         except Exception as exc:
-            logger.error("Groq error: %s. Falling back.", exc)
-            return self._fallback(prompt)
+            return f"AGENT_ERROR: Groq API error — {str(exc)}"
 
     def _fallback(self, prompt: str) -> str:
         """
         Rule-based fallback: parses the prompt to determine which tool
         the agent should call next, without an LLM.
         """
-        p = prompt.lower()
+        p_full = prompt.lower()
 
         # If this is a "final answer" request (observation already in prompt)
-        if "observation:" in p and "based on" in p:
+        if "observation:" in p_full and "based on" in p_full:
             return "Final Answer: Based on the data retrieved, I have analyzed your business situation. Please review the detailed observations above for specific numbers and recommendations."
 
+        # Extract only the original user question to prevent routing on stale observation keywords
+        import re
+        q_match = re.search(r"question:\s*(.+?)(?=\n|$)", prompt, re.IGNORECASE)
+        p = q_match.group(1).lower() if q_match else p_full
+
         # Tool selection heuristics
+        if any(w in p for w in ["recover", "campaign", "run recovery", "run today", "execute recovery", "maximize recovery"]):
+            return 'Thought: The user wants to run a revenue recovery campaign.\nAction: execute_recovery_campaign\nAction Input: {}'
+
+        if any(w in p for w in ["recovery batch", "who should we contact", "contact today", "revenue at risk"]):
+            return 'Thought: I need to identify the recovery batch and prioritize customers.\nAction: get_recovery_batch\nAction Input: {}'
+
+        if any(w in p for w in ["recovery metric", "how much recovered", "recovery rate", "what happened in", "campaign result"]):
+            return 'Thought: I need to check the recovery campaign metrics.\nAction: get_recovery_metrics\nAction Input: {}'
+
+        if any(w in p for w in ["audit trail", "audit log", "show audit", "recovery history", "decisions made"]):
+            return 'Thought: I need to show the recovery audit trail.\nAction: get_recovery_audit_log\nAction Input: {}'
+
+        if any(w in p for w in ["recovery status", "not contact", "low risk", "exclude", "should not contact"]):
+            return 'Thought: I need to check recovery status for all customers.\nAction: get_customer_recovery_status\nAction Input: {}'
+
+        if any(w in p for w in ["priority rank", "expected recovery value", "why priorit"]):
+            return 'Thought: I need to show the full recovery priority ranking.\nAction: get_recovery_priority\nAction Input: {}'
+
         if any(w in p for w in ["dead stock", "slow moving", "not sold", "capital blocked", "inventory"]):
+
             return 'Thought: I need to check inventory data for dead or slow-moving stock.\nAction: get_dead_stock\nAction Input: {}'
 
         if any(w in p for w in ["pay", "overdue", "outstanding", "collection", "owes", "dues", "receivable", "payment"]):
@@ -503,28 +850,28 @@ class LLMClient:
 # 5. System Prompt
 # ═════════════════════════════════════════════════════════════════════════════
 
-_SYSTEM_PROMPT = """You are an expert AI Business Analyst for a wholesale distribution business in India.
-You help the business owner make data-driven decisions about inventory, payments, customers, and sales.
+_SYSTEM_PROMPT = """You are the WHOLESALE AI BUSINESS ANALYST for a wholesale distribution business in India.
+You operate across Revenue Recovery, Inventory, Customer Intelligence, Sales, Territory / Operations, and Business-wide risk.
+You help the business owner make data-driven decisions by selecting appropriate deterministic tools.
 
 You have access to these tools:
-{tools}
+TOOL_DESCRIPTIONS_PLACEHOLDER
 
-You follow the ReAct pattern strictly:
-- Thought: reason about what to do next
-- Action: tool name to call
-- Action Input: JSON dict of arguments (use {{}} if no arguments needed)
-- Observation: [tool result will be inserted here]
-- ... repeat as needed ...
-- Final Answer: your grounded, specific, actionable answer in plain English
+IMPORTANT — Your Role & Constraints:
+- You must NEVER invent metrics, fabricate customer balances, fabricate inventory, fabricate forecasts, or fabricate recovery probabilities.
+- You must NEVER claim an action happened when it did not.
+- You must NEVER treat Figma/reference content as business data.
+- When factual numeric information is needed, obtain it ONLY from the available tools.
+- Responses should be concise, executive-friendly, evidence-based, action-oriented, and grounded in tool results.
+- Where appropriate, structure your answer with: Key finding, Recommended action, Evidence. Do not force this if a simple answer is better.
 
-Rules:
-1. ALWAYS ground your answer in the actual data from tool observations
-2. Use ₹ for all Indian Rupee amounts
-3. Be specific — name customers, products, and amounts
-4. Keep Final Answer under 200 words but make it actionable
-5. If data is missing or tools return no results, say so clearly
-6. Never make up numbers — only use what the tools return
+Authority boundaries (Revenue Recovery):
+- You may RECOMMEND actions and ORCHESTRATE tool calls for recovery campaigns.
+- The deterministic Recovery Policy Engine ENFORCES all state transitions, stopping rules, and intervention limits.
+- You must NEVER claim to directly move money, change payment states, or bypass policy rules.
+- All financial recovery results are SIMULATED for demonstration.
 """
+
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -601,23 +948,32 @@ class WholesaleAgent:
     def _parse_llm_response(self, response: str) -> tuple[str, str, dict, bool]:
         """
         Parse LLM response into (thought, action, action_args, is_final).
+        Handles plain text AND bold markdown (**Thought:**, **Action:**) from Gemini.
         Returns is_final=True when the LLM writes 'Final Answer: ...'.
         """
+        # Strip markdown bold formatting that Gemini sometimes outputs
+        cleaned = re.sub(r"\*\*(\w[^*]*)\*\*:", r"\1:", response)
+        cleaned = re.sub(r"\*(\w[^*]*)\*:",   r"\1:", cleaned)
+
+        # Check for API errors surfaced by _gemini / _groq
+        if cleaned.startswith("AGENT_ERROR:"):
+            return cleaned, "_error_", {}, True
+
         # Check for final answer
-        final_match = re.search(r"Final Answer:\s*(.+)", response, re.DOTALL | re.IGNORECASE)
+        final_match = re.search(r"Final Answer:\s*(.+)", cleaned, re.DOTALL | re.IGNORECASE)
         if final_match:
             return "", "", {}, True
 
         # Extract Thought
-        thought_match = re.search(r"Thought:\s*(.+?)(?=Action:|$)", response, re.DOTALL | re.IGNORECASE)
-        thought = thought_match.group(1).strip() if thought_match else response.strip()
+        thought_match = re.search(r"Thought:\s*(.+?)(?=Action:|Final Answer:|$)", cleaned, re.DOTALL | re.IGNORECASE)
+        thought = thought_match.group(1).strip() if thought_match else cleaned.strip()[:200]
 
-        # Extract Action
-        action_match = re.search(r"Action:\s*(\w+)", response, re.IGNORECASE)
+        # Extract Action — allow word chars, underscores, hyphens, and optional parens
+        action_match = re.search(r"Action:\s*([\w_-]+)", cleaned, re.IGNORECASE)
         action = action_match.group(1).strip() if action_match else "get_morning_briefing"
 
         # Extract Action Input
-        args_match = re.search(r"Action Input:\s*(\{.*?\})", response, re.DOTALL | re.IGNORECASE)
+        args_match = re.search(r"Action Input:\s*(\{.*?\})", cleaned, re.DOTALL | re.IGNORECASE)
         args = {}
         if args_match:
             try:
@@ -627,7 +983,6 @@ class WholesaleAgent:
 
         # Validate action name
         if action not in self.tools:
-            # Try fuzzy match
             for tool_name in self.tools:
                 if tool_name.lower() in action.lower() or action.lower() in tool_name.lower():
                     action = tool_name
@@ -638,21 +993,31 @@ class WholesaleAgent:
         return thought, action, args, False
 
     def _extract_final_answer(self, response: str) -> str:
-        match = re.search(r"Final Answer:\s*(.+)", response, re.DOTALL | re.IGNORECASE)
+        # Strip markdown bold
+        cleaned = re.sub(r"\*\*(\w[^*]*)\*\*:", r"\1:", response)
+        cleaned = re.sub(r"\*(\w[^*]*)\*:",   r"\1:", cleaned)
+
+        # Return the API error message directly if present
+        if cleaned.startswith("AGENT_ERROR:"):
+            return cleaned  # will be shown as an error in the UI
+
+        match = re.search(r"Final Answer:\s*(.+)", cleaned, re.DOTALL | re.IGNORECASE)
         if match:
             return match.group(1).strip()
-        # If it doesn't say "Final Answer:" but it doesn't have an Action either, treat it as the final answer
-        if "Action:" not in response and "Thought:" not in response:
-            return response.strip()
+        # If no Final Answer tag but also no Action/Thought, treat the whole response as the answer
+        if "Action:" not in cleaned and "Thought:" not in cleaned:
+            return cleaned.strip()
         return ""
 
-    def run(self, question: str) -> AgentResult:
+    def run(self, question: str, cancel_check: Optional[Callable[[], bool]] = None) -> AgentResult:
         """
         Run the full ReAct loop for the given question.
 
         Returns an AgentResult with the answer, all reasoning steps,
         and metadata about which LLM was used.
         """
+        from engine.audit_logger import log_event
+
         t_start     = time.time()
         history: list[AgentStep] = []
         tool_calls: list[str]    = []
@@ -661,12 +1026,17 @@ class WholesaleAgent:
         confidence               = "HIGH"
 
         logger.info("Agent starting. LLM: %s. Question: %s", self.llm.name, question[:80])
+        log_event(event_type="AGENT_QUERY", reason=question)
 
         for step_num in range(1, MAX_REACT_STEPS + 1):
+            if cancel_check and cancel_check():
+                final_answer = "AGENT_ERROR: Generation stopped by user."
+                break
+
             t_step = time.time()
 
-            # Build prompt for this step
-            system_prompt = _SYSTEM_PROMPT.format(tools=self._tool_descriptions())
+            # Build system prompt with tool descriptions injected (avoid .format() issues with curly braces in tool output)
+            system_prompt = _SYSTEM_PROMPT.replace("TOOL_DESCRIPTIONS_PLACEHOLDER", self._tool_descriptions())
             react_prompt  = self._build_react_prompt(question, history, context_summary)
 
             # Ask LLM what to do next
@@ -675,6 +1045,10 @@ class WholesaleAgent:
 
             if is_final:
                 final_answer = self._extract_final_answer(llm_response)
+                break
+
+            if cancel_check and cancel_check():
+                final_answer = "AGENT_ERROR: Generation stopped by user."
                 break
 
             # Call the tool
@@ -687,6 +1061,7 @@ class WholesaleAgent:
                     observation = "I already called this tool and got the same result. I should stop and provide a Final Answer."
                 else:
                     observation = tool.call(**action_args)
+                    log_event(event_type="TOOL_CALL", action=action, reason=json.dumps(action_args))
                 tool_calls.append(action)
 
             elapsed_ms = int((time.time() - t_step) * 1000)
@@ -723,6 +1098,9 @@ class WholesaleAgent:
         if not final_answer:
             final_answer = self._synthesize_from_history(question, history)
             confidence   = "MEDIUM"
+
+        if final_answer.startswith("AGENT_ERROR:") or len(tool_calls) == 0:
+            confidence = "LOW"
 
         total_ms = int((time.time() - t_start) * 1000)
         logger.info(
@@ -797,12 +1175,13 @@ def ask(
 
 # ─── Suggested questions for the UI ──────────────────────────────────────────
 SUGGESTED_QUESTIONS = [
-    "What should I focus on today?",
-    "Which customers are most likely to not pay me?",
-    "Which products should I reorder this week?",
-    "Are there any suspicious or fraudulent transactions?",
-    "Which customers are about to churn?",
-    "Which area/town is performing best this month?",
-    "What is my dead stock situation?",
-    "Give me my morning briefing.",
+    "Who should we contact today to maximize expected revenue recovery?",
+    "Run today's recovery campaign.",
+    "What happened in today's recovery campaign?",
+    "Why was Patel Stores selected?",
+    "Why was this customer not selected?",
+    "Did Patel Stores pay?",
+    "Show today's recovery audit trail.",
+    "What is the expected recoverable value?"
 ]
+

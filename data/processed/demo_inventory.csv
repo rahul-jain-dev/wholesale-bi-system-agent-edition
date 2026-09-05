@@ -1,0 +1,136 @@
+product_name,category,company,size_variant,current_stock,last_purchase_date,last_sale_date,purchase_price,mrp,reorder_level
+Brooke Bond Red Label Tea,Beverages,HUL,250g,1269,2026-07-23,2026-08-25,95.0,130.0,126
+Tata Tea Gold,Beverages,Tata,500g,1392,2026-07-21,2026-08-29,190.0,260.0,111
+Nescafe Classic,Beverages,Nestle,50g,1018,2026-07-19,2026-08-31,195.0,280.0,82
+Bru Gold Coffee,Beverages,HUL,100g,1147,2026-07-26,2026-08-21,175.0,250.0,140
+Amul Kool Milk,Beverages,Amul,200ml,1483,2026-07-18,2026-08-31,18.0,25.0,141
+Frooti Mango Drink,Beverages,PepsiCo,200ml,1153,2026-07-18,2026-08-29,9.0,13.0,105
+Maaza Mango,Beverages,Coca-Cola,600ml,1296,2026-07-30,2026-08-26,32.0,45.0,46
+Slice Mango Drink,Beverages,PepsiCo,600ml,1164,2026-07-24,2026-08-29,28.0,40.0,54
+Thumbs Up Cola,Beverages,Coca-Cola,750ml,1003,2026-07-28,2026-08-26,30.0,42.0,69
+Limca Lemon,Beverages,Coca-Cola,750ml,975,2026-08-01,2026-08-21,28.0,40.0,54
+Sprite,Beverages,Coca-Cola,750ml,966,2026-07-23,2026-08-22,28.0,40.0,55
+Coca Cola,Beverages,Coca-Cola,750ml,1277,2026-07-26,2026-08-29,30.0,42.0,148
+Pepsi,Beverages,PepsiCo,750ml,1055,2026-07-31,2026-08-28,28.0,40.0,45
+Real Fruit Juice,Beverages,Dabur,1L,1079,2026-07-24,2026-08-29,66.0,95.0,120
+Tropicana Orange Juice,Beverages,PepsiCo,1L,1123,2026-07-29,2026-08-26,77.0,110.0,112
+Colgate MaxFresh Toothpaste,Personal Care,Colgate,200g,1193,2026-07-29,2026-08-21,62.0,95.0,37
+Colgate Dental Cream,Personal Care,Colgate,100g,1190,2026-07-29,2026-08-27,38.0,58.0,62
+Pepsodent Toothpaste,Personal Care,HUL,200g,1117,2026-08-01,2026-08-24,55.0,82.0,57
+Dettol Soap,Personal Care,Reckitt,125g,1424,2026-07-23,2026-08-31,31.0,48.0,42
+Lux Beauty Soap,Personal Care,HUL,100g,1058,2026-07-25,2026-08-26,22.0,35.0,69
+Lifebuoy Soap,Personal Care,HUL,100g,1273,2026-07-27,2026-08-29,18.0,28.0,122
+Dove Soap,Personal Care,HUL,75g,1013,2026-07-27,2026-08-27,42.0,65.0,58
+Head & Shoulders Shampoo,Personal Care,P&G,180ml,1269,2026-07-27,2026-08-25,118.0,175.0,83
+Clinic Plus Shampoo,Personal Care,HUL,175ml,1149,2026-07-24,2026-08-25,51.0,78.0,60
+Pantene Shampoo,Personal Care,P&G,180ml,1100,2026-07-20,2026-08-31,125.0,185.0,113
+Parachute Coconut Oil,Personal Care,Marico,500ml,1311,2026-07-29,2026-08-25,75.0,110.0,27
+Dabur Amla Hair Oil,Personal Care,Dabur,500ml,1213,2026-07-29,2026-08-21,68.0,100.0,54
+Vivel Soap,Personal Care,ITC,100g,1065,2026-07-25,2026-08-31,20.0,30.0,131
+Gillette Mach3 Razor,Personal Care,Gillette,2pcs,1211,2026-07-25,2026-08-29,95.0,145.0,42
+Gillette Fusion Razor,Personal Care,Gillette,2pcs,1201,2026-07-19,2026-08-29,195.0,295.0,42
+Nivea Cream,Personal Care,Nivea,200ml,1254,2026-07-24,2026-08-20,148.0,220.0,58
+Fair & Lovely Cream,Personal Care,HUL,100g,1288,2026-07-31,2026-08-28,58.0,88.0,98
+Ponds Talcum Powder,Personal Care,HUL,300g,1231,2026-07-21,2026-08-26,95.0,145.0,140
+Vim Dishwash Bar,Personal Care,HUL,300g,1434,2026-07-29,2026-08-28,18.0,28.0,91
+Pears Soap,Personal Care,HUL,75g,1044,2026-07-18,2026-08-29,38.0,58.0,36
+Surf Excel Detergent,Home Care,HUL,1kg,1029,2026-07-19,2026-08-31,91.0,140.0,107
+Ariel Detergent,Home Care,P&G,1kg,1363,2026-07-21,2026-08-31,95.0,145.0,84
+Rin Detergent,Home Care,HUL,500g,1045,2026-07-30,2026-08-21,38.0,58.0,79
+Wheel Detergent,Home Care,HUL,1kg,1090,2026-07-28,2026-08-31,55.0,82.0,113
+Harpic Toilet Cleaner,Home Care,Reckitt,500ml,1127,2026-07-20,2026-08-28,81.0,125.0,70
+Lizol Floor Cleaner,Home Care,Reckitt,500ml,1055,2026-07-20,2026-08-26,72.0,110.0,107
+Colin Glass Cleaner,Home Care,Reckitt,500ml,1227,2026-07-22,2026-08-26,65.0,98.0,22
+Scotch Brite Scrub,Home Care,3M,1pc,969,2026-07-30,2026-08-27,22.0,35.0,29
+Vim Dishwash Liquid,Home Care,HUL,500ml,1267,2026-08-01,2026-08-26,85.0,128.0,133
+Good Knight Mosquito Coil,Home Care,Godrej,10pcs,975,2026-07-23,2026-08-25,38.0,58.0,42
+All Out Mosquito Repellent,Home Care,HUL,45ml,1113,2026-07-20,2026-08-31,55.0,82.0,103
+Odonil Air Freshener,Home Care,Dabur,50g,1193,2026-07-27,2026-08-28,42.0,65.0,82
+Phenyl Floor Cleaner,Home Care,Reckitt,500ml,1238,2026-07-19,2026-08-31,28.0,42.0,20
+Exo Dishwash Bar,Home Care,HUL,200g,1014,2026-07-20,2026-08-26,15.0,22.0,48
+Domex Toilet Cleaner,Home Care,HUL,500ml,1270,2026-07-24,2026-08-26,68.0,102.0,24
+Parle-G Biscuit,Snacks,Parle,800g,1121,2026-07-18,2026-08-24,38.0,55.0,105
+Britannia Good Day,Snacks,Britannia,200g,951,2026-07-19,2026-08-29,27.0,38.0,123
+Oreo Biscuit,Snacks,Mondelez,120g,1356,2026-08-01,2026-08-31,38.0,55.0,145
+Marie Gold Biscuit,Snacks,Britannia,250g,1185,2026-07-24,2026-08-31,24.0,34.0,117
+Lays Classic Chips,Snacks,PepsiCo,26g,1145,2026-08-01,2026-08-31,9.0,13.0,110
+Kurkure Masala,Snacks,PepsiCo,90g,1145,2026-07-23,2026-08-28,19.0,27.0,128
+Uncle Chips,Snacks,PepsiCo,60g,1169,2026-08-01,2026-08-22,15.0,22.0,141
+Haldiram Bhujia,Snacks,Haldiram,200g,847,2026-08-01,2026-08-26,65.0,95.0,65
+Haldiram Aloo Bhujia,Snacks,Haldiram,150g,1024,2026-07-27,2026-08-29,48.0,70.0,100
+Maggi Noodles,Snacks,Nestle,70g,1131,2026-08-01,2026-08-26,11.0,16.0,130
+Yippee Noodles,Snacks,ITC,70g,967,2026-07-30,2026-08-29,12.0,17.0,141
+Britannia 50-50 Biscuit,Snacks,Britannia,100g,1141,2026-07-22,2026-08-25,18.0,26.0,33
+Monaco Biscuit,Snacks,Parle,250g,1168,2026-07-20,2026-08-29,28.0,40.0,91
+Sunfeast Dark Fantasy,Snacks,ITC,150g,1005,2026-07-27,2026-08-29,31.0,45.0,130
+Bingo Mad Angles,Snacks,ITC,90g,1171,2026-07-24,2026-08-27,22.0,32.0,105
+Hippo Rings,Snacks,PepsiCo,40g,1233,2026-07-31,2026-08-28,10.0,14.0,43
+Crax Corn Rings,Snacks,DFM,30g,1143,2026-07-31,2026-08-31,8.0,12.0,134
+Perk Chocolate,Snacks,Cadbury,36g,1027,2026-07-21,2026-08-27,18.0,25.0,42
+Dairy Milk Chocolate,Snacks,Cadbury,40g,1135,2026-07-28,2026-08-31,35.0,50.0,46
+Sunfeast Yumfills,Snacks,ITC,50g,1044,2026-07-22,2026-08-19,12.0,18.0,31
+Aashirvaad Atta,Packaged Foods,ITC,5kg,1134,2026-07-29,2026-08-27,203.0,260.0,109
+Fortune Chakki Atta,Packaged Foods,Marico,5kg,1215,2026-07-29,2026-08-20,195.0,250.0,115
+Saffola Gold Oil,Packaged Foods,Marico,1L,1037,2026-07-29,2026-08-26,145.0,195.0,42
+Fortune Sunflower Oil,Packaged Foods,Marico,1L,983,2026-07-18,2026-08-31,125.0,170.0,127
+Tata Salt,Packaged Foods,Tata,1kg,1094,2026-07-19,2026-08-31,18.0,24.0,127
+Captain Cook Salt,Packaged Foods,Tata,1kg,1330,2026-07-21,2026-08-31,16.0,22.0,20
+Catch Black Pepper,Packaged Foods,Catch,50g,1415,2026-07-28,2026-08-25,38.0,52.0,144
+Everest Garam Masala,Packaged Foods,Everest,100g,1107,2026-08-01,2026-08-18,55.0,75.0,89
+MDH Kitchen King,Packaged Foods,MDH,100g,951,2026-07-30,2026-08-28,58.0,80.0,37
+Rajdhani Besan,Packaged Foods,Rajdhani,1kg,1291,2026-07-26,2026-08-28,62.0,85.0,105
+Patanjali Ghee,Packaged Foods,Patanjali,1L,1031,2026-08-01,2026-08-29,380.0,495.0,117
+Amul Butter,Packaged Foods,Amul,500g,1006,2026-08-01,2026-08-31,211.0,270.0,27
+Amul Cheese,Packaged Foods,Amul,200g,1022,2026-07-26,2026-08-31,129.0,165.0,110
+Knorr Soup,Packaged Foods,HUL,44g,1496,2026-07-26,2026-08-31,34.0,48.0,74
+Maggi Masala,Packaged Foods,Nestle,100g,944,2026-07-28,2026-08-28,22.0,30.0,133
+Amul Milk 1L Pouch,Dairy,Amul,1L,1334,2026-07-26,2026-08-27,55.0,68.0,123
+Amul Dahi,Dairy,Amul,400g,1155,2026-07-22,2026-08-28,38.0,50.0,125
+Mother Dairy Curd,Dairy,Mother Dairy,400g,1032,2026-07-23,2026-08-27,35.0,48.0,52
+Amul Paneer,Dairy,Amul,200g,968,2026-07-26,2026-08-31,85.0,110.0,92
+Amul Gold Milk,Dairy,Amul,1L,1560,2026-07-27,2026-08-31,62.0,80.0,112
+Nestle Milkmaid,Dairy,Nestle,400g,1033,2026-07-31,2026-08-25,88.0,118.0,29
+Amul Mozzarella Cheese,Dairy,Amul,200g,1111,2026-08-01,2026-08-21,145.0,190.0,54
+Kwality Walls Cornetto,Dairy,HUL,65ml,1370,2026-07-25,2026-08-26,28.0,40.0,104
+Amul Cone Ice Cream,Dairy,Amul,65ml,1191,2026-07-30,2026-08-31,22.0,32.0,42
+Havmor Ice Cream,Dairy,Havmor,500ml,1260,2026-07-19,2026-08-28,95.0,130.0,98
+Dettol Handwash,FMCG,Reckitt,200ml,1142,2026-07-26,2026-08-31,65.0,95.0,93
+Savlon Antiseptic,FMCG,ICI,200ml,1175,2026-07-29,2026-08-27,55.0,80.0,148
+Burnol Cream,FMCG,Reckitt,20g,1153,2026-07-18,2026-08-29,35.0,52.0,142
+Band-Aid Strips,FMCG,J&J,10pcs,882,2026-07-22,2026-08-25,22.0,32.0,110
+ORS Oral Rehydration,FMCG,Dabur,21g,922,2026-07-25,2026-08-25,12.0,18.0,34
+Vicks VapoRub,FMCG,P&G,50ml,977,2026-07-24,2026-08-28,96.0,148.0,51
+Eno Fruit Salt,FMCG,Reckitt,100g,1147,2026-08-01,2026-08-29,61.0,78.0,84
+Hajmola Tablets,FMCG,Dabur,120pcs,1003,2026-07-27,2026-08-29,35.0,50.0,110
+Pudin Hara,FMCG,Dabur,20ml,1020,2026-07-20,2026-08-22,28.0,40.0,47
+Reynolds Pen,FMCG,Reynolds,10pcs,1058,2026-07-23,2026-08-27,45.0,65.0,94
+Classmate Notebook,FMCG,ITC,172pg,1018,2026-07-21,2026-08-29,38.0,55.0,145
+Natraj Pencil,FMCG,Natraj,12pcs,761,2026-07-30,2026-08-25,28.0,40.0,73
+Stayfree Pads,FMCG,J&J,8pcs,1139,2026-07-27,2026-08-27,65.0,95.0,82
+Whisper Ultra,FMCG,P&G,8pcs,1087,2026-07-31,2026-08-22,68.0,98.0,109
+Carefree Liner,FMCG,J&J,20pcs,1248,2026-07-28,2026-08-29,55.0,80.0,107
+Bisleri Water 1L,Household,Bisleri,1L,1052,2026-07-19,2026-08-31,12.0,20.0,40
+Bisleri Water 500ml,Household,Bisleri,500ml,1066,2026-07-30,2026-08-26,8.0,15.0,78
+Aquaguard Filter Candle,Household,Aquaguard,1pc,1183,2026-07-18,2026-08-29,145.0,210.0,37
+Comfort Fabric Softener,Household,HUL,800ml,1300,2026-07-27,2026-08-28,95.0,145.0,109
+Dynamo Liquid Detergent,Household,HUL,1L,1370,2026-07-29,2026-08-29,115.0,170.0,75
+Fevicol SH Adhesive,Household,Pidilite,200g,1100,2026-07-29,2026-08-24,62.0,95.0,138
+Pidilite M-Seal,Household,Pidilite,50g,1133,2026-07-18,2026-08-29,48.0,72.0,120
+Castrol Oil,Household,Castrol,1L,917,2026-07-23,2026-08-27,245.0,360.0,66
+Battery Duracell AA,Household,Duracell,2pcs,1072,2026-07-25,2026-08-29,58.0,85.0,67
+Battery Eveready AA,Household,Eveready,2pcs,1036,2026-07-26,2026-08-29,42.0,62.0,46
+Sarpan Hybrid Seeds,Agricultural,Sarpan,500g,1042,2026-07-29,2026-08-26,185.0,260.0,74
+Parle Groundnut Oil,Agricultural,Parle,1L,1150,2026-07-27,2026-08-26,110.0,150.0,97
+Ruchi Soya Oil,Agricultural,Ruchi Soya,1L,1039,2026-07-20,2026-08-31,120.0,165.0,97
+Naturefresh Oil,Agricultural,Cargill,1L,1108,2026-07-25,2026-08-27,115.0,158.0,112
+Dhara Mustard Oil,Agricultural,Dhara,1L,1325,2026-07-31,2026-08-17,105.0,145.0,110
+Sunfeast Bounce,Snacks,ITC,82g,967,2026-07-27,2026-08-29,28.0,40.0,98
+Jim Jam Biscuit,Snacks,Britannia,150g,1279,2026-07-18,2026-08-29,22.0,32.0,85
+Hide & Seek Biscuit,Snacks,Parle,120g,1162,2026-07-25,2026-08-24,32.0,45.0,76
+Nutrichoice Biscuit,Snacks,Britannia,100g,1013,2026-07-29,2026-08-29,35.0,52.0,70
+Tiger Biscuit,Snacks,Britannia,100g,1037,2026-07-20,2026-08-29,18.0,26.0,145
+Harpic Bathroom Cleaner,Household,Reckitt,500ml,1332,2026-07-22,2026-08-31,78.0,120.0,30
+Lizol Disinfectant Spray,Household,Reckitt,500ml,1167,2026-07-21,2026-08-28,68.0,105.0,79
+Mortein Insect Spray,Household,Reckitt,300ml,1102,2026-07-28,2026-08-27,142.0,215.0,95
+Colin Multipurpose Cleaner,Household,Reckitt,500ml,890,2026-07-18,2026-08-31,62.0,95.0,147
+Dettol Antiseptic Liquid,Household,Reckitt,250ml,1216,2026-07-18,2026-08-26,75.0,115.0,138

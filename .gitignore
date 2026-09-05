@@ -54,3 +54,20 @@ logs/
 
 # Docker
 .dockerignore
+
+# Build and Scratch scripts
+*.exe
+test*.py
+patch_*.py
+fix_*.py
+schema_*.py
+build_*.py
+replace_*.py
+check_*.py
+runtime_test.py
+find_block.py
+
+patch.py
+new_cc.txt
+app/streamlit_app_new.py
+audit.py

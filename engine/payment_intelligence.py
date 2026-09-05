@@ -101,10 +101,18 @@ def _build_features(
     ).clip(-1, 1)  # normalised to [-1, +1]
 
     # ── Outstanding invoice features ───────────────────────────────────────
-    # Detect outstanding: invoices that have no matching "PAID" status
-    outstanding_flag = "credit" if "payment_type" not in df.columns else None
+    # Compute days_overdue from payment_due_date if not already present
+    if "days_overdue" not in df.columns and "payment_due_date" in df.columns:
+        due_dates = pd.to_datetime(df["payment_due_date"], errors="coerce")
+        raw_days = (today - due_dates).dt.days.fillna(0).astype(int)
+        df["days_overdue"] = raw_days.clip(lower=0)
+        # Only count as overdue if payment_status is not PAID
+        if "payment_status" in df.columns:
+            paid_mask = df["payment_status"].str.upper().isin(["PAID"])
+            df.loc[paid_mask, "days_overdue"] = 0
 
     if "days_overdue" in df.columns:
+
         overdue = (
             df[pd.to_numeric(df["days_overdue"], errors="coerce").fillna(0) > 0]
             .groupby("customer_name")
@@ -271,6 +279,13 @@ def score_payment_risk(
 
     if not use_ml:
         features["collection_probability"] = features.apply(_rule_based_score, axis=1)
+    else:
+        # Floor: ML probability should never be below the rule-based score.
+        # This prevents the GBM from assigning 0% to all overdue customers
+        # when training data lacks diversity (common with small demo datasets).
+        rule_based = features.apply(_rule_based_score, axis=1)
+        features["collection_probability"] = features["collection_probability"].clip(lower=rule_based)
+
 
     # ── Assign risk tiers and recommended actions ──────────────────────────
     tiers, actions = zip(*features.apply(
@@ -336,6 +351,7 @@ def generate_collection_message(
     days_overdue:     int,
     recommended_action: str,
     distributor_name: str = "Raj Distributors",
+    payment_link:     str = "",
 ) -> str:
     """
     Generate a personalized WhatsApp/call script for payment collection.
@@ -343,15 +359,17 @@ def generate_collection_message(
 
     Args:
         customer_name:      Name of the customer/retailer.
-        overdue_amount:     Outstanding amount in ₹.
+        overdue_amount:     Outstanding amount in Rs.
         days_overdue:       Number of days the invoice is overdue.
-        recommended_action: From score_payment_risk() — sets the tone.
+        recommended_action: From score_payment_risk() - sets the tone.
         distributor_name:   Distributor's business name.
+        payment_link:       Optional mock Razorpay payment link to embed.
 
     Returns:
         A ready-to-send WhatsApp message string in Hindi-English mix.
     """
     amt_str = f"₹{overdue_amount:,.0f}"
+    link_line = f"\n\nPay here: {payment_link}" if payment_link else ""
 
     if recommended_action == "Routine Follow-up" or days_overdue <= 30:
         return (
@@ -359,7 +377,8 @@ def generate_collection_message(
             f"Yeh {distributor_name} ki taraf se ek friendly reminder hai. "
             f"Aapka {amt_str} ka payment {days_overdue} din se pending hai.\n\n"
             f"Kripya is week mein settle kar dein. Koi bhi problem ho to "
-            f"batayein — hum solution nikalenge.\n\n"
+            f"batayein — hum solution nikalenge."
+            f"{link_line}\n\n"
             f"Dhanyawad! 🙏"
         )
 
@@ -369,7 +388,8 @@ def generate_collection_message(
             f"{distributor_name} se contact kar raha hoon. "
             f"Aapka {amt_str} ka outstanding {days_overdue} din se overdue hai.\n\n"
             f"Kripya aaj payment ka arrangement karein. "
-            f"Mujhe call karein: hum payment schedule bana sakte hain.\n\n"
+            f"Mujhe call karein: hum payment schedule bana sakte hain."
+            f"{link_line}\n\n"
             f"Regards,\n{distributor_name}"
         )
 
@@ -381,7 +401,8 @@ def generate_collection_message(
             f"Overdue Since: {days_overdue} days\n\n"
             f"This is urgent. Please arrange payment immediately or contact us "
             f"to discuss. Our representative will visit your shop this week.\n\n"
-            f"Please take this seriously to avoid any disruption to your supply.\n\n"
+            f"Please take this seriously to avoid any disruption to your supply."
+            f"{link_line}\n\n"
             f"— {distributor_name}"
         )
 
@@ -393,7 +414,8 @@ def generate_collection_message(
             f"has remained unpaid for {days_overdue} days.\n\n"
             f"This is your final notice before we proceed with legal action "
             f"and report this to the trade association.\n\n"
-            f"Please settle this amount within 7 days.\n\n"
+            f"Please settle this amount within 7 days."
+            f"{link_line}\n\n"
             f"— {distributor_name}"
         )
 

@@ -76,6 +76,7 @@ SALES_ALIASES: dict[str, str] = {
     "description": "product_name",
     "item name": "product_name",    # Kuber ERP
     "goods name": "product_name",   # Marg ERP
+    "stock_item": "product_name",   # Tally
     # category
     "category": "category",
     "cat": "category",
@@ -137,6 +138,7 @@ SALES_ALIASES: dict[str, str] = {
     "sales_person": "salesperson",
     "rep": "salesperson",
     "executive": "salesperson",
+    "salesman_name": "salesperson", # Kuber / Tally
     # payment_status
     "payment_status": "payment_status",
     "pay_status": "payment_status",
@@ -191,6 +193,7 @@ INVENTORY_ALIASES: dict[str, str] = {
     "cost_price": "purchase_price",
     "buying_price": "purchase_price",
     "cp": "purchase_price",
+    "closing_rate": "purchase_price", # ERP stock summary
     # mrp
     "mrp": "mrp",
     "max_retail_price": "mrp",

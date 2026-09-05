@@ -107,6 +107,29 @@ from engine.payment_intelligence import (
     get_collection_summary,
 )
 
+# Recovery Engine — revenue recovery campaigns
+from engine.recovery_engine import (
+    RecoveryState,
+    Campaign,
+    CustomerRecoveryRecord,
+    calculate_recovery_priority,
+    build_recovery_batch,
+    choose_intervention,
+    generate_mock_payment_link,
+    execute_recovery_action,
+    simulate_payment_outcome,
+    run_recovery_campaign,
+    calculate_campaign_metrics,
+)
+
+# Audit Logger — canonical audit trail
+from engine.audit_logger import (
+    log_event,
+    get_audit_log,
+    clear_audit_log,
+)
+
+
 __all__ = [
     # data_cleaner
     "standardize_sales",

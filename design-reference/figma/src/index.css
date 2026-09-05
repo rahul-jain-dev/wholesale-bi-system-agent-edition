@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@theme inline {
+  --color-app-bg: #0B0E14;
+  --color-sidebar-bg: #10141B;
+  --color-card: #151A23;
+  --color-card-elevated: #1A202B;
+  --color-border: #232A36;
+  --color-border-strong: #2E3644;
+
+  --color-text-primary: #E8ECF3;
+  --color-text-secondary: #9AA4B2;
+  --color-text-muted: #6B7482;
+
+  --color-accent: #6D5BF0;
+  --color-accent-hover: #7E6FF5;
+  --color-link: #8B7CF7;
+
+  --color-success: #34D399;
+  --color-warning: #F5B84C;
+  --color-danger: #F0616D;
+  --color-critical: #E5484D;
+  --color-info: #4C9AFF;
+  --color-gold: #E7B93C;
+
+  --color-seg-champions: #E7B93C;
+  --color-seg-loyal: #34D399;
+  --color-seg-at-risk: #F58A4C;
+  --color-seg-lost: #F0616D;
+
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-badge: 999px;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0B0E14;
+  color: #E8ECF3;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #232A36; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #2E3644; }
+
+/* Tabular nums for financial data */
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Hero card top glow */
+.hero-glow {
+  position: relative;
+}
+.hero-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(109,91,240,0.6), transparent);
+  border-radius: 999px;
+}
+
+/* Row hover */
+.table-row:hover { background: #1A202B; }
+
+/* Nav item active */
+.nav-active {
+  background: rgba(109,91,240,0.12);
+  color: #E8ECF3;
+}
+
+/* Stepper connector */
+.step-connector {
+  flex: 1;
+  height: 1px;
+  background: #232A36;
+  margin-top: -12px;
+}
+.step-connector.done {
+  background: #6D5BF0;
+}

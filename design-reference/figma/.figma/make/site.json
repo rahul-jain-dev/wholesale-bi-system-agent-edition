@@ -1,0 +1,10 @@
+{
+  "description": "Empowering Indian FMCG wholesale distributors with actionable insights and analytics, this platform enhances decision-making through intuitive data visualization.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

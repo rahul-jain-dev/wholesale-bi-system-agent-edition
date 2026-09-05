@@ -1,0 +1,136 @@
+product_id,product_name,product_alias,category,sub_category,brand,unit,gst_rate,purchase_rate,selling_rate,size_variant,reorder_level,opening_stock
+PRD0001,Brooke Bond Red Label Tea,Brooke 250g,Beverages,Beverages,HUL,PCS,12,95.0,130.0,250g,126,271
+PRD0002,Tata Tea Gold,Tata 500g,Beverages,Beverages,Tata,PCS,12,190.0,260.0,500g,111,427
+PRD0003,Nescafe Classic,Nescafe 50g,Beverages,Beverages,Nestle,PCS,12,195.0,280.0,50g,82,296
+PRD0004,Bru Gold Coffee,Bru 100g,Beverages,Beverages,HUL,PCS,12,175.0,250.0,100g,140,372
+PRD0005,Amul Kool Milk,Amul 200ml,Beverages,Beverages,Amul,PCS,12,18.0,25.0,200ml,141,470
+PRD0006,Frooti Mango Drink,Frooti 200ml,Beverages,Beverages,PepsiCo,PCS,12,9.0,13.0,200ml,105,347
+PRD0007,Maaza Mango,Maaza 600ml,Beverages,Beverages,Coca-Cola,PCS,12,32.0,45.0,600ml,46,319
+PRD0008,Slice Mango Drink,Slice 600ml,Beverages,Beverages,PepsiCo,PCS,12,28.0,40.0,600ml,54,226
+PRD0009,Thumbs Up Cola,Thumbs 750ml,Beverages,Beverages,Coca-Cola,PCS,12,30.0,42.0,750ml,69,346
+PRD0010,Limca Lemon,Limca 750ml,Beverages,Beverages,Coca-Cola,PCS,12,28.0,40.0,750ml,54,175
+PRD0011,Sprite,Sprite 750ml,Beverages,Beverages,Coca-Cola,PCS,12,28.0,40.0,750ml,55,67
+PRD0012,Coca Cola,Coca 750ml,Beverages,Beverages,Coca-Cola,PCS,12,30.0,42.0,750ml,148,250
+PRD0013,Pepsi,Pepsi 750ml,Beverages,Beverages,PepsiCo,PCS,12,28.0,40.0,750ml,45,286
+PRD0014,Real Fruit Juice,Real 1L,Beverages,Beverages,Dabur,PCS,12,66.0,95.0,1L,120,67
+PRD0015,Tropicana Orange Juice,Tropicana 1L,Beverages,Beverages,PepsiCo,PCS,12,77.0,110.0,1L,112,171
+PRD0016,Colgate MaxFresh Toothpaste,Colgate 200g,Personal Care,Personal Care,Colgate,PCS,18,62.0,95.0,200g,37,286
+PRD0017,Colgate Dental Cream,Colgate 100g,Personal Care,Personal Care,Colgate,PCS,18,38.0,58.0,100g,62,411
+PRD0018,Pepsodent Toothpaste,Pepsodent 200g,Personal Care,Personal Care,HUL,PCS,18,55.0,82.0,200g,57,146
+PRD0019,Dettol Soap,Dettol 125g,Personal Care,Personal Care,Reckitt,PCS,18,31.0,48.0,125g,42,445
+PRD0020,Lux Beauty Soap,Lux 100g,Personal Care,Personal Care,HUL,PCS,18,22.0,35.0,100g,69,71
+PRD0021,Lifebuoy Soap,Lifebuoy 100g,Personal Care,Personal Care,HUL,PCS,18,18.0,28.0,100g,122,462
+PRD0022,Dove Soap,Dove 75g,Personal Care,Personal Care,HUL,PCS,18,42.0,65.0,75g,58,91
+PRD0023,Head & Shoulders Shampoo,Head 180ml,Personal Care,Personal Care,P&G,PCS,18,118.0,175.0,180ml,83,386
+PRD0024,Clinic Plus Shampoo,Clinic 175ml,Personal Care,Personal Care,HUL,PCS,18,51.0,78.0,175ml,60,498
+PRD0025,Pantene Shampoo,Pantene 180ml,Personal Care,Personal Care,P&G,PCS,18,125.0,185.0,180ml,113,73
+PRD0026,Parachute Coconut Oil,Parachute 500ml,Personal Care,Personal Care,Marico,PCS,18,75.0,110.0,500ml,27,297
+PRD0027,Dabur Amla Hair Oil,Dabur 500ml,Personal Care,Personal Care,Dabur,PCS,18,68.0,100.0,500ml,54,277
+PRD0028,Vivel Soap,Vivel 100g,Personal Care,Personal Care,ITC,PCS,18,20.0,30.0,100g,131,173
+PRD0029,Gillette Mach3 Razor,Gillette 2pcs,Personal Care,Personal Care,Gillette,PCS,18,95.0,145.0,2pcs,42,274
+PRD0030,Gillette Fusion Razor,Gillette 2pcs,Personal Care,Personal Care,Gillette,PCS,18,195.0,295.0,2pcs,42,398
+PRD0031,Nivea Cream,Nivea 200ml,Personal Care,Personal Care,Nivea,PCS,18,148.0,220.0,200ml,58,134
+PRD0032,Fair & Lovely Cream,Fair 100g,Personal Care,Personal Care,HUL,PCS,18,58.0,88.0,100g,98,491
+PRD0033,Ponds Talcum Powder,Ponds 300g,Personal Care,Personal Care,HUL,PCS,18,95.0,145.0,300g,140,499
+PRD0034,Vim Dishwash Bar,Vim 300g,Personal Care,Personal Care,HUL,PCS,18,18.0,28.0,300g,91,483
+PRD0035,Pears Soap,Pears 75g,Personal Care,Personal Care,HUL,PCS,18,38.0,58.0,75g,36,421
+PRD0036,Surf Excel Detergent,Surf 1kg,Home Care,Home Care,HUL,PCS,12,91.0,140.0,1kg,107,81
+PRD0037,Ariel Detergent,Ariel 1kg,Home Care,Home Care,P&G,PCS,12,95.0,145.0,1kg,84,427
+PRD0038,Rin Detergent,Rin 500g,Home Care,Home Care,HUL,PCS,12,38.0,58.0,500g,79,332
+PRD0039,Wheel Detergent,Wheel 1kg,Home Care,Home Care,HUL,PCS,12,55.0,82.0,1kg,113,183
+PRD0040,Harpic Toilet Cleaner,Harpic 500ml,Home Care,Home Care,Reckitt,PCS,12,81.0,125.0,500ml,70,382
+PRD0041,Lizol Floor Cleaner,Lizol 500ml,Home Care,Home Care,Reckitt,PCS,12,72.0,110.0,500ml,107,200
+PRD0042,Colin Glass Cleaner,Colin 500ml,Home Care,Home Care,Reckitt,PCS,12,65.0,98.0,500ml,22,166
+PRD0043,Scotch Brite Scrub,Scotch 1pc,Home Care,Home Care,3M,PCS,12,22.0,35.0,1pc,29,111
+PRD0044,Vim Dishwash Liquid,Vim 500ml,Home Care,Home Care,HUL,PCS,12,85.0,128.0,500ml,133,71
+PRD0045,Good Knight Mosquito Coil,Good 10pcs,Home Care,Home Care,Godrej,PCS,12,38.0,58.0,10pcs,42,53
+PRD0046,All Out Mosquito Repellent,All 45ml,Home Care,Home Care,HUL,PCS,12,55.0,82.0,45ml,103,243
+PRD0047,Odonil Air Freshener,Odonil 50g,Home Care,Home Care,Dabur,PCS,12,42.0,65.0,50g,82,420
+PRD0048,Phenyl Floor Cleaner,Phenyl 500ml,Home Care,Home Care,Reckitt,PCS,12,28.0,42.0,500ml,20,487
+PRD0049,Exo Dishwash Bar,Exo 200g,Home Care,Home Care,HUL,PCS,12,15.0,22.0,200g,48,264
+PRD0050,Domex Toilet Cleaner,Domex 500ml,Home Care,Home Care,HUL,PCS,12,68.0,102.0,500ml,24,268
+PRD0051,Parle-G Biscuit,Parle-G 800g,Snacks,Snacks,Parle,PCS,12,38.0,55.0,800g,105,354
+PRD0052,Britannia Good Day,Britannia 200g,Snacks,Snacks,Britannia,PCS,12,27.0,38.0,200g,123,90
+PRD0053,Oreo Biscuit,Oreo 120g,Snacks,Snacks,Mondelez,PCS,12,38.0,55.0,120g,145,249
+PRD0054,Marie Gold Biscuit,Marie 250g,Snacks,Snacks,Britannia,PCS,12,24.0,34.0,250g,117,215
+PRD0055,Lays Classic Chips,Lays 26g,Snacks,Snacks,PepsiCo,PCS,12,9.0,13.0,26g,110,86
+PRD0056,Kurkure Masala,Kurkure 90g,Snacks,Snacks,PepsiCo,PCS,12,19.0,27.0,90g,128,162
+PRD0057,Uncle Chips,Uncle 60g,Snacks,Snacks,PepsiCo,PCS,12,15.0,22.0,60g,141,487
+PRD0058,Haldiram Bhujia,Haldiram 200g,Snacks,Snacks,Haldiram,PCS,12,65.0,95.0,200g,65,265
+PRD0059,Haldiram Aloo Bhujia,Haldiram 150g,Snacks,Snacks,Haldiram,PCS,12,48.0,70.0,150g,100,238
+PRD0060,Maggi Noodles,Maggi 70g,Snacks,Snacks,Nestle,PCS,12,11.0,16.0,70g,130,269
+PRD0061,Yippee Noodles,Yippee 70g,Snacks,Snacks,ITC,PCS,12,12.0,17.0,70g,141,159
+PRD0062,Britannia 50-50 Biscuit,Britannia 100g,Snacks,Snacks,Britannia,PCS,12,18.0,26.0,100g,33,328
+PRD0063,Monaco Biscuit,Monaco 250g,Snacks,Snacks,Parle,PCS,12,28.0,40.0,250g,91,302
+PRD0064,Sunfeast Dark Fantasy,Sunfeast 150g,Snacks,Snacks,ITC,PCS,12,31.0,45.0,150g,130,130
+PRD0065,Bingo Mad Angles,Bingo 90g,Snacks,Snacks,ITC,PCS,12,22.0,32.0,90g,105,479
+PRD0066,Hippo Rings,Hippo 40g,Snacks,Snacks,PepsiCo,PCS,12,10.0,14.0,40g,43,182
+PRD0067,Crax Corn Rings,Crax 30g,Snacks,Snacks,DFM,PCS,12,8.0,12.0,30g,134,101
+PRD0068,Perk Chocolate,Perk 36g,Snacks,Snacks,Cadbury,PCS,12,18.0,25.0,36g,42,443
+PRD0069,Dairy Milk Chocolate,Dairy 40g,Snacks,Snacks,Cadbury,PCS,12,35.0,50.0,40g,46,221
+PRD0070,Sunfeast Yumfills,Sunfeast 50g,Snacks,Snacks,ITC,PCS,12,12.0,18.0,50g,31,414
+PRD0071,Aashirvaad Atta,Aashirvaad 5kg,Packaged Foods,Packaged Foods,ITC,PCS,5,203.0,260.0,5kg,109,226
+PRD0072,Fortune Chakki Atta,Fortune 5kg,Packaged Foods,Packaged Foods,Marico,PCS,5,195.0,250.0,5kg,115,379
+PRD0073,Saffola Gold Oil,Saffola 1L,Packaged Foods,Packaged Foods,Marico,PCS,5,145.0,195.0,1L,42,122
+PRD0074,Fortune Sunflower Oil,Fortune 1L,Packaged Foods,Packaged Foods,Marico,PCS,5,125.0,170.0,1L,127,191
+PRD0075,Tata Salt,Tata 1kg,Packaged Foods,Packaged Foods,Tata,PCS,5,18.0,24.0,1kg,127,149
+PRD0076,Captain Cook Salt,Captain 1kg,Packaged Foods,Packaged Foods,Tata,PCS,5,16.0,22.0,1kg,20,357
+PRD0077,Catch Black Pepper,Catch 50g,Packaged Foods,Packaged Foods,Catch,PCS,5,38.0,52.0,50g,144,498
+PRD0078,Everest Garam Masala,Everest 100g,Packaged Foods,Packaged Foods,Everest,PCS,5,55.0,75.0,100g,89,267
+PRD0079,MDH Kitchen King,MDH 100g,Packaged Foods,Packaged Foods,MDH,PCS,5,58.0,80.0,100g,37,123
+PRD0080,Rajdhani Besan,Rajdhani 1kg,Packaged Foods,Packaged Foods,Rajdhani,PCS,5,62.0,85.0,1kg,105,399
+PRD0081,Patanjali Ghee,Patanjali 1L,Packaged Foods,Packaged Foods,Patanjali,PCS,5,380.0,495.0,1L,117,190
+PRD0082,Amul Butter,Amul 500g,Packaged Foods,Packaged Foods,Amul,PCS,5,211.0,270.0,500g,27,233
+PRD0083,Amul Cheese,Amul 200g,Packaged Foods,Packaged Foods,Amul,PCS,5,129.0,165.0,200g,110,318
+PRD0084,Knorr Soup,Knorr 44g,Packaged Foods,Packaged Foods,HUL,PCS,5,34.0,48.0,44g,74,464
+PRD0085,Maggi Masala,Maggi 100g,Packaged Foods,Packaged Foods,Nestle,PCS,5,22.0,30.0,100g,133,212
+PRD0086,Amul Milk 1L Pouch,Amul 1L,Dairy,Dairy,Amul,PCS,5,55.0,68.0,1L,123,475
+PRD0087,Amul Dahi,Amul 400g,Dairy,Dairy,Amul,PCS,5,38.0,50.0,400g,125,122
+PRD0088,Mother Dairy Curd,Mother 400g,Dairy,Dairy,Mother Dairy,PCS,5,35.0,48.0,400g,52,295
+PRD0089,Amul Paneer,Amul 200g,Dairy,Dairy,Amul,PCS,5,85.0,110.0,200g,92,328
+PRD0090,Amul Gold Milk,Amul 1L,Dairy,Dairy,Amul,PCS,5,62.0,80.0,1L,112,375
+PRD0091,Nestle Milkmaid,Nestle 400g,Dairy,Dairy,Nestle,PCS,5,88.0,118.0,400g,29,81
+PRD0092,Amul Mozzarella Cheese,Amul 200g,Dairy,Dairy,Amul,PCS,5,145.0,190.0,200g,54,405
+PRD0093,Kwality Walls Cornetto,Kwality 65ml,Dairy,Dairy,HUL,PCS,5,28.0,40.0,65ml,104,279
+PRD0094,Amul Cone Ice Cream,Amul 65ml,Dairy,Dairy,Amul,PCS,5,22.0,32.0,65ml,42,349
+PRD0095,Havmor Ice Cream,Havmor 500ml,Dairy,Dairy,Havmor,PCS,5,95.0,130.0,500ml,98,454
+PRD0096,Dettol Handwash,Dettol 200ml,FMCG,FMCG,Reckitt,PCS,12,65.0,95.0,200ml,93,256
+PRD0097,Savlon Antiseptic,Savlon 200ml,FMCG,FMCG,ICI,PCS,12,55.0,80.0,200ml,148,497
+PRD0098,Burnol Cream,Burnol 20g,FMCG,FMCG,Reckitt,PCS,12,35.0,52.0,20g,142,346
+PRD0099,Band-Aid Strips,Band-Aid 10pcs,FMCG,FMCG,J&J,PCS,12,22.0,32.0,10pcs,110,386
+PRD0100,ORS Oral Rehydration,ORS 21g,FMCG,FMCG,Dabur,PCS,5,12.0,18.0,21g,34,239
+PRD0101,Vicks VapoRub,Vicks 50ml,FMCG,FMCG,P&G,PCS,12,96.0,148.0,50ml,51,146
+PRD0102,Eno Fruit Salt,Eno 100g,FMCG,FMCG,Reckitt,PCS,5,61.0,78.0,100g,84,153
+PRD0103,Hajmola Tablets,Hajmola 120pcs,FMCG,FMCG,Dabur,PCS,5,35.0,50.0,120pcs,110,166
+PRD0104,Pudin Hara,Pudin 20ml,FMCG,FMCG,Dabur,PCS,5,28.0,40.0,20ml,47,270
+PRD0105,Reynolds Pen,Reynolds 10pcs,FMCG,FMCG,Reynolds,PCS,12,45.0,65.0,10pcs,94,285
+PRD0106,Classmate Notebook,Classmate 172pg,FMCG,FMCG,ITC,PCS,12,38.0,55.0,172pg,145,289
+PRD0107,Natraj Pencil,Natraj 12pcs,FMCG,FMCG,Natraj,PCS,12,28.0,40.0,12pcs,73,149
+PRD0108,Stayfree Pads,Stayfree 8pcs,FMCG,FMCG,J&J,PCS,12,65.0,95.0,8pcs,82,485
+PRD0109,Whisper Ultra,Whisper 8pcs,FMCG,FMCG,P&G,PCS,12,68.0,98.0,8pcs,109,268
+PRD0110,Carefree Liner,Carefree 20pcs,FMCG,FMCG,J&J,PCS,12,55.0,80.0,20pcs,107,338
+PRD0111,Bisleri Water 1L,Bisleri 1L,Household,Household,Bisleri,PCS,18,12.0,20.0,1L,40,416
+PRD0112,Bisleri Water 500ml,Bisleri 500ml,Household,Household,Bisleri,PCS,18,8.0,15.0,500ml,78,380
+PRD0113,Aquaguard Filter Candle,Aquaguard 1pc,Household,Household,Aquaguard,PCS,12,145.0,210.0,1pc,37,434
+PRD0114,Comfort Fabric Softener,Comfort 800ml,Household,Household,HUL,PCS,12,95.0,145.0,800ml,109,218
+PRD0115,Dynamo Liquid Detergent,Dynamo 1L,Household,Household,HUL,PCS,12,115.0,170.0,1L,75,478
+PRD0116,Fevicol SH Adhesive,Fevicol 200g,Household,Household,Pidilite,PCS,12,62.0,95.0,200g,138,230
+PRD0117,Pidilite M-Seal,Pidilite 50g,Household,Household,Pidilite,PCS,18,48.0,72.0,50g,120,403
+PRD0118,Castrol Oil,Castrol 1L,Household,Household,Castrol,PCS,18,245.0,360.0,1L,66,367
+PRD0119,Battery Duracell AA,Battery 2pcs,Household,Household,Duracell,PCS,12,58.0,85.0,2pcs,67,231
+PRD0120,Battery Eveready AA,Battery 2pcs,Household,Household,Eveready,PCS,12,42.0,62.0,2pcs,46,153
+PRD0121,Sarpan Hybrid Seeds,Sarpan 500g,Agricultural,Agricultural,Sarpan,PCS,5,185.0,260.0,500g,74,456
+PRD0122,Parle Groundnut Oil,Parle 1L,Agricultural,Agricultural,Parle,PCS,5,110.0,150.0,1L,97,420
+PRD0123,Ruchi Soya Oil,Ruchi 1L,Agricultural,Agricultural,Ruchi Soya,PCS,5,120.0,165.0,1L,97,451
+PRD0124,Naturefresh Oil,Naturefresh 1L,Agricultural,Agricultural,Cargill,PCS,5,115.0,158.0,1L,112,261
+PRD0125,Dhara Mustard Oil,Dhara 1L,Agricultural,Agricultural,Dhara,PCS,5,105.0,145.0,1L,110,343
+PRD0126,Sunfeast Bounce,Sunfeast 82g,Snacks,Snacks,ITC,PCS,12,28.0,40.0,82g,98,380
+PRD0127,Jim Jam Biscuit,Jim 150g,Snacks,Snacks,Britannia,PCS,12,22.0,32.0,150g,85,389
+PRD0128,Hide & Seek Biscuit,Hide 120g,Snacks,Snacks,Parle,PCS,12,32.0,45.0,120g,76,135
+PRD0129,Nutrichoice Biscuit,Nutrichoice 100g,Snacks,Snacks,Britannia,PCS,12,35.0,52.0,100g,70,229
+PRD0130,Tiger Biscuit,Tiger 100g,Snacks,Snacks,Britannia,PCS,12,18.0,26.0,100g,145,199
+PRD0131,Harpic Bathroom Cleaner,Harpic 500ml,Household,Household,Reckitt,PCS,18,78.0,120.0,500ml,30,433
+PRD0132,Lizol Disinfectant Spray,Lizol 500ml,Household,Household,Reckitt,PCS,12,68.0,105.0,500ml,79,84
+PRD0133,Mortein Insect Spray,Mortein 300ml,Household,Household,Reckitt,PCS,12,142.0,215.0,300ml,95,261
+PRD0134,Colin Multipurpose Cleaner,Colin 500ml,Household,Household,Reckitt,PCS,12,62.0,95.0,500ml,147,226
+PRD0135,Dettol Antiseptic Liquid,Dettol 250ml,Household,Household,Reckitt,PCS,12,75.0,115.0,250ml,138,332

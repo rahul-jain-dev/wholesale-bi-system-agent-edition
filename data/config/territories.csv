@@ -1,0 +1,26 @@
+territory_id,territory_name,town,beat,route_day,sales_rep
+T001,Uniara-1,Uniara,Uniara-1,Monday,Ramesh Kumar
+T002,Uniara-2,Uniara,Uniara-2,Wednesday,Vijay Sharma
+T003,Uniara-3,Uniara,Uniara-3,Friday,Ramesh Kumar
+T004,Tonk-Main,Tonk,Tonk-Main,Monday,Suresh Yadav
+T005,Tonk-Station,Tonk,Tonk-Station,Tuesday,Manoj Patel
+T006,Tonk-Civil,Tonk,Tonk-Civil,Thursday,Suresh Yadav
+T007,Tonk-Market,Tonk,Tonk-Market,Saturday,Manoj Patel
+T008,Deoli-Main,Deoli,Deoli-Main,Tuesday,Rakesh Singh
+T009,Deoli-East,Deoli,Deoli-East,Friday,Arun Gupta
+T010,Deoli-West,Deoli,Deoli-West,Wednesday,Rakesh Singh
+T011,Niwai-1,Niwai,Niwai-1,Monday,Dinesh Verma
+T012,Niwai-2,Niwai,Niwai-2,Thursday,Bharat Meena
+T013,Niwai-3,Niwai,Niwai-3,Saturday,Dinesh Verma
+T014,Malpura-Main,Malpura,Malpura-Main,Tuesday,Pradeep Saini
+T015,Malpura-North,Malpura,Malpura-North,Friday,Kamal Jain
+T016,Malpura-South,Malpura,Malpura-South,Wednesday,Pradeep Saini
+T017,Toda-Main,Todaraisingh,Toda-Main,Monday,Sanjay Rajput
+T018,Toda-Mandi,Todaraisingh,Toda-Mandi,Thursday,Ravi Choudhary
+T019,Toda-Rural,Todaraisingh,Toda-Rural,Saturday,Sanjay Rajput
+T020,Khanpur-1,Khanpur,Khanpur-1,Wednesday,Amit Sharma
+T021,Khanpur-2,Khanpur,Khanpur-2,Saturday,Nikhil Gupta
+T022,Khanpur-3,Khanpur,Khanpur-3,Monday,Amit Sharma
+T023,SM-City,Sawai Madhopur,SM-City,Tuesday,Tushar Patel
+T024,SM-Station,Sawai Madhopur,SM-Station,Thursday,Ramesh Kumar
+T025,SM-Mandi,Sawai Madhopur,SM-Mandi,Saturday,Tushar Patel

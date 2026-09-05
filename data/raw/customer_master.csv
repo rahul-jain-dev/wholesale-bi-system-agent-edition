@@ -1,0 +1,381 @@
+customer_id,party_name,address,city,district,state,pincode,phone,customer_type,ledger_group,opening_balance,credit_limit,credit_days,gstin_placeholder
+CUST0001,Patel Medical Store,654 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9494990595,Wholesaler,Sundry Debtors,0.0,50000,45,08XXXXX0001X1ZA
+CUST0002,Bairwa Enterprises,58 Main Road,Deoli,Tonk,Rajasthan,304804,9921976718,Retailer,Sundry Debtors,0.0,160000,30,08XXXXX0002X1ZA
+CUST0003,Patel Sons,549 Main Road,Khanpur,Tonk,Rajasthan,304803,9764784552,Retailer,Sundry Debtors,9900.0,255000,30,08XXXXX0003X1ZA
+CUST0004,Kumar Departmental Store,536 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9901159193,Retailer,Sundry Debtors,11000.0,160000,30,08XXXXX0004X1ZA
+CUST0005,Kumar Supermart,523 Main Road,Uniara,Tonk,Rajasthan,304024,9841538194,Retailer,Sundry Debtors,45600.0,230000,30,08XXXXX0005X1ZA
+CUST0006,Lodha Brothers,446 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9706306183,Retailer,Sundry Debtors,0.0,240000,30,08XXXXX0006X1ZA
+CUST0007,Bohra Departmental Store,833 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9696517260,Retailer,Sundry Debtors,0.0,270000,45,08XXXXX0007X1ZA
+CUST0008,Kumar General Store,525 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9537632274,Retailer,Sundry Debtors,0.0,150000,30,08XXXXX0008X1ZA
+CUST0009,Kumawat Traders,545 Main Road,Tonk,Tonk,Rajasthan,304001,9380158188,Retailer,Sundry Debtors,0.0,75000,45,08XXXXX0009X1ZA
+CUST0010,Khandelwal Kirana,307 Main Road,Niwai,Tonk,Rajasthan,304021,9112718487,Retailer,Sundry Debtors,0.0,230000,30,08XXXXX0010X1ZA
+CUST0011,Bansal Brothers,926 Main Road,Deoli,Tonk,Rajasthan,304804,9313589876,Wholesaler,Sundry Debtors,0.0,235000,30,08XXXXX0011X1ZA
+CUST0012,Rajput Supermart,561 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9846109656,Wholesaler,Sundry Debtors,10400.0,65000,30,08XXXXX0012X1ZA
+CUST0013,Garg Enterprises,16 Main Road,Malpura,Tonk,Rajasthan,304502,9685916089,Retailer,Sundry Debtors,0.0,270000,30,08XXXXX0013X1ZA
+CUST0014,Mittal Supermart,331 Main Road,Khanpur,Tonk,Rajasthan,304803,9998648768,Wholesaler,Sundry Debtors,0.0,135000,30,08XXXXX0014X1ZA
+CUST0015,Lodha Supermart,395 Main Road,Deoli,Tonk,Rajasthan,304804,9823277662,Retailer,Sundry Debtors,14400.0,215000,30,08XXXXX0015X1ZA
+CUST0016,Bairwa Sons,914 Main Road,Tonk,Tonk,Rajasthan,304001,9191662094,Wholesaler,Sundry Debtors,0.0,105000,30,08XXXXX0016X1ZA
+CUST0017,Patel Supermart,810 Main Road,Niwai,Tonk,Rajasthan,304021,9902457418,Retailer,Sundry Debtors,6400.0,115000,30,08XXXXX0017X1ZA
+CUST0018,Garg Departmental Store,62 Main Road,Uniara,Tonk,Rajasthan,304024,9386677113,Retailer,Sundry Debtors,0.0,155000,30,08XXXXX0018X1ZA
+CUST0019,Rathi Traders,284 Main Road,Khanpur,Tonk,Rajasthan,304803,9463411623,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0019X1ZA
+CUST0020,Kothari Traders,809 Main Road,Malpura,Tonk,Rajasthan,304502,9592311775,Wholesaler,Sundry Debtors,0.0,130000,45,08XXXXX0020X1ZA
+CUST0021,Rajput Enterprises,875 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9837766999,Retailer,Sundry Debtors,0.0,115000,30,08XXXXX0021X1ZA
+CUST0022,Natani Medical Store,811 Main Road,Deoli,Tonk,Rajasthan,304804,9466947510,Wholesaler,Sundry Debtors,0.0,100000,45,08XXXXX0022X1ZA
+CUST0023,Khandelwal Enterprises,473 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9772008267,Wholesaler,Sundry Debtors,0.0,35000,30,08XXXXX0023X1ZA
+CUST0024,Kasliwal Provisions,998 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9391225781,Wholesaler,Sundry Debtors,0.0,215000,30,08XXXXX0024X1ZA
+CUST0025,Gupta Traders,32 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9861508201,Wholesaler,Sundry Debtors,0.0,125000,30,08XXXXX0025X1ZA
+CUST0026,Garg Cold Store,642 Main Road,Tonk,Tonk,Rajasthan,304001,9901140358,Wholesaler,Sundry Debtors,0.0,270000,30,08XXXXX0026X1ZA
+CUST0027,Yadav Kirana,315 Main Road,Niwai,Tonk,Rajasthan,304021,9177478171,Retailer,Sundry Debtors,0.0,40000,30,08XXXXX0027X1ZA
+CUST0028,Kumawat Cold Store,109 Main Road,Uniara,Tonk,Rajasthan,304024,9764222201,Retailer,Sundry Debtors,23600.0,275000,30,08XXXXX0028X1ZA
+CUST0029,Patel General Store,617 Main Road,Tonk,Tonk,Rajasthan,304001,9834057613,Retailer,Sundry Debtors,0.0,125000,30,08XXXXX0029X1ZA
+CUST0030,Kumar Kirana,240 Main Road,Malpura,Tonk,Rajasthan,304502,9480884894,Retailer,Sundry Debtors,21900.0,160000,30,08XXXXX0030X1ZA
+CUST0031,Meena Sons,390 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9266120028,Retailer,Sundry Debtors,0.0,120000,30,08XXXXX0031X1ZA
+CUST0032,Kothari Supermart,449 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9889311585,Retailer,Sundry Debtors,4000.0,110000,30,08XXXXX0032X1ZA
+CUST0033,Lodha Medical Store,899 Main Road,Deoli,Tonk,Rajasthan,304804,9144306851,Wholesaler,Sundry Debtors,0.0,85000,30,08XXXXX0033X1ZA
+CUST0034,Saini Kirana,995 Main Road,Deoli,Tonk,Rajasthan,304804,9138999815,Wholesaler,Sundry Debtors,0.0,160000,30,08XXXXX0034X1ZA
+CUST0035,Kumawat Departmental Store,474 Main Road,Niwai,Tonk,Rajasthan,304021,9888815967,Retailer,Sundry Debtors,47800.0,290000,30,08XXXXX0035X1ZA
+CUST0036,Verma Supermart,821 Main Road,Tonk,Tonk,Rajasthan,304001,9943429234,Retailer,Sundry Debtors,0.0,245000,30,08XXXXX0036X1ZA
+CUST0037,Mali Medical Store,231 Main Road,Tonk,Tonk,Rajasthan,304001,9966499446,Retailer,Sundry Debtors,0.0,190000,30,08XXXXX0037X1ZA
+CUST0038,Sogani Provisions,946 Main Road,Niwai,Tonk,Rajasthan,304021,9893043028,Retailer,Sundry Debtors,0.0,180000,30,08XXXXX0038X1ZA
+CUST0039,Lodha Enterprises,275 Main Road,Tonk,Tonk,Rajasthan,304001,9454479449,Retailer,Sundry Debtors,0.0,110000,30,08XXXXX0039X1ZA
+CUST0040,Mali Traders,185 Main Road,Malpura,Tonk,Rajasthan,304502,9286384226,Wholesaler,Sundry Debtors,0.0,140000,30,08XXXXX0040X1ZA
+CUST0041,Agarwal Provisions,587 Main Road,Deoli,Tonk,Rajasthan,304804,9610595168,Wholesaler,Sundry Debtors,0.0,130000,30,08XXXXX0041X1ZA
+CUST0042,Kothari Cold Store,690 Main Road,Khanpur,Tonk,Rajasthan,304803,9187951144,Retailer,Sundry Debtors,0.0,180000,45,08XXXXX0042X1ZA
+CUST0043,Choudhary Sons,731 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9679198409,Retailer,Sundry Debtors,0.0,205000,30,08XXXXX0043X1ZA
+CUST0044,Bansal Provisions,712 Main Road,Tonk,Tonk,Rajasthan,304001,9537594807,Retailer,Sundry Debtors,0.0,125000,30,08XXXXX0044X1ZA
+CUST0045,Bohra Provisions,931 Main Road,Khanpur,Tonk,Rajasthan,304803,9515539967,Wholesaler,Sundry Debtors,0.0,220000,45,08XXXXX0045X1ZA
+CUST0046,Agarwal Enterprises,700 Main Road,Khanpur,Tonk,Rajasthan,304803,9896229034,Retailer,Sundry Debtors,0.0,55000,45,08XXXXX0046X1ZA
+CUST0047,Bairwa Medical Store,773 Main Road,Deoli,Tonk,Rajasthan,304804,9191950329,Retailer,Sundry Debtors,0.0,110000,45,08XXXXX0047X1ZA
+CUST0048,Nagar Provisions,178 Main Road,Tonk,Tonk,Rajasthan,304001,9587407352,Wholesaler,Sundry Debtors,0.0,95000,30,08XXXXX0048X1ZA
+CUST0049,Kumawat Brothers,616 Main Road,Malpura,Tonk,Rajasthan,304502,9125866153,Retailer,Sundry Debtors,41600.0,135000,30,08XXXXX0049X1ZA
+CUST0050,Mali General Store,15 Main Road,Tonk,Tonk,Rajasthan,304001,9412548127,Wholesaler,Sundry Debtors,0.0,160000,30,08XXXXX0050X1ZA
+CUST0051,Yadav Cold Store,878 Main Road,Tonk,Tonk,Rajasthan,304001,9569443399,Retailer,Sundry Debtors,0.0,115000,30,08XXXXX0051X1ZA
+CUST0052,Nagar Kirana,579 Main Road,Uniara,Tonk,Rajasthan,304024,9998066361,Retailer,Sundry Debtors,0.0,210000,45,08XXXXX0052X1ZA
+CUST0053,Rajput Departmental Store,983 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9823115882,Wholesaler,Sundry Debtors,0.0,225000,30,08XXXXX0053X1ZA
+CUST0054,Verma Sons,524 Main Road,Malpura,Tonk,Rajasthan,304502,9501154303,Retailer,Sundry Debtors,37100.0,45000,30,08XXXXX0054X1ZA
+CUST0055,Yadav Brothers,512 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9464840446,Retailer,Sundry Debtors,0.0,50000,30,08XXXXX0055X1ZA
+CUST0056,Sogani Traders,98 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9163315649,Wholesaler,Sundry Debtors,0.0,200000,30,08XXXXX0056X1ZA
+CUST0057,Lodha Kirana,554 Main Road,Niwai,Tonk,Rajasthan,304021,9330105497,Retailer,Sundry Debtors,0.0,160000,30,08XXXXX0057X1ZA
+CUST0058,Maheshwari Enterprises,247 Main Road,Niwai,Tonk,Rajasthan,304021,9833277705,Wholesaler,Sundry Debtors,0.0,260000,30,08XXXXX0058X1ZA
+CUST0059,Verma Kirana,101 Main Road,Tonk,Tonk,Rajasthan,304001,9976956729,Retailer,Sundry Debtors,11800.0,55000,30,08XXXXX0059X1ZA
+CUST0060,Bohra General Store,426 Main Road,Uniara,Tonk,Rajasthan,304024,9621962986,Wholesaler,Sundry Debtors,12000.0,160000,30,08XXXXX0060X1ZA
+CUST0061,Bohra Medical Store,574 Main Road,Malpura,Tonk,Rajasthan,304502,9377188885,Wholesaler,Sundry Debtors,0.0,120000,45,08XXXXX0061X1ZA
+CUST0062,Jain Kirana,837 Main Road,Niwai,Tonk,Rajasthan,304021,9993895978,Wholesaler,Sundry Debtors,16500.0,90000,30,08XXXXX0062X1ZA
+CUST0063,Kothari Enterprises,868 Main Road,Niwai,Tonk,Rajasthan,304021,9859616325,Retailer,Sundry Debtors,42300.0,105000,30,08XXXXX0063X1ZA
+CUST0064,Garg Sons,455 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9652951908,Retailer,Sundry Debtors,10200.0,240000,30,08XXXXX0064X1ZA
+CUST0065,Patel Traders,172 Main Road,Malpura,Tonk,Rajasthan,304502,9546936212,Retailer,Sundry Debtors,0.0,245000,30,08XXXXX0065X1ZA
+CUST0066,Rathi Kirana,212 Main Road,Niwai,Tonk,Rajasthan,304021,9555903627,Wholesaler,Sundry Debtors,0.0,285000,45,08XXXXX0066X1ZA
+CUST0067,Verma Departmental Store,621 Main Road,Niwai,Tonk,Rajasthan,304021,9493179207,Wholesaler,Sundry Debtors,0.0,250000,45,08XXXXX0067X1ZA
+CUST0068,Saini Traders,786 Main Road,Tonk,Tonk,Rajasthan,304001,9256462077,Retailer,Sundry Debtors,0.0,80000,30,08XXXXX0068X1ZA
+CUST0069,Mittal Cold Store,825 Main Road,Uniara,Tonk,Rajasthan,304024,9732423508,Retailer,Sundry Debtors,0.0,30000,30,08XXXXX0069X1ZA
+CUST0070,Patel Provisions,108 Main Road,Deoli,Tonk,Rajasthan,304804,9288210543,Retailer,Sundry Debtors,0.0,125000,30,08XXXXX0070X1ZA
+CUST0071,Bohra Cold Store,985 Main Road,Tonk,Tonk,Rajasthan,304001,9634560646,Retailer,Sundry Debtors,7900.0,55000,30,08XXXXX0071X1ZA
+CUST0072,Kothari Medical Store,842 Main Road,Deoli,Tonk,Rajasthan,304804,9759292237,Wholesaler,Sundry Debtors,0.0,145000,30,08XXXXX0072X1ZA
+CUST0073,Choudhary Supermart,909 Main Road,Khanpur,Tonk,Rajasthan,304803,9935880329,Retailer,Sundry Debtors,0.0,165000,45,08XXXXX0073X1ZA
+CUST0074,Kumar Traders,955 Main Road,Tonk,Tonk,Rajasthan,304001,9536405881,Retailer,Sundry Debtors,0.0,70000,30,08XXXXX0074X1ZA
+CUST0075,Patel Departmental Store,181 Main Road,Uniara,Tonk,Rajasthan,304024,9280659372,Wholesaler,Sundry Debtors,11900.0,215000,30,08XXXXX0075X1ZA
+CUST0076,Surana Traders,120 Main Road,Tonk,Tonk,Rajasthan,304001,9379455234,Retailer,Sundry Debtors,0.0,160000,30,08XXXXX0076X1ZA
+CUST0077,Jain Medical Store,110 Main Road,Tonk,Tonk,Rajasthan,304001,9359526184,Retailer,Sundry Debtors,24800.0,65000,30,08XXXXX0077X1ZA
+CUST0078,Choudhary Traders,865 Main Road,Malpura,Tonk,Rajasthan,304502,9273433786,Retailer,Sundry Debtors,0.0,50000,30,08XXXXX0078X1ZA
+CUST0079,Surana Supermart,540 Main Road,Niwai,Tonk,Rajasthan,304021,9297778370,Retailer,Sundry Debtors,0.0,250000,30,08XXXXX0079X1ZA
+CUST0080,Sogani Brothers,113 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9312562769,Wholesaler,Sundry Debtors,0.0,155000,30,08XXXXX0080X1ZA
+CUST0081,Rajput General Store,391 Main Road,Malpura,Tonk,Rajasthan,304502,9406831816,Retailer,Sundry Debtors,0.0,145000,30,08XXXXX0081X1ZA
+CUST0082,Kasliwal Brothers,613 Main Road,Deoli,Tonk,Rajasthan,304804,9967822131,Retailer,Sundry Debtors,4000.0,195000,30,08XXXXX0082X1ZA
+CUST0083,Maheshwari Supermart,221 Main Road,Khanpur,Tonk,Rajasthan,304803,9634986512,Wholesaler,Sundry Debtors,0.0,180000,30,08XXXXX0083X1ZA
+CUST0084,Jain Brothers,62 Main Road,Tonk,Tonk,Rajasthan,304001,9262292734,Retailer,Sundry Debtors,0.0,125000,45,08XXXXX0084X1ZA
+CUST0085,Garg General Store,845 Main Road,Uniara,Tonk,Rajasthan,304024,9890250919,Wholesaler,Sundry Debtors,0.0,255000,45,08XXXXX0085X1ZA
+CUST0086,Mittal Provisions,923 Main Road,Uniara,Tonk,Rajasthan,304024,9419443869,Wholesaler,Sundry Debtors,0.0,50000,45,08XXXXX0086X1ZA
+CUST0087,Yadav Traders,197 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9197338807,Wholesaler,Sundry Debtors,0.0,190000,30,08XXXXX0087X1ZA
+CUST0088,Nagar Supermart,454 Main Road,Niwai,Tonk,Rajasthan,304021,9961265111,Retailer,Sundry Debtors,0.0,265000,30,08XXXXX0088X1ZA
+CUST0089,Rajput Traders,889 Main Road,Tonk,Tonk,Rajasthan,304001,9216883263,Wholesaler,Sundry Debtors,0.0,290000,30,08XXXXX0089X1ZA
+CUST0090,Agarwal Medical Store,155 Main Road,Niwai,Tonk,Rajasthan,304021,9457552023,Wholesaler,Sundry Debtors,0.0,185000,45,08XXXXX0090X1ZA
+CUST0091,Gupta Brothers,768 Main Road,Tonk,Tonk,Rajasthan,304001,9998257065,Retailer,Sundry Debtors,0.0,125000,30,08XXXXX0091X1ZA
+CUST0092,Khandelwal Provisions,772 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9309085503,Retailer,Sundry Debtors,0.0,175000,45,08XXXXX0092X1ZA
+CUST0093,Mali Enterprises,9 Main Road,Deoli,Tonk,Rajasthan,304804,9954561714,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0093X1ZA
+CUST0094,Gupta Enterprises,394 Main Road,Deoli,Tonk,Rajasthan,304804,9299703220,Wholesaler,Sundry Debtors,0.0,160000,45,08XXXXX0094X1ZA
+CUST0095,Sharma Medical Store,510 Main Road,Tonk,Tonk,Rajasthan,304001,9349611231,Retailer,Sundry Debtors,0.0,110000,45,08XXXXX0095X1ZA
+CUST0096,Verma Cold Store,223 Main Road,Malpura,Tonk,Rajasthan,304502,9208412158,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0096X1ZA
+CUST0097,Choudhary General Store,511 Main Road,Deoli,Tonk,Rajasthan,304804,9934314428,Retailer,Sundry Debtors,0.0,30000,30,08XXXXX0097X1ZA
+CUST0098,Mittal Kirana,204 Main Road,Uniara,Tonk,Rajasthan,304024,9926680046,Retailer,Sundry Debtors,0.0,95000,45,08XXXXX0098X1ZA
+CUST0099,Saini Supermart,409 Main Road,Uniara,Tonk,Rajasthan,304024,9867330076,Retailer,Sundry Debtors,0.0,40000,30,08XXXXX0099X1ZA
+CUST0100,Rathi Medical Store,109 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9458758006,Wholesaler,Sundry Debtors,0.0,120000,30,08XXXXX0100X1ZA
+CUST0101,Kumawat Kirana,89 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9303723415,Retailer,Sundry Debtors,0.0,285000,45,08XXXXX0101X1ZA
+CUST0102,Meena Traders,863 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9398729657,Retailer,Sundry Debtors,0.0,240000,30,08XXXXX0102X1ZA
+CUST0103,Natani Provisions,642 Main Road,Tonk,Tonk,Rajasthan,304001,9248642243,Retailer,Sundry Debtors,0.0,55000,30,08XXXXX0103X1ZA
+CUST0104,Kumar Sons,546 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9661810075,Retailer,Sundry Debtors,0.0,140000,45,08XXXXX0104X1ZA
+CUST0105,Saini Enterprises,984 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9167064775,Wholesaler,Sundry Debtors,11900.0,295000,30,08XXXXX0105X1ZA
+CUST0106,Rathi Enterprises,750 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9596988160,Retailer,Sundry Debtors,0.0,145000,30,08XXXXX0106X1ZA
+CUST0107,Bansal Kirana,487 Main Road,Deoli,Tonk,Rajasthan,304804,9801470537,Retailer,Sundry Debtors,6100.0,180000,30,08XXXXX0107X1ZA
+CUST0108,Jain Provisions,500 Main Road,Tonk,Tonk,Rajasthan,304001,9606926932,Retailer,Sundry Debtors,0.0,200000,30,08XXXXX0108X1ZA
+CUST0109,Lodha Provisions,215 Main Road,Uniara,Tonk,Rajasthan,304024,9967283922,Retailer,Sundry Debtors,0.0,145000,45,08XXXXX0109X1ZA
+CUST0110,Bansal General Store,512 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9510103317,Retailer,Sundry Debtors,0.0,115000,30,08XXXXX0110X1ZA
+CUST0111,Maheshwari Kirana,936 Main Road,Niwai,Tonk,Rajasthan,304021,9102583929,Retailer,Sundry Debtors,0.0,50000,45,08XXXXX0111X1ZA
+CUST0112,Bairwa Supermart,662 Main Road,Tonk,Tonk,Rajasthan,304001,9871631364,Wholesaler,Sundry Debtors,0.0,265000,30,08XXXXX0112X1ZA
+CUST0113,Saini Brothers,421 Main Road,Tonk,Tonk,Rajasthan,304001,9678149010,Retailer,Sundry Debtors,11900.0,155000,30,08XXXXX0113X1ZA
+CUST0114,Yadav Sons,163 Main Road,Malpura,Tonk,Rajasthan,304502,9757724792,Wholesaler,Sundry Debtors,15700.0,280000,30,08XXXXX0114X1ZA
+CUST0115,Choudhary Provisions,331 Main Road,Tonk,Tonk,Rajasthan,304001,9411605400,Wholesaler,Sundry Debtors,0.0,80000,30,08XXXXX0115X1ZA
+CUST0116,Choudhary Brothers,451 Main Road,Khanpur,Tonk,Rajasthan,304803,9569330388,Retailer,Sundry Debtors,0.0,65000,45,08XXXXX0116X1ZA
+CUST0117,Meena Provisions,536 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9280713194,Wholesaler,Sundry Debtors,49900.0,220000,30,08XXXXX0117X1ZA
+CUST0118,Sogani Departmental Store,673 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9180925277,Wholesaler,Sundry Debtors,0.0,270000,30,08XXXXX0118X1ZA
+CUST0119,Meena Supermart,27 Main Road,Deoli,Tonk,Rajasthan,304804,9983503361,Retailer,Sundry Debtors,0.0,40000,45,08XXXXX0119X1ZA
+CUST0120,Kumar Brothers,881 Main Road,Malpura,Tonk,Rajasthan,304502,9645872174,Retailer,Sundry Debtors,0.0,275000,45,08XXXXX0120X1ZA
+CUST0121,Gupta Medical Store,111 Main Road,Malpura,Tonk,Rajasthan,304502,9682538816,Retailer,Sundry Debtors,0.0,80000,30,08XXXXX0121X1ZA
+CUST0122,Jain Supermart,218 Main Road,Malpura,Tonk,Rajasthan,304502,9862479606,Wholesaler,Sundry Debtors,0.0,65000,30,08XXXXX0122X1ZA
+CUST0123,Surana Sons,688 Main Road,Uniara,Tonk,Rajasthan,304024,9589991040,Retailer,Sundry Debtors,13600.0,115000,30,08XXXXX0123X1ZA
+CUST0124,Kasliwal General Store,546 Main Road,Deoli,Tonk,Rajasthan,304804,9944461689,Retailer,Sundry Debtors,0.0,135000,30,08XXXXX0124X1ZA
+CUST0125,Mittal Traders,138 Main Road,Uniara,Tonk,Rajasthan,304024,9567963269,Retailer,Sundry Debtors,4700.0,250000,30,08XXXXX0125X1ZA
+CUST0126,Kumawat Provisions,884 Main Road,Niwai,Tonk,Rajasthan,304021,9719330199,Retailer,Sundry Debtors,9800.0,65000,30,08XXXXX0126X1ZA
+CUST0127,Surana Brothers,499 Main Road,Deoli,Tonk,Rajasthan,304804,9942733474,Wholesaler,Sundry Debtors,0.0,145000,30,08XXXXX0127X1ZA
+CUST0128,Natani Cold Store,305 Main Road,Tonk,Tonk,Rajasthan,304001,9743409628,Retailer,Sundry Debtors,0.0,210000,45,08XXXXX0128X1ZA
+CUST0129,Kothari Brothers,524 Main Road,Uniara,Tonk,Rajasthan,304024,9684058433,Retailer,Sundry Debtors,0.0,280000,30,08XXXXX0129X1ZA
+CUST0130,Kasliwal Medical Store,141 Main Road,Malpura,Tonk,Rajasthan,304502,9509196590,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0130X1ZA
+CUST0131,Sharma General Store,380 Main Road,Tonk,Tonk,Rajasthan,304001,9770505930,Wholesaler,Sundry Debtors,0.0,220000,30,08XXXXX0131X1ZA
+CUST0132,Maheshwari Sons,488 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9217942971,Retailer,Sundry Debtors,0.0,225000,30,08XXXXX0132X1ZA
+CUST0133,Bohra Traders,423 Main Road,Malpura,Tonk,Rajasthan,304502,9160774506,Retailer,Sundry Debtors,0.0,165000,30,08XXXXX0133X1ZA
+CUST0134,Garg Traders,73 Main Road,Deoli,Tonk,Rajasthan,304804,9719113408,Retailer,Sundry Debtors,0.0,270000,30,08XXXXX0134X1ZA
+CUST0135,Kasliwal Kirana,443 Main Road,Malpura,Tonk,Rajasthan,304502,9302909839,Retailer,Sundry Debtors,0.0,40000,30,08XXXXX0135X1ZA
+CUST0136,Yadav Enterprises,660 Main Road,Uniara,Tonk,Rajasthan,304024,9410084868,Wholesaler,Sundry Debtors,0.0,295000,45,08XXXXX0136X1ZA
+CUST0137,Kothari Departmental Store,607 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9592170790,Retailer,Sundry Debtors,0.0,165000,30,08XXXXX0137X1ZA
+CUST0138,Singh Medical Store,908 Main Road,Niwai,Tonk,Rajasthan,304021,9377937251,Retailer,Sundry Debtors,0.0,125000,30,08XXXXX0138X1ZA
+CUST0139,Garg Supermart,212 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9966680511,Retailer,Sundry Debtors,0.0,235000,45,08XXXXX0139X1ZA
+CUST0140,Saini Departmental Store,966 Main Road,Uniara,Tonk,Rajasthan,304024,9723494029,Retailer,Sundry Debtors,0.0,95000,30,08XXXXX0140X1ZA
+CUST0141,Jain Cold Store,203 Main Road,Niwai,Tonk,Rajasthan,304021,9281613445,Retailer,Sundry Debtors,0.0,85000,30,08XXXXX0141X1ZA
+CUST0142,Maheshwari Medical Store,45 Main Road,Niwai,Tonk,Rajasthan,304021,9352527770,Retailer,Sundry Debtors,0.0,90000,45,08XXXXX0142X1ZA
+CUST0143,Sogani Cold Store,481 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9469190599,Retailer,Sundry Debtors,0.0,175000,30,08XXXXX0143X1ZA
+CUST0144,Saini General Store,200 Main Road,Malpura,Tonk,Rajasthan,304502,9932894919,Retailer,Sundry Debtors,0.0,105000,30,08XXXXX0144X1ZA
+CUST0145,Maheshwari Brothers,655 Main Road,Niwai,Tonk,Rajasthan,304021,9341071899,Wholesaler,Sundry Debtors,0.0,170000,30,08XXXXX0145X1ZA
+CUST0146,Surana Kirana,175 Main Road,Tonk,Tonk,Rajasthan,304001,9270886112,Retailer,Sundry Debtors,0.0,145000,30,08XXXXX0146X1ZA
+CUST0147,Gupta Supermart,984 Main Road,Deoli,Tonk,Rajasthan,304804,9978743894,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0147X1ZA
+CUST0148,Mittal Medical Store,743 Main Road,Niwai,Tonk,Rajasthan,304021,9725172690,Retailer,Sundry Debtors,0.0,45000,45,08XXXXX0148X1ZA
+CUST0149,Lodha Traders,736 Main Road,Deoli,Tonk,Rajasthan,304804,9235361648,Retailer,Sundry Debtors,0.0,45000,30,08XXXXX0149X1ZA
+CUST0150,Bairwa General Store,352 Main Road,Uniara,Tonk,Rajasthan,304024,9860685294,Retailer,Sundry Debtors,0.0,245000,30,08XXXXX0150X1ZA
+CUST0151,Patel Brothers,586 Main Road,Khanpur,Tonk,Rajasthan,304803,9325924078,Wholesaler,Sundry Debtors,0.0,70000,45,08XXXXX0151X1ZA
+CUST0152,Saini Provisions,476 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9975025331,Retailer,Sundry Debtors,12600.0,95000,30,08XXXXX0152X1ZA
+CUST0153,Mittal General Store,33 Main Road,Tonk,Tonk,Rajasthan,304001,9428981468,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0153X1ZA
+CUST0154,Meena Departmental Store,829 Main Road,Niwai,Tonk,Rajasthan,304021,9925335558,Wholesaler,Sundry Debtors,0.0,75000,30,08XXXXX0154X1ZA
+CUST0155,Gupta Provisions,901 Main Road,Uniara,Tonk,Rajasthan,304024,9569977523,Retailer,Sundry Debtors,0.0,115000,45,08XXXXX0155X1ZA
+CUST0156,Saini Sons,348 Main Road,Malpura,Tonk,Rajasthan,304502,9206910991,Retailer,Sundry Debtors,0.0,260000,30,08XXXXX0156X1ZA
+CUST0157,Patel Cold Store,292 Main Road,Tonk,Tonk,Rajasthan,304001,9817155238,Retailer,Sundry Debtors,0.0,85000,30,08XXXXX0157X1ZA
+CUST0158,Rathi Cold Store,334 Main Road,Malpura,Tonk,Rajasthan,304502,9344907416,Retailer,Sundry Debtors,5400.0,265000,30,08XXXXX0158X1ZA
+CUST0159,Surana Medical Store,516 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9428432725,Retailer,Sundry Debtors,0.0,35000,30,08XXXXX0159X1ZA
+CUST0160,Sharma Kirana,898 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9519183843,Retailer,Sundry Debtors,0.0,260000,30,08XXXXX0160X1ZA
+CUST0161,Bairwa Traders,81 Main Road,Uniara,Tonk,Rajasthan,304024,9406977788,Retailer,Sundry Debtors,0.0,55000,30,08XXXXX0161X1ZA
+CUST0162,Rathi Departmental Store,524 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9357921181,Retailer,Sundry Debtors,0.0,90000,45,08XXXXX0162X1ZA
+CUST0163,Mali Provisions,419 Main Road,Tonk,Tonk,Rajasthan,304001,9608582257,Retailer,Sundry Debtors,0.0,100000,30,08XXXXX0163X1ZA
+CUST0164,Kumar Enterprises,794 Main Road,Uniara,Tonk,Rajasthan,304024,9970950870,Retailer,Sundry Debtors,19400.0,215000,30,08XXXXX0164X1ZA
+CUST0165,Nagar Brothers,754 Main Road,Niwai,Tonk,Rajasthan,304021,9701082851,Wholesaler,Sundry Debtors,0.0,135000,30,08XXXXX0165X1ZA
+CUST0166,Rathi Provisions,765 Main Road,Deoli,Tonk,Rajasthan,304804,9825087149,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0166X1ZA
+CUST0167,Yadav General Store,775 Main Road,Khanpur,Tonk,Rajasthan,304803,9943468589,Wholesaler,Sundry Debtors,14100.0,120000,30,08XXXXX0167X1ZA
+CUST0168,Singh Departmental Store,753 Main Road,Khanpur,Tonk,Rajasthan,304803,9335269713,Wholesaler,Sundry Debtors,23000.0,230000,30,08XXXXX0168X1ZA
+CUST0169,Gupta Cold Store,184 Main Road,Tonk,Tonk,Rajasthan,304001,9300670858,Wholesaler,Sundry Debtors,0.0,30000,30,08XXXXX0169X1ZA
+CUST0170,Patel Enterprises,807 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9607659607,Retailer,Sundry Debtors,0.0,55000,30,08XXXXX0170X1ZA
+CUST0171,Maheshwari General Store,185 Main Road,Tonk,Tonk,Rajasthan,304001,9865340134,Retailer,Sundry Debtors,0.0,85000,30,08XXXXX0171X1ZA
+CUST0172,Rathi General Store,425 Main Road,Niwai,Tonk,Rajasthan,304021,9910742431,Retailer,Sundry Debtors,7400.0,35000,30,08XXXXX0172X1ZA
+CUST0173,Gupta Kirana,689 Main Road,Tonk,Tonk,Rajasthan,304001,9382118504,Retailer,Sundry Debtors,0.0,165000,45,08XXXXX0173X1ZA
+CUST0174,Sogani Medical Store,719 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9967855648,Retailer,Sundry Debtors,0.0,285000,30,08XXXXX0174X1ZA
+CUST0175,Natani Enterprises,800 Main Road,Tonk,Tonk,Rajasthan,304001,9397350062,Wholesaler,Sundry Debtors,0.0,175000,30,08XXXXX0175X1ZA
+CUST0176,Kumawat Medical Store,887 Main Road,Uniara,Tonk,Rajasthan,304024,9278776872,Wholesaler,Sundry Debtors,0.0,190000,30,08XXXXX0176X1ZA
+CUST0177,Lodha Cold Store,400 Main Road,Deoli,Tonk,Rajasthan,304804,9818616757,Retailer,Sundry Debtors,0.0,235000,30,08XXXXX0177X1ZA
+CUST0178,Sogani Kirana,84 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9842697480,Retailer,Sundry Debtors,0.0,140000,30,08XXXXX0178X1ZA
+CUST0179,Mali Brothers,437 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9831832848,Wholesaler,Sundry Debtors,0.0,195000,30,08XXXXX0179X1ZA
+CUST0180,Meena Cold Store,193 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9311375342,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0180X1ZA
+CUST0181,Rajput Cold Store,622 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9471695204,Retailer,Sundry Debtors,12700.0,285000,30,08XXXXX0181X1ZA
+CUST0182,Agarwal Departmental Store,599 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9428408425,Retailer,Sundry Debtors,0.0,105000,30,08XXXXX0182X1ZA
+CUST0183,Saini Medical Store,397 Main Road,Niwai,Tonk,Rajasthan,304021,9570567299,Wholesaler,Sundry Debtors,13900.0,45000,30,08XXXXX0183X1ZA
+CUST0184,Kasliwal Cold Store,618 Main Road,Tonk,Tonk,Rajasthan,304001,9606782122,Wholesaler,Sundry Debtors,0.0,220000,30,08XXXXX0184X1ZA
+CUST0185,Meena Medical Store,688 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9147694572,Wholesaler,Sundry Debtors,0.0,265000,30,08XXXXX0185X1ZA
+CUST0186,Khandelwal Medical Store,613 Main Road,Malpura,Tonk,Rajasthan,304502,9360028047,Retailer,Sundry Debtors,0.0,240000,45,08XXXXX0186X1ZA
+CUST0187,Mali Cold Store,121 Main Road,Deoli,Tonk,Rajasthan,304804,9325914650,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0187X1ZA
+CUST0188,Maheshwari Traders,883 Main Road,Uniara,Tonk,Rajasthan,304024,9376924329,Retailer,Sundry Debtors,0.0,145000,30,08XXXXX0188X1ZA
+CUST0189,Mali Kirana,810 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9744662942,Retailer,Sundry Debtors,0.0,230000,30,08XXXXX0189X1ZA
+CUST0190,Agarwal Traders,461 Main Road,Tonk,Tonk,Rajasthan,304001,9980995866,Retailer,Sundry Debtors,0.0,215000,30,08XXXXX0190X1ZA
+CUST0191,Nagar Traders,234 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9405881347,Retailer,Sundry Debtors,0.0,290000,45,08XXXXX0191X1ZA
+CUST0192,Surana Enterprises,118 Main Road,Tonk,Tonk,Rajasthan,304001,9166554443,Retailer,Sundry Debtors,0.0,75000,45,08XXXXX0192X1ZA
+CUST0193,Rathi Sons,170 Main Road,Tonk,Tonk,Rajasthan,304001,9368398427,Wholesaler,Sundry Debtors,0.0,105000,30,08XXXXX0193X1ZA
+CUST0194,Lodha Departmental Store,717 Main Road,Khanpur,Tonk,Rajasthan,304803,9911193459,Retailer,Sundry Debtors,0.0,70000,30,08XXXXX0194X1ZA
+CUST0195,Bairwa Kirana,87 Main Road,Tonk,Tonk,Rajasthan,304001,9228963738,Retailer,Sundry Debtors,0.0,235000,30,08XXXXX0195X1ZA
+CUST0196,Khandelwal Sons,461 Main Road,Tonk,Tonk,Rajasthan,304001,9738837605,Retailer,Sundry Debtors,0.0,255000,30,08XXXXX0196X1ZA
+CUST0197,Choudhary Cold Store,873 Main Road,Malpura,Tonk,Rajasthan,304502,9686486381,Wholesaler,Sundry Debtors,0.0,100000,30,08XXXXX0197X1ZA
+CUST0198,Choudhary Kirana,954 Main Road,Khanpur,Tonk,Rajasthan,304803,9523539729,Retailer,Sundry Debtors,0.0,145000,30,08XXXXX0198X1ZA
+CUST0199,Nagar Departmental Store,53 Main Road,Tonk,Tonk,Rajasthan,304001,9950853370,Retailer,Sundry Debtors,9000.0,65000,30,08XXXXX0199X1ZA
+CUST0200,Yadav Departmental Store,936 Main Road,Tonk,Tonk,Rajasthan,304001,9457518692,Retailer,Sundry Debtors,0.0,205000,45,08XXXXX0200X1ZA
+CUST0201,Surana Cold Store,6 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9983595190,Retailer,Sundry Debtors,7300.0,295000,30,08XXXXX0201X1ZA
+CUST0202,Saini Cold Store,332 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9115898658,Retailer,Sundry Debtors,0.0,95000,30,08XXXXX0202X1ZA
+CUST0203,Nagar Cold Store,316 Main Road,Niwai,Tonk,Rajasthan,304021,9725211886,Retailer,Sundry Debtors,0.0,265000,30,08XXXXX0203X1ZA
+CUST0204,Natani Sons,693 Main Road,Tonk,Tonk,Rajasthan,304001,9753683909,Retailer,Sundry Debtors,0.0,130000,30,08XXXXX0204X1ZA
+CUST0205,Surana Provisions,767 Main Road,Uniara,Tonk,Rajasthan,304024,9622076159,Retailer,Sundry Debtors,19300.0,200000,30,08XXXXX0205X1ZA
+CUST0206,Natani Supermart,122 Main Road,Tonk,Tonk,Rajasthan,304001,9482960595,Retailer,Sundry Debtors,0.0,45000,30,08XXXXX0206X1ZA
+CUST0207,Agarwal Sons,804 Main Road,Tonk,Tonk,Rajasthan,304001,9676425629,Retailer,Sundry Debtors,0.0,185000,30,08XXXXX0207X1ZA
+CUST0208,Singh Traders,851 Main Road,Malpura,Tonk,Rajasthan,304502,9426126004,Retailer,Sundry Debtors,0.0,80000,45,08XXXXX0208X1ZA
+CUST0209,Singh Cold Store,465 Main Road,Tonk,Tonk,Rajasthan,304001,9794933860,Retailer,Sundry Debtors,0.0,135000,30,08XXXXX0209X1ZA
+CUST0210,Jain General Store,280 Main Road,Niwai,Tonk,Rajasthan,304021,9640305513,Retailer,Sundry Debtors,0.0,200000,30,08XXXXX0210X1ZA
+CUST0211,Meena General Store,374 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9673409144,Retailer,Sundry Debtors,7600.0,270000,30,08XXXXX0211X1ZA
+CUST0212,Lodha Sons,630 Main Road,Malpura,Tonk,Rajasthan,304502,9627948143,Wholesaler,Sundry Debtors,0.0,125000,45,08XXXXX0212X1ZA
+CUST0213,Yadav Provisions,74 Main Road,Tonk,Tonk,Rajasthan,304001,9466869107,Retailer,Sundry Debtors,0.0,185000,30,08XXXXX0213X1ZA
+CUST0214,Choudhary Medical Store,837 Main Road,Khanpur,Tonk,Rajasthan,304803,9293384900,Wholesaler,Sundry Debtors,11800.0,70000,30,08XXXXX0214X1ZA
+CUST0215,Kasliwal Supermart,97 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9374703016,Wholesaler,Sundry Debtors,22200.0,225000,30,08XXXXX0215X1ZA
+CUST0216,Khandelwal General Store,186 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9828762070,Retailer,Sundry Debtors,0.0,130000,30,08XXXXX0216X1ZA
+CUST0217,Rajput Medical Store,217 Main Road,Tonk,Tonk,Rajasthan,304001,9432135169,Retailer,Sundry Debtors,0.0,130000,45,08XXXXX0217X1ZA
+CUST0218,Bansal Medical Store,544 Main Road,Tonk,Tonk,Rajasthan,304001,9459542077,Retailer,Sundry Debtors,0.0,295000,30,08XXXXX0218X1ZA
+CUST0219,Sharma Sons,374 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9838654132,Wholesaler,Sundry Debtors,15900.0,260000,30,08XXXXX0219X1ZA
+CUST0220,Garg Kirana,263 Main Road,Deoli,Tonk,Rajasthan,304804,9605412083,Retailer,Sundry Debtors,0.0,215000,45,08XXXXX0220X1ZA
+CUST0221,Singh Brothers,948 Main Road,Tonk,Tonk,Rajasthan,304001,9645868328,Retailer,Sundry Debtors,0.0,70000,30,08XXXXX0221X1ZA
+CUST0222,Sharma Provisions,842 Main Road,Niwai,Tonk,Rajasthan,304021,9588136483,Retailer,Sundry Debtors,0.0,165000,30,08XXXXX0222X1ZA
+CUST0223,Bohra Kirana,884 Main Road,Malpura,Tonk,Rajasthan,304502,9612698858,Retailer,Sundry Debtors,0.0,115000,30,08XXXXX0223X1ZA
+CUST0224,Kothari Sons,489 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9221282842,Retailer,Sundry Debtors,0.0,250000,30,08XXXXX0224X1ZA
+CUST0225,Agarwal Supermart,36 Main Road,Tonk,Tonk,Rajasthan,304001,9115132949,Wholesaler,Sundry Debtors,15200.0,295000,30,08XXXXX0225X1ZA
+CUST0226,Khandelwal Brothers,44 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9901074777,Retailer,Sundry Debtors,0.0,150000,30,08XXXXX0226X1ZA
+CUST0227,Gupta Departmental Store,394 Main Road,Uniara,Tonk,Rajasthan,304024,9837825045,Retailer,Sundry Debtors,0.0,210000,30,08XXXXX0227X1ZA
+CUST0228,Verma Medical Store,585 Main Road,Niwai,Tonk,Rajasthan,304021,9239954714,Retailer,Sundry Debtors,0.0,295000,30,08XXXXX0228X1ZA
+CUST0229,Kumawat General Store,133 Main Road,Malpura,Tonk,Rajasthan,304502,9402827851,Retailer,Sundry Debtors,0.0,155000,30,08XXXXX0229X1ZA
+CUST0230,Mittal Enterprises,656 Main Road,Uniara,Tonk,Rajasthan,304024,9617709187,Wholesaler,Sundry Debtors,0.0,70000,30,08XXXXX0230X1ZA
+CUST0231,Meena Kirana,365 Main Road,Tonk,Tonk,Rajasthan,304001,9973346716,Retailer,Sundry Debtors,45000.0,155000,30,08XXXXX0231X1ZA
+CUST0232,Kumawat Enterprises,122 Main Road,Deoli,Tonk,Rajasthan,304804,9972379890,Retailer,Sundry Debtors,11300.0,280000,30,08XXXXX0232X1ZA
+CUST0233,Singh Sons,688 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9638647009,Retailer,Sundry Debtors,0.0,160000,30,08XXXXX0233X1ZA
+CUST0234,Mittal Sons,352 Main Road,Malpura,Tonk,Rajasthan,304502,9389583434,Wholesaler,Sundry Debtors,0.0,50000,30,08XXXXX0234X1ZA
+CUST0235,Bairwa Departmental Store,24 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9296620651,Retailer,Sundry Debtors,0.0,260000,30,08XXXXX0235X1ZA
+CUST0236,Nagar General Store,643 Main Road,Khanpur,Tonk,Rajasthan,304803,9344423795,Retailer,Sundry Debtors,5900.0,195000,30,08XXXXX0236X1ZA
+CUST0237,Kumar Medical Store,854 Main Road,Niwai,Tonk,Rajasthan,304021,9845863313,Retailer,Sundry Debtors,0.0,260000,30,08XXXXX0237X1ZA
+CUST0238,Kasliwal Traders,319 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9155075980,Retailer,Sundry Debtors,0.0,70000,30,08XXXXX0238X1ZA
+CUST0239,Nagar Enterprises,261 Main Road,Uniara,Tonk,Rajasthan,304024,9462087870,Retailer,Sundry Debtors,0.0,205000,30,08XXXXX0239X1ZA
+CUST0240,Sharma Departmental Store,74 Main Road,Uniara,Tonk,Rajasthan,304024,9600578676,Wholesaler,Sundry Debtors,0.0,30000,30,08XXXXX0240X1ZA
+CUST0241,Natani Brothers,472 Main Road,Khanpur,Tonk,Rajasthan,304803,9465309549,Retailer,Sundry Debtors,0.0,55000,30,08XXXXX0241X1ZA
+CUST0242,Agarwal Brothers,239 Main Road,Khanpur,Tonk,Rajasthan,304803,9391080908,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0242X1ZA
+CUST0243,Agarwal Cold Store,44 Main Road,Tonk,Tonk,Rajasthan,304001,9606812699,Wholesaler,Sundry Debtors,0.0,230000,30,08XXXXX0243X1ZA
+CUST0244,Kumar Provisions,444 Main Road,Niwai,Tonk,Rajasthan,304021,9175358436,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0244X1ZA
+CUST0245,Kumawat Sons,244 Main Road,Malpura,Tonk,Rajasthan,304502,9105054523,Retailer,Sundry Debtors,20100.0,185000,30,08XXXXX0245X1ZA
+CUST0246,Maheshwari Cold Store,134 Main Road,Khanpur,Tonk,Rajasthan,304803,9981049154,Retailer,Sundry Debtors,36900.0,65000,30,08XXXXX0246X1ZA
+CUST0247,Bohra Enterprises,514 Main Road,Malpura,Tonk,Rajasthan,304502,9903334579,Retailer,Sundry Debtors,0.0,260000,30,08XXXXX0247X1ZA
+CUST0248,Khandelwal Cold Store,709 Main Road,Deoli,Tonk,Rajasthan,304804,9364896568,Wholesaler,Sundry Debtors,0.0,190000,45,08XXXXX0248X1ZA
+CUST0249,Choudhary Departmental Store,599 Main Road,Deoli,Tonk,Rajasthan,304804,9444385884,Retailer,Sundry Debtors,0.0,190000,30,08XXXXX0249X1ZA
+CUST0250,Singh Provisions,249 Main Road,Deoli,Tonk,Rajasthan,304804,9225045761,Retailer,Sundry Debtors,0.0,35000,30,08XXXXX0250X1ZA
+CUST0251,Khandelwal Supermart,811 Main Road,Malpura,Tonk,Rajasthan,304502,9646470432,Wholesaler,Sundry Debtors,40600.0,35000,30,08XXXXX0251X1ZA
+CUST0252,Sogani Enterprises,90 Main Road,Khanpur,Tonk,Rajasthan,304803,9808338727,Retailer,Sundry Debtors,31400.0,220000,30,08XXXXX0252X1ZA
+CUST0253,Nagar Medical Store,357 Main Road,Niwai,Tonk,Rajasthan,304021,9930988004,Retailer,Sundry Debtors,0.0,35000,30,08XXXXX0253X1ZA
+CUST0254,Bohra Brothers,700 Main Road,Tonk,Tonk,Rajasthan,304001,9144561988,Wholesaler,Sundry Debtors,0.0,270000,45,08XXXXX0254X1ZA
+CUST0255,Garg Medical Store,982 Main Road,Tonk,Tonk,Rajasthan,304001,9794256554,Wholesaler,Sundry Debtors,0.0,120000,30,08XXXXX0255X1ZA
+CUST0256,Natani Kirana,12 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9284546111,Wholesaler,Sundry Debtors,0.0,30000,45,08XXXXX0256X1ZA
+CUST0257,Natani General Store,272 Main Road,Khanpur,Tonk,Rajasthan,304803,9767819749,Retailer,Sundry Debtors,0.0,225000,30,08XXXXX0257X1ZA
+CUST0258,Yadav Medical Store,889 Main Road,Uniara,Tonk,Rajasthan,304024,9274833168,Retailer,Sundry Debtors,0.0,150000,30,08XXXXX0258X1ZA
+CUST0259,Verma Provisions,945 Main Road,Uniara,Tonk,Rajasthan,304024,9678567398,Retailer,Sundry Debtors,0.0,290000,45,08XXXXX0259X1ZA
+CUST0260,Natani Traders,148 Main Road,Malpura,Tonk,Rajasthan,304502,9625410533,Wholesaler,Sundry Debtors,44000.0,75000,30,08XXXXX0260X1ZA
+CUST0261,Mali Supermart,602 Main Road,Tonk,Tonk,Rajasthan,304001,9566831405,Retailer,Sundry Debtors,0.0,210000,30,08XXXXX0261X1ZA
+CUST0262,Mali Departmental Store,713 Main Road,Khanpur,Tonk,Rajasthan,304803,9383567983,Retailer,Sundry Debtors,0.0,80000,30,08XXXXX0262X1ZA
+CUST0263,Nagar Sons,137 Main Road,Tonk,Tonk,Rajasthan,304001,9749961159,Retailer,Sundry Debtors,10900.0,95000,30,08XXXXX0263X1ZA
+CUST0264,Sharma Cold Store,216 Main Road,Tonk,Tonk,Rajasthan,304001,9387630123,Retailer,Sundry Debtors,0.0,200000,30,08XXXXX0264X1ZA
+CUST0265,Agarwal General Store,665 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9499913303,Retailer,Sundry Debtors,0.0,245000,30,08XXXXX0265X1ZA
+CUST0266,Lodha General Store,394 Main Road,Tonk,Tonk,Rajasthan,304001,9941654646,Retailer,Sundry Debtors,0.0,270000,30,08XXXXX0266X1ZA
+CUST0267,Maheshwari Provisions,381 Main Road,Tonk,Tonk,Rajasthan,304001,9557859567,Retailer,Sundry Debtors,0.0,50000,30,08XXXXX0267X1ZA
+CUST0268,Surana Departmental Store,14 Main Road,Tonk,Tonk,Rajasthan,304001,9990119983,Wholesaler,Sundry Debtors,0.0,100000,30,08XXXXX0268X1ZA
+CUST0269,Rathi Supermart,40 Main Road,Uniara,Tonk,Rajasthan,304024,9855247788,Retailer,Sundry Debtors,0.0,45000,30,08XXXXX0269X1ZA
+CUST0270,Kumawat Supermart,611 Main Road,Uniara,Tonk,Rajasthan,304024,9715301317,Retailer,Sundry Debtors,0.0,180000,30,08XXXXX0270X1ZA
+CUST0271,Sharma Supermart,665 Main Road,Uniara,Tonk,Rajasthan,304024,9159505734,Retailer,Sundry Debtors,13900.0,85000,30,08XXXXX0271X1ZA
+CUST0272,Natani Departmental Store,648 Main Road,Tonk,Tonk,Rajasthan,304001,9782118247,Retailer,Sundry Debtors,0.0,270000,30,08XXXXX0272X1ZA
+CUST0273,Sharma Enterprises,627 Main Road,Uniara,Tonk,Rajasthan,304024,9974741624,Retailer,Sundry Debtors,0.0,145000,45,08XXXXX0273X1ZA
+CUST0274,Jain Enterprises,840 Main Road,Malpura,Tonk,Rajasthan,304502,9996494318,Retailer,Sundry Debtors,0.0,55000,30,08XXXXX0274X1ZA
+CUST0275,Rajput Kirana,10 Main Road,Malpura,Tonk,Rajasthan,304502,9986783015,Retailer,Sundry Debtors,45000.0,225000,30,08XXXXX0275X1ZA
+CUST0276,Singh Supermart,240 Main Road,Deoli,Tonk,Rajasthan,304804,9947230865,Retailer,Sundry Debtors,0.0,275000,30,08XXXXX0276X1ZA
+CUST0277,Kumar Cold Store,565 Main Road,Tonk,Tonk,Rajasthan,304001,9121932411,Wholesaler,Sundry Debtors,0.0,245000,30,08XXXXX0277X1ZA
+CUST0278,Sharma Traders,414 Main Road,Niwai,Tonk,Rajasthan,304021,9304212371,Wholesaler,Sundry Debtors,0.0,105000,30,08XXXXX0278X1ZA
+CUST0279,Verma Traders,485 Main Road,Khanpur,Tonk,Rajasthan,304803,9484193919,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0279X1ZA
+CUST0280,Choudhary Enterprises,968 Main Road,Khanpur,Tonk,Rajasthan,304803,9157755776,Retailer,Sundry Debtors,0.0,270000,30,08XXXXX0280X1ZA
+CUST0281,Mittal Departmental Store,470 Main Road,Uniara,Tonk,Rajasthan,304024,9548077086,Retailer,Sundry Debtors,0.0,190000,30,08XXXXX0281X1ZA
+CUST0282,Kothari General Store,72 Main Road,Tonk,Tonk,Rajasthan,304001,9710756421,Wholesaler,Sundry Debtors,0.0,210000,30,08XXXXX0282X1ZA
+CUST0283,Mali Sons,725 Main Road,Tonk,Tonk,Rajasthan,304001,9268166528,Retailer,Sundry Debtors,0.0,205000,30,08XXXXX0283X1ZA
+CUST0284,Bohra Sons,433 Main Road,Tonk,Tonk,Rajasthan,304001,9587219209,Retailer,Sundry Debtors,0.0,155000,30,08XXXXX0284X1ZA
+CUST0285,Kasliwal Enterprises,364 Main Road,Malpura,Tonk,Rajasthan,304502,9796554691,Retailer,Sundry Debtors,0.0,250000,45,08XXXXX0285X1ZA
+CUST0286,Yadav Supermart,204 Main Road,Deoli,Tonk,Rajasthan,304804,9194474911,Retailer,Sundry Debtors,37100.0,135000,30,08XXXXX0286X1ZA
+CUST0287,Bairwa Provisions,801 Main Road,Uniara,Tonk,Rajasthan,304024,9451359261,Retailer,Sundry Debtors,0.0,150000,45,08XXXXX0287X1ZA
+CUST0288,Agarwal Kirana,804 Main Road,Deoli,Tonk,Rajasthan,304804,9631243841,Wholesaler,Sundry Debtors,0.0,85000,30,08XXXXX0288X1ZA
+CUST0289,Kothari Provisions,589 Main Road,Niwai,Tonk,Rajasthan,304021,9750339153,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0289X1ZA
+CUST0290,Verma Brothers,516 Main Road,Uniara,Tonk,Rajasthan,304024,9619093069,Wholesaler,Sundry Debtors,0.0,95000,45,08XXXXX0290X1ZA
+CUST0291,Verma Enterprises,359 Main Road,Khanpur,Tonk,Rajasthan,304803,9531914057,Wholesaler,Sundry Debtors,18100.0,225000,30,08XXXXX0291X1ZA
+CUST0292,Bohra Supermart,357 Main Road,Uniara,Tonk,Rajasthan,304024,9765357621,Wholesaler,Sundry Debtors,0.0,115000,30,08XXXXX0292X1ZA
+CUST0293,Jain Departmental Store,800 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9383208114,Wholesaler,Sundry Debtors,7100.0,200000,30,08XXXXX0293X1ZA
+CUST0294,Khandelwal Departmental Store,714 Main Road,Uniara,Tonk,Rajasthan,304024,9449614487,Retailer,Sundry Debtors,5300.0,40000,30,08XXXXX0294X1ZA
+CUST0295,Khandelwal Traders,485 Main Road,Khanpur,Tonk,Rajasthan,304803,9414274788,Retailer,Sundry Debtors,0.0,40000,30,08XXXXX0295X1ZA
+CUST0296,Singh General Store,446 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9137547649,Wholesaler,Sundry Debtors,0.0,55000,30,08XXXXX0296X1ZA
+CUST0297,Bansal Departmental Store,903 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9852849692,Retailer,Sundry Debtors,41100.0,55000,30,08XXXXX0297X1ZA
+CUST0298,Kasliwal Sons,669 Main Road,Khanpur,Tonk,Rajasthan,304803,9271421655,Wholesaler,Sundry Debtors,0.0,170000,30,08XXXXX0298X1ZA
+CUST0299,Singh Enterprises,819 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9151929539,Retailer,Sundry Debtors,0.0,75000,30,08XXXXX0299X1ZA
+CUST0300,Rajput Brothers,63 Main Road,Malpura,Tonk,Rajasthan,304502,9951489373,Retailer,Sundry Debtors,0.0,95000,30,08XXXXX0300X1ZA
+CUST0301,Jain Traders,208 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9532087429,Retailer,Sundry Debtors,0.0,185000,45,08XXXXX0301X1ZA
+CUST0302,Sharma Brothers,335 Main Road,Tonk,Tonk,Rajasthan,304001,9934763178,Wholesaler,Sundry Debtors,0.0,155000,30,08XXXXX0302X1ZA
+CUST0303,Patel Kirana,847 Main Road,Niwai,Tonk,Rajasthan,304021,9407292497,Retailer,Sundry Debtors,36700.0,155000,30,08XXXXX0303X1ZA
+CUST0304,Gupta Sons,673 Main Road,Niwai,Tonk,Rajasthan,304021,9323787478,Wholesaler,Sundry Debtors,0.0,130000,30,08XXXXX0304X1ZA
+CUST0305,Mittal Brothers,637 Main Road,Khanpur,Tonk,Rajasthan,304803,9552467608,Retailer,Sundry Debtors,0.0,40000,30,08XXXXX0305X1ZA
+CUST0306,Meena Enterprises,614 Main Road,Niwai,Tonk,Rajasthan,304021,9793450437,Wholesaler,Sundry Debtors,0.0,135000,30,08XXXXX0306X1ZA
+CUST0307,Bansal Cold Store,765 Main Road,Deoli,Tonk,Rajasthan,304804,9876435014,Retailer,Sundry Debtors,0.0,235000,30,08XXXXX0307X1ZA
+CUST0308,Gupta General Store,454 Main Road,Malpura,Tonk,Rajasthan,304502,9238688682,Retailer,Sundry Debtors,0.0,150000,30,08XXXXX0308X1ZA
+CUST0309,Meena Brothers,621 Main Road,Tonk,Tonk,Rajasthan,304001,9721512385,Wholesaler,Sundry Debtors,0.0,175000,30,08XXXXX0309X1ZA
+CUST0310,Sogani Supermart,471 Main Road,Tonk,Tonk,Rajasthan,304001,9707552507,Retailer,Sundry Debtors,0.0,225000,30,08XXXXX0310X1ZA
+CUST0311,Bairwa Cold Store,107 Main Road,Niwai,Tonk,Rajasthan,304021,9849320286,Retailer,Sundry Debtors,49100.0,225000,30,08XXXXX0311X1ZA
+CUST0312,Bairwa Brothers,402 Main Road,Deoli,Tonk,Rajasthan,304804,9589768250,Wholesaler,Sundry Debtors,0.0,195000,45,08XXXXX0312X1ZA
+CUST0313,Rathi Brothers,192 Main Road,Tonk,Tonk,Rajasthan,304001,9889167659,Retailer,Sundry Debtors,0.0,30000,30,08XXXXX0313X1ZA
+CUST0314,Singh Kirana,663 Main Road,Deoli,Tonk,Rajasthan,304804,9782164201,Wholesaler,Sundry Debtors,0.0,150000,30,08XXXXX0314X1ZA
+CUST0315,Kothari Kirana,62 Main Road,Deoli,Tonk,Rajasthan,304804,9432442374,Retailer,Sundry Debtors,0.0,250000,30,08XXXXX0315X1ZA
+CUST0316,Jain Sons,151 Main Road,Deoli,Tonk,Rajasthan,304804,9381651743,Retailer,Sundry Debtors,11700.0,80000,30,08XXXXX0316X1ZA
+CUST0317,Surana General Store,356 Main Road,Deoli,Tonk,Rajasthan,304804,9426068300,Retailer,Sundry Debtors,0.0,165000,30,08XXXXX0317X1ZA
+CUST0318,Garg Provisions,940 Main Road,Malpura,Tonk,Rajasthan,304502,9437993063,Retailer,Sundry Debtors,0.0,215000,45,08XXXXX0318X1ZA
+CUST0319,Kasliwal Departmental Store,646 Main Road,Tonk,Tonk,Rajasthan,304001,9650336590,Retailer,Sundry Debtors,0.0,185000,30,08XXXXX0319X1ZA
+CUST0320,Maheshwari Departmental Store,317 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9185687512,Wholesaler,Sundry Debtors,0.0,40000,45,08XXXXX0320X1ZA
+CUST0321,Bansal Traders,14 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9926670120,Retailer,Sundry Debtors,0.0,50000,30,08XXXXX0321X1ZA
+CUST0322,Bansal Supermart,237 Main Road,Niwai,Tonk,Rajasthan,304021,9373981526,Retailer,Sundry Debtors,0.0,210000,30,08XXXXX0322X1ZA
+CUST0323,Sogani Sons,661 Main Road,Deoli,Tonk,Rajasthan,304804,9116233779,Retailer,Sundry Debtors,0.0,100000,30,08XXXXX0323X1ZA
+CUST0324,Sogani General Store,623 Main Road,Niwai,Tonk,Rajasthan,304021,9665004847,Retailer,Sundry Debtors,0.0,105000,30,08XXXXX0324X1ZA
+CUST0325,Verma General Store,528 Main Road,Khanpur,Tonk,Rajasthan,304803,9524700674,Wholesaler,Sundry Debtors,4000.0,160000,30,08XXXXX0325X1ZA
+CUST0326,Rajput Sons,242 Main Road,Malpura,Tonk,Rajasthan,304502,9957616735,Retailer,Sundry Debtors,36200.0,255000,30,08XXXXX0326X1ZA
+CUST0327,Mali General Store,148 Main Road,Khanpur,Tonk,Rajasthan,304803,9908154607,Retailer,Sundry Debtors,14400.0,45000,30,08XXXXX0327X1ZA
+CUST0328,Gupta Provisions,426 Main Road,Niwai,Tonk,Rajasthan,304021,9268554405,Retailer,Sundry Debtors,0.0,35000,30,08XXXXX0328X1ZA
+CUST0329,Verma Kirana,509 Main Road,Malpura,Tonk,Rajasthan,304502,9719763450,Retailer,Sundry Debtors,0.0,60000,30,08XXXXX0329X1ZA
+CUST0330,Bansal Sons,44 Main Road,Tonk,Tonk,Rajasthan,304001,9500616469,Retailer,Sundry Debtors,0.0,245000,30,08XXXXX0330X1ZA
+CUST0331,Rajput Provisions,42 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9533866230,Retailer,Sundry Debtors,9000.0,175000,30,08XXXXX0331X1ZA
+CUST0332,Garg Brothers,369 Main Road,Tonk,Tonk,Rajasthan,304001,9651797227,Wholesaler,Sundry Debtors,0.0,65000,30,08XXXXX0332X1ZA
+CUST0333,Kumawat Departmental Store,750 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9851107376,Retailer,Sundry Debtors,0.0,70000,30,08XXXXX0333X1ZA
+CUST0334,Bansal Enterprises,112 Main Road,Khanpur,Tonk,Rajasthan,304803,9349037794,Retailer,Sundry Debtors,0.0,280000,30,08XXXXX0334X1ZA
+CUST0335,Khandelwal General Store,112 Main Road,Tonk,Tonk,Rajasthan,304001,9173370856,Retailer,Sundry Debtors,0.0,255000,30,08XXXXX0335X1ZA
+CUST0336,Jain Brothers,636 Main Road,Malpura,Tonk,Rajasthan,304502,9982895702,Wholesaler,Sundry Debtors,0.0,30000,30,08XXXXX0336X1ZA
+CUST0337,Agarwal Medical Store,780 Main Road,Uniara,Tonk,Rajasthan,304024,9990091126,Wholesaler,Sundry Debtors,10600.0,270000,30,08XXXXX0337X1ZA
+CUST0338,Mali General Store,629 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9169503868,Wholesaler,Sundry Debtors,0.0,260000,30,08XXXXX0338X1ZA
+CUST0339,Jain Medical Store,122 Main Road,Uniara,Tonk,Rajasthan,304024,9116657213,Retailer,Sundry Debtors,0.0,125000,30,08XXXXX0339X1ZA
+CUST0340,Khandelwal Traders,757 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9909150396,Retailer,Sundry Debtors,0.0,70000,30,08XXXXX0340X1ZA
+CUST0341,Garg Brothers,736 Main Road,Tonk,Tonk,Rajasthan,304001,9569383561,Wholesaler,Sundry Debtors,37300.0,100000,30,08XXXXX0341X1ZA
+CUST0342,Natani General Store,960 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9715784056,Retailer,Sundry Debtors,0.0,170000,30,08XXXXX0342X1ZA
+CUST0343,Kumar Provisions,524 Main Road,Khanpur,Tonk,Rajasthan,304803,9406149993,Retailer,Sundry Debtors,0.0,280000,45,08XXXXX0343X1ZA
+CUST0344,Mali General Store,646 Main Road,Malpura,Tonk,Rajasthan,304502,9715029948,Wholesaler,Sundry Debtors,0.0,160000,30,08XXXXX0344X1ZA
+CUST0345,Agarwal Cold Store,76 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9191568212,Wholesaler,Sundry Debtors,0.0,225000,30,08XXXXX0345X1ZA
+CUST0346,Bohra Supermart,738 Main Road,Khanpur,Tonk,Rajasthan,304803,9262687136,Retailer,Sundry Debtors,0.0,80000,30,08XXXXX0346X1ZA
+CUST0347,Bohra Departmental Store,938 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9832800309,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0347X1ZA
+CUST0348,Sharma Supermart,930 Main Road,Tonk,Tonk,Rajasthan,304001,9412676182,Retailer,Sundry Debtors,0.0,290000,30,08XXXXX0348X1ZA
+CUST0349,Meena Sons,212 Main Road,Malpura,Tonk,Rajasthan,304502,9963948585,Retailer,Sundry Debtors,0.0,115000,45,08XXXXX0349X1ZA
+CUST0350,Kumar Kirana,546 Main Road,Uniara,Tonk,Rajasthan,304024,9433470395,Wholesaler,Sundry Debtors,0.0,250000,30,08XXXXX0350X1ZA
+CUST0351,Singh Supermart,815 Main Road,Malpura,Tonk,Rajasthan,304502,9747903903,Retailer,Sundry Debtors,0.0,145000,30,08XXXXX0351X1ZA
+CUST0352,Choudhary General Store,302 Main Road,Tonk,Tonk,Rajasthan,304001,9237188507,Retailer,Sundry Debtors,0.0,225000,30,08XXXXX0352X1ZA
+CUST0353,Sharma Sons,558 Main Road,Niwai,Tonk,Rajasthan,304021,9844036904,Retailer,Sundry Debtors,0.0,235000,30,08XXXXX0353X1ZA
+CUST0354,Verma Provisions,615 Main Road,Malpura,Tonk,Rajasthan,304502,9307581430,Wholesaler,Sundry Debtors,0.0,240000,30,08XXXXX0354X1ZA
+CUST0355,Lodha General Store,846 Main Road,Niwai,Tonk,Rajasthan,304021,9870683976,Retailer,Sundry Debtors,0.0,205000,45,08XXXXX0355X1ZA
+CUST0356,Choudhary Provisions,194 Main Road,Niwai,Tonk,Rajasthan,304021,9957580719,Retailer,Sundry Debtors,0.0,30000,30,08XXXXX0356X1ZA
+CUST0357,Garg Traders,576 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9532624642,Retailer,Sundry Debtors,0.0,40000,30,08XXXXX0357X1ZA
+CUST0358,Maheshwari Cold Store,279 Main Road,Khanpur,Tonk,Rajasthan,304803,9797403896,Retailer,Sundry Debtors,0.0,270000,30,08XXXXX0358X1ZA
+CUST0359,Sogani Kirana,965 Main Road,Niwai,Tonk,Rajasthan,304021,9342756640,Retailer,Sundry Debtors,0.0,190000,45,08XXXXX0359X1ZA
+CUST0360,Kumawat General Store,39 Main Road,Malpura,Tonk,Rajasthan,304502,9608735798,Retailer,Sundry Debtors,0.0,120000,30,08XXXXX0360X1ZA
+CUST0361,Yadav Brothers,545 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9556251347,Wholesaler,Sundry Debtors,0.0,80000,30,08XXXXX0361X1ZA
+CUST0362,Kumawat General Store,697 Main Road,Uniara,Tonk,Rajasthan,304024,9587688553,Retailer,Sundry Debtors,17600.0,160000,30,08XXXXX0362X1ZA
+CUST0363,Surana Supermart,172 Main Road,Uniara,Tonk,Rajasthan,304024,9270001694,Retailer,Sundry Debtors,0.0,65000,30,08XXXXX0363X1ZA
+CUST0364,Maheshwari Cold Store,828 Main Road,Uniara,Tonk,Rajasthan,304024,9853650910,Retailer,Sundry Debtors,0.0,185000,30,08XXXXX0364X1ZA
+CUST0365,Patel Kirana,646 Main Road,Malpura,Tonk,Rajasthan,304502,9267323752,Retailer,Sundry Debtors,0.0,145000,45,08XXXXX0365X1ZA
+CUST0366,Mali Departmental Store,265 Main Road,Deoli,Tonk,Rajasthan,304804,9624400290,Wholesaler,Sundry Debtors,0.0,280000,45,08XXXXX0366X1ZA
+CUST0367,Jain Sons,227 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9932450401,Wholesaler,Sundry Debtors,0.0,255000,30,08XXXXX0367X1ZA
+CUST0368,Patel Departmental Store,409 Main Road,Malpura,Tonk,Rajasthan,304502,9321406210,Retailer,Sundry Debtors,0.0,175000,30,08XXXXX0368X1ZA
+CUST0369,Sogani Departmental Store,886 Main Road,Deoli,Tonk,Rajasthan,304804,9969513362,Wholesaler,Sundry Debtors,0.0,110000,30,08XXXXX0369X1ZA
+CUST0370,Garg Kirana,172 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9301522067,Wholesaler,Sundry Debtors,0.0,285000,30,08XXXXX0370X1ZA
+CUST0371,Surana Supermart,213 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9557570509,Wholesaler,Sundry Debtors,18700.0,230000,30,08XXXXX0371X1ZA
+CUST0372,Mittal Provisions,773 Main Road,Tonk,Tonk,Rajasthan,304001,9503131567,Wholesaler,Sundry Debtors,0.0,55000,30,08XXXXX0372X1ZA
+CUST0373,Singh Provisions,888 Main Road,Deoli,Tonk,Rajasthan,304804,9617299403,Retailer,Sundry Debtors,0.0,55000,30,08XXXXX0373X1ZA
+CUST0374,Verma General Store,15 Main Road,Tonk,Tonk,Rajasthan,304001,9457135516,Retailer,Sundry Debtors,48100.0,290000,30,08XXXXX0374X1ZA
+CUST0375,Verma Cold Store,508 Main Road,Tonk,Tonk,Rajasthan,304001,9182704475,Wholesaler,Sundry Debtors,0.0,195000,30,08XXXXX0375X1ZA
+CUST0376,Bohra Supermart,615 Main Road,Tonk,Tonk,Rajasthan,304001,9683148568,Wholesaler,Sundry Debtors,0.0,270000,30,08XXXXX0376X1ZA
+CUST0377,Kumawat Kirana,235 Main Road,Sawai Madhopur,Sawai Madhopur,Rajasthan,322001,9944033181,Retailer,Sundry Debtors,0.0,240000,30,08XXXXX0377X1ZA
+CUST0378,Choudhary General Store,537 Main Road,Deoli,Tonk,Rajasthan,304804,9185996801,Retailer,Sundry Debtors,0.0,170000,45,08XXXXX0378X1ZA
+CUST0379,Surana Traders,358 Main Road,Deoli,Tonk,Rajasthan,304804,9726795622,Retailer,Sundry Debtors,0.0,95000,45,08XXXXX0379X1ZA
+CUST0380,Natani Enterprises,398 Main Road,Todaraisingh,Tonk,Rajasthan,304505,9861750332,Retailer,Sundry Debtors,0.0,250000,30,08XXXXX0380X1ZA

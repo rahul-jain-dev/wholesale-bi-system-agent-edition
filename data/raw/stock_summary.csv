@@ -1,0 +1,406 @@
+product_id,product_name,godown,opening_qty,inward_qty,outward_qty,closing_qty,closing_rate,closing_value
+PRD0001,Brooke Bond Red Label Tea,Main Godown,127,3741,3088,780,95.1,74178.0
+PRD0001,Brooke Bond Red Label Tea,Tonk Branch,46,1558,1287,317,96.07,30454.19
+PRD0001,Brooke Bond Red Label Tea,Sawai Madhopur Branch,9,935,772,172,95.49,16424.28
+PRD0002,Tata Tea Gold,Main Godown,88,3827,3157,758,191.97,145513.26
+PRD0002,Tata Tea Gold,Tonk Branch,125,1594,1315,404,192.53,77782.12
+PRD0002,Tata Tea Gold,Sawai Madhopur Branch,63,956,789,230,193.29,44456.7
+PRD0003,Nescafe Classic,Main Godown,94,3369,2845,618,197.86,122277.48
+PRD0003,Nescafe Classic,Tonk Branch,43,1403,1185,261,195.89,51127.29
+PRD0003,Nescafe Classic,Sawai Madhopur Branch,8,842,711,139,194.95,27098.05
+PRD0004,Bru Gold Coffee,Main Godown,94,3550,2961,683,176.85,120788.55
+PRD0004,Bru Gold Coffee,Tonk Branch,28,1479,1234,273,173.37,47330.01
+PRD0004,Bru Gold Coffee,Sawai Madhopur Branch,44,887,740,191,176.61,33732.51
+PRD0005,Amul Kool Milk,Main Godown,89,4040,3310,819,18.35,15028.65
+PRD0005,Amul Kool Milk,Tonk Branch,130,1683,1379,434,18.34,7959.56
+PRD0005,Amul Kool Milk,Sawai Madhopur Branch,47,1010,827,230,17.87,4110.1
+PRD0006,Frooti Mango Drink,Main Godown,28,3847,3218,657,9.09,5972.13
+PRD0006,Frooti Mango Drink,Tonk Branch,55,1603,1341,317,9.13,2894.21
+PRD0006,Frooti Mango Drink,Sawai Madhopur Branch,22,961,804,179,9.05,1619.95
+PRD0007,Maaza Mango,Main Godown,67,3943,3271,739,31.82,23514.98
+PRD0007,Maaza Mango,Tonk Branch,68,1643,1363,348,32.22,11212.56
+PRD0007,Maaza Mango,Sawai Madhopur Branch,41,985,817,209,32.05,6698.45
+PRD0008,Slice Mango Drink,Main Godown,128,3462,2886,704,28.41,20000.64
+PRD0008,Slice Mango Drink,Tonk Branch,53,1442,1202,293,28.08,8227.44
+PRD0008,Slice Mango Drink,Sawai Madhopur Branch,23,865,721,167,28.27,4721.09
+PRD0009,Thumbs Up Cola,Main Godown,49,3285,2746,588,29.87,17563.56
+PRD0009,Thumbs Up Cola,Tonk Branch,9,1368,1144,233,29.76,6934.08
+PRD0009,Thumbs Up Cola,Sawai Madhopur Branch,47,821,686,182,30.47,5545.54
+PRD0010,Limca Lemon,Main Godown,11,3460,2914,557,28.3,15763.1
+PRD0010,Limca Lemon,Tonk Branch,11,1441,1214,238,28.1,6687.8
+PRD0010,Limca Lemon,Sawai Madhopur Branch,43,865,728,180,28.15,5067.0
+PRD0011,Sprite,Main Godown,49,3439,2906,582,28.07,16336.74
+PRD0011,Sprite,Tonk Branch,24,1433,1211,246,28.2,6937.2
+PRD0011,Sprite,Sawai Madhopur Branch,5,859,726,138,28.33,3909.54
+PRD0012,Coca Cola,Main Godown,120,3877,3213,784,29.75,23324.0
+PRD0012,Coca Cola,Tonk Branch,9,1615,1338,286,29.87,8542.82
+PRD0012,Coca Cola,Sawai Madhopur Branch,41,969,803,207,30.31,6274.17
+PRD0013,Pepsi,Main Godown,108,3120,2582,646,28.19,18210.74
+PRD0013,Pepsi,Tonk Branch,36,1300,1076,260,28.09,7303.4
+PRD0013,Pepsi,Sawai Madhopur Branch,14,780,645,149,27.87,4152.63
+PRD0014,Real Fruit Juice,Main Godown,37,3484,2893,628,66.3,41636.4
+PRD0014,Real Fruit Juice,Tonk Branch,34,1451,1205,280,66.26,18552.8
+PRD0014,Real Fruit Juice,Sawai Madhopur Branch,23,871,723,171,66.02,11289.42
+PRD0015,Tropicana Orange Juice,Main Godown,27,3720,3120,627,77.79,48774.33
+PRD0015,Tropicana Orange Juice,Tonk Branch,54,1550,1300,304,76.31,23198.24
+PRD0015,Tropicana Orange Juice,Sawai Madhopur Branch,42,930,780,192,78.16,15006.72
+PRD0016,Colgate MaxFresh Toothpaste,Main Godown,40,3761,3093,708,63.0,44604.0
+PRD0016,Colgate MaxFresh Toothpaste,Tonk Branch,26,1567,1288,305,62.03,18919.15
+PRD0016,Colgate MaxFresh Toothpaste,Sawai Madhopur Branch,13,940,773,180,61.54,11077.2
+PRD0017,Colgate Dental Cream,Main Godown,77,3340,2748,669,38.37,25669.53
+PRD0017,Colgate Dental Cream,Tonk Branch,90,1392,1145,337,38.72,13048.64
+PRD0017,Colgate Dental Cream,Sawai Madhopur Branch,36,835,687,184,37.96,6984.64
+PRD0018,Pepsodent Toothpaste,Main Godown,82,3740,3151,671,55.11,36978.81
+PRD0018,Pepsodent Toothpaste,Tonk Branch,32,1558,1313,277,54.98,15229.46
+PRD0018,Pepsodent Toothpaste,Sawai Madhopur Branch,21,935,787,169,55.07,9306.83
+PRD0019,Dettol Soap,Main Godown,227,3907,3253,881,31.36,27628.16
+PRD0019,Dettol Soap,Tonk Branch,75,1628,1355,348,30.81,10721.88
+PRD0019,Dettol Soap,Sawai Madhopur Branch,32,976,813,195,30.86,6017.7
+PRD0020,Lux Beauty Soap,Main Godown,23,3564,2955,632,22.03,13922.96
+PRD0020,Lux Beauty Soap,Tonk Branch,7,1485,1231,261,21.84,5700.24
+PRD0020,Lux Beauty Soap,Sawai Madhopur Branch,12,891,738,165,21.83,3601.95
+PRD0021,Lifebuoy Soap,Main Godown,10,3708,3051,667,17.97,11985.99
+PRD0021,Lifebuoy Soap,Tonk Branch,94,1545,1271,368,18.17,6686.56
+PRD0021,Lifebuoy Soap,Sawai Madhopur Branch,73,927,762,238,18.3,4355.4
+PRD0022,Dove Soap,Main Godown,61,3478,2936,603,42.79,25802.37
+PRD0022,Dove Soap,Tonk Branch,35,1449,1223,261,41.9,10935.9
+PRD0022,Dove Soap,Sawai Madhopur Branch,14,869,734,149,42.37,6313.13
+PRD0023,Head & Shoulders Shampoo,Main Godown,214,3203,2672,745,117.44,87492.8
+PRD0023,Head & Shoulders Shampoo,Tonk Branch,107,1334,1113,328,120.19,39422.32
+PRD0023,Head & Shoulders Shampoo,Sawai Madhopur Branch,64,800,668,196,120.35,23588.6
+PRD0024,Clinic Plus Shampoo,Main Godown,99,3513,2905,707,51.02,36071.14
+PRD0024,Clinic Plus Shampoo,Tonk Branch,14,1464,1210,268,50.95,13654.6
+PRD0024,Clinic Plus Shampoo,Sawai Madhopur Branch,22,878,726,174,51.92,9034.08
+PRD0025,Pantene Shampoo,Main Godown,8,3752,3124,636,124.13,78946.68
+PRD0025,Pantene Shampoo,Tonk Branch,33,1563,1301,295,124.49,36724.55
+PRD0025,Pantene Shampoo,Sawai Madhopur Branch,12,938,781,169,126.09,21309.21
+PRD0026,Parachute Coconut Oil,Main Godown,165,3541,2890,816,75.42,61542.72
+PRD0026,Parachute Coconut Oil,Tonk Branch,11,1475,1204,282,75.92,21409.44
+PRD0026,Parachute Coconut Oil,Sawai Madhopur Branch,50,885,722,213,74.97,15968.61
+PRD0027,Dabur Amla Hair Oil,Main Godown,167,3406,2816,757,68.22,51642.54
+PRD0027,Dabur Amla Hair Oil,Tonk Branch,57,1419,1173,303,68.57,20776.71
+PRD0027,Dabur Amla Hair Oil,Sawai Madhopur Branch,6,851,704,153,69.31,10604.43
+PRD0028,Vivel Soap,Main Godown,94,3597,3030,661,20.23,13372.03
+PRD0028,Vivel Soap,Tonk Branch,20,1499,1262,257,19.97,5132.29
+PRD0028,Vivel Soap,Sawai Madhopur Branch,5,899,757,147,19.92,2928.24
+PRD0029,Gillette Mach3 Razor,Main Godown,138,3584,2973,749,94.74,70960.26
+PRD0029,Gillette Mach3 Razor,Tonk Branch,26,1493,1238,281,96.85,27214.85
+PRD0029,Gillette Mach3 Razor,Sawai Madhopur Branch,28,896,743,181,95.16,17223.96
+PRD0030,Gillette Fusion Razor,Main Godown,206,2936,2440,702,195.71,137388.42
+PRD0030,Gillette Fusion Razor,Tonk Branch,103,1223,1017,309,195.81,60505.29
+PRD0030,Gillette Fusion Razor,Sawai Madhopur Branch,66,734,610,190,197.76,37574.4
+PRD0031,Nivea Cream,Main Godown,81,3747,3074,754,147.45,111177.3
+PRD0031,Nivea Cream,Tonk Branch,26,1561,1281,306,147.3,45073.8
+PRD0031,Nivea Cream,Sawai Madhopur Branch,26,936,768,194,148.48,28805.12
+PRD0032,Fair & Lovely Cream,Main Godown,239,3290,2724,805,58.43,47036.15
+PRD0032,Fair & Lovely Cream,Tonk Branch,66,1371,1135,302,58.14,17558.28
+PRD0032,Fair & Lovely Cream,Sawai Madhopur Branch,40,822,681,181,58.29,10550.49
+PRD0033,Ponds Talcum Powder,Main Godown,149,3586,2965,770,94.42,72703.4
+PRD0033,Ponds Talcum Powder,Tonk Branch,29,1494,1235,288,96.24,27717.12
+PRD0033,Ponds Talcum Powder,Sawai Madhopur Branch,18,896,741,173,95.92,16594.16
+PRD0034,Vim Dishwash Bar,Main Godown,125,4260,3594,791,18.23,14419.93
+PRD0034,Vim Dishwash Bar,Tonk Branch,112,1775,1497,390,17.84,6957.6
+PRD0034,Vim Dishwash Bar,Sawai Madhopur Branch,86,1065,898,253,18.24,4614.72
+PRD0035,Pears Soap,Main Godown,90,3228,2680,638,37.72,24065.36
+PRD0035,Pears Soap,Tonk Branch,21,1345,1117,249,38.06,9476.94
+PRD0035,Pears Soap,Sawai Madhopur Branch,20,807,670,157,37.89,5948.73
+PRD0036,Surf Excel Detergent,Main Godown,67,3355,2814,608,90.59,55078.72
+PRD0036,Surf Excel Detergent,Tonk Branch,32,1398,1172,258,92.63,23898.54
+PRD0036,Surf Excel Detergent,Sawai Madhopur Branch,28,838,703,163,91.54,14921.02
+PRD0037,Ariel Detergent,Main Godown,137,3754,3101,790,96.67,76369.3
+PRD0037,Ariel Detergent,Tonk Branch,119,1564,1292,391,95.97,37524.27
+PRD0037,Ariel Detergent,Sawai Madhopur Branch,19,938,775,182,94.55,17208.1
+PRD0038,Rin Detergent,Main Godown,171,2812,2362,621,37.67,23393.07
+PRD0038,Rin Detergent,Tonk Branch,100,1172,984,288,37.68,10851.84
+PRD0038,Rin Detergent,Sawai Madhopur Branch,23,703,590,136,37.94,5159.84
+PRD0039,Wheel Detergent,Main Godown,92,3214,2662,644,55.63,35825.72
+PRD0039,Wheel Detergent,Tonk Branch,38,1339,1109,268,55.57,14892.76
+PRD0039,Wheel Detergent,Sawai Madhopur Branch,40,803,665,178,55.66,9907.48
+PRD0040,Harpic Toilet Cleaner,Main Godown,232,2826,2372,686,80.26,55058.36
+PRD0040,Harpic Toilet Cleaner,Tonk Branch,98,1177,988,287,81.45,23376.15
+PRD0040,Harpic Toilet Cleaner,Sawai Madhopur Branch,41,706,593,154,81.28,12517.12
+PRD0041,Lizol Floor Cleaner,Main Godown,22,3473,2880,615,72.14,44366.1
+PRD0041,Lizol Floor Cleaner,Tonk Branch,6,1447,1200,253,71.6,18114.8
+PRD0041,Lizol Floor Cleaner,Sawai Madhopur Branch,39,868,720,187,72.95,13641.65
+PRD0042,Colin Glass Cleaner,Main Godown,100,3622,3000,722,64.8,46785.6
+PRD0042,Colin Glass Cleaner,Tonk Branch,53,1509,1250,312,65.62,20473.44
+PRD0042,Colin Glass Cleaner,Sawai Madhopur Branch,38,905,750,193,65.36,12614.48
+PRD0043,Scotch Brite Scrub,Main Godown,26,3270,2730,566,22.16,12542.56
+PRD0043,Scotch Brite Scrub,Tonk Branch,11,1362,1137,236,22.34,5272.24
+PRD0043,Scotch Brite Scrub,Sawai Madhopur Branch,32,817,682,167,21.8,3640.6
+PRD0044,Vim Dishwash Liquid,Main Godown,8,3877,3156,729,84.28,61440.12
+PRD0044,Vim Dishwash Liquid,Tonk Branch,36,1615,1315,336,85.56,28748.16
+PRD0044,Vim Dishwash Liquid,Sawai Madhopur Branch,22,969,789,202,85.34,17238.68
+PRD0045,Good Knight Mosquito Coil,Main Godown,44,3050,2518,576,37.73,21732.48
+PRD0045,Good Knight Mosquito Coil,Tonk Branch,19,1271,1049,241,38.53,9285.73
+PRD0045,Good Knight Mosquito Coil,Sawai Madhopur Branch,25,762,629,158,38.61,6100.38
+PRD0046,All Out Mosquito Repellent,Main Godown,95,3618,3050,663,54.96,36438.48
+PRD0046,All Out Mosquito Repellent,Tonk Branch,43,1507,1271,279,56.04,15635.16
+PRD0046,All Out Mosquito Repellent,Sawai Madhopur Branch,29,904,762,171,54.62,9340.02
+PRD0047,Odonil Air Freshener,Main Godown,176,3355,2807,724,42.58,30827.92
+PRD0047,Odonil Air Freshener,Tonk Branch,83,1398,1169,312,42.12,13141.44
+PRD0047,Odonil Air Freshener,Sawai Madhopur Branch,20,838,701,157,42.12,6612.84
+PRD0048,Phenyl Floor Cleaner,Main Godown,121,3111,2567,665,27.76,18460.4
+PRD0048,Phenyl Floor Cleaner,Tonk Branch,131,1296,1069,358,27.91,9991.78
+PRD0048,Phenyl Floor Cleaner,Sawai Madhopur Branch,79,777,641,215,28.49,6125.35
+PRD0049,Exo Dishwash Bar,Main Godown,90,3097,2592,595,14.97,8907.15
+PRD0049,Exo Dishwash Bar,Tonk Branch,53,1290,1080,263,15.18,3992.34
+PRD0049,Exo Dishwash Bar,Sawai Madhopur Branch,30,774,648,156,15.12,2358.72
+PRD0050,Domex Toilet Cleaner,Main Godown,68,3635,2991,712,69.1,49199.2
+PRD0050,Domex Toilet Cleaner,Tonk Branch,86,1514,1246,354,67.93,24047.22
+PRD0050,Domex Toilet Cleaner,Sawai Madhopur Branch,43,908,747,204,68.0,13872.0
+PRD0051,Parle-G Biscuit,Main Godown,147,3144,2615,676,38.01,25694.76
+PRD0051,Parle-G Biscuit,Tonk Branch,85,1310,1089,306,38.39,11747.34
+PRD0051,Parle-G Biscuit,Sawai Madhopur Branch,6,786,653,139,37.82,5256.98
+PRD0052,Britannia Good Day,Main Godown,30,3225,2700,555,27.28,15140.4
+PRD0052,Britannia Good Day,Tonk Branch,38,1343,1125,256,27.32,6993.92
+PRD0052,Britannia Good Day,Sawai Madhopur Branch,9,806,675,140,27.52,3852.8
+PRD0053,Oreo Biscuit,Main Godown,113,3715,2998,830,38.71,32129.3
+PRD0053,Oreo Biscuit,Tonk Branch,5,1548,1249,304,38.69,11761.76
+PRD0053,Oreo Biscuit,Sawai Madhopur Branch,43,928,749,222,38.22,8484.84
+PRD0054,Marie Gold Biscuit,Main Godown,8,3603,2959,652,24.24,15804.48
+PRD0054,Marie Gold Biscuit,Tonk Branch,59,1501,1233,327,23.97,7838.19
+PRD0054,Marie Gold Biscuit,Sawai Madhopur Branch,45,900,739,206,24.46,5038.76
+PRD0055,Lays Classic Chips,Main Godown,59,3844,3221,682,9.02,6151.64
+PRD0055,Lays Classic Chips,Tonk Branch,26,1601,1342,285,9.17,2613.45
+PRD0055,Lays Classic Chips,Sawai Madhopur Branch,22,961,805,178,8.93,1589.54
+PRD0056,Kurkure Masala,Main Godown,77,3192,2583,686,19.24,13198.64
+PRD0056,Kurkure Masala,Tonk Branch,18,1330,1076,272,19.22,5227.84
+PRD0056,Kurkure Masala,Sawai Madhopur Branch,34,798,645,187,18.95,3543.65
+PRD0057,Uncle Chips,Main Godown,58,3783,3180,661,15.06,9954.66
+PRD0057,Uncle Chips,Tonk Branch,30,1576,1325,281,14.9,4186.9
+PRD0057,Uncle Chips,Sawai Madhopur Branch,77,945,795,227,15.21,3452.67
+PRD0058,Haldiram Bhujia,Main Godown,50,2755,2322,483,65.97,31863.51
+PRD0058,Haldiram Bhujia,Tonk Branch,17,1148,967,198,64.68,12806.64
+PRD0058,Haldiram Bhujia,Sawai Madhopur Branch,58,688,580,166,64.49,10705.34
+PRD0059,Haldiram Aloo Bhujia,Main Godown,158,3061,2575,644,48.3,31105.2
+PRD0059,Haldiram Aloo Bhujia,Tonk Branch,27,1275,1073,229,48.26,11051.54
+PRD0059,Haldiram Aloo Bhujia,Sawai Madhopur Branch,29,765,643,151,48.69,7352.19
+PRD0060,Maggi Noodles,Main Godown,151,3456,2933,674,10.93,7366.82
+PRD0060,Maggi Noodles,Tonk Branch,54,1440,1222,272,11.18,3040.96
+PRD0060,Maggi Noodles,Sawai Madhopur Branch,54,864,733,185,10.98,2031.3
+PRD0061,Yippee Noodles,Main Godown,28,3619,3095,552,11.95,6596.4
+PRD0061,Yippee Noodles,Tonk Branch,55,1508,1289,274,11.93,3268.82
+PRD0061,Yippee Noodles,Sawai Madhopur Branch,10,904,773,141,12.08,1703.28
+PRD0062,Britannia 50-50 Biscuit,Main Godown,161,3353,2797,717,18.01,12913.17
+PRD0062,Britannia 50-50 Biscuit,Tonk Branch,44,1397,1165,276,17.94,4951.44
+PRD0062,Britannia 50-50 Biscuit,Sawai Madhopur Branch,9,838,699,148,17.95,2656.6
+PRD0063,Monaco Biscuit,Main Godown,88,3660,3051,697,28.33,19746.01
+PRD0063,Monaco Biscuit,Tonk Branch,5,1525,1271,259,28.07,7270.13
+PRD0063,Monaco Biscuit,Sawai Madhopur Branch,59,915,762,212,28.17,5972.04
+PRD0064,Sunfeast Dark Fantasy,Main Godown,10,3415,2847,578,30.81,17808.18
+PRD0064,Sunfeast Dark Fantasy,Tonk Branch,40,1423,1186,277,31.16,8631.32
+PRD0064,Sunfeast Dark Fantasy,Sawai Madhopur Branch,8,853,711,150,31.0,4650.0
+PRD0065,Bingo Mad Angles,Main Godown,163,3193,2679,677,22.25,15063.25
+PRD0065,Bingo Mad Angles,Tonk Branch,129,1330,1116,343,22.4,7683.2
+PRD0065,Bingo Mad Angles,Sawai Madhopur Branch,22,798,669,151,22.08,3334.08
+PRD0066,Hippo Rings,Main Godown,16,4246,3550,712,10.1,7191.2
+PRD0066,Hippo Rings,Tonk Branch,27,1769,1479,317,10.03,3179.51
+PRD0066,Hippo Rings,Sawai Madhopur Branch,30,1061,887,204,10.12,2064.48
+PRD0067,Crax Corn Rings,Main Godown,76,3521,2923,674,8.03,5412.22
+PRD0067,Crax Corn Rings,Tonk Branch,44,1467,1218,293,8.02,2349.86
+PRD0067,Crax Corn Rings,Sawai Madhopur Branch,26,880,730,176,7.93,1395.68
+PRD0068,Perk Chocolate,Main Godown,137,2823,2359,601,18.11,10884.11
+PRD0068,Perk Chocolate,Tonk Branch,43,1176,983,236,18.27,4311.72
+PRD0068,Perk Chocolate,Sawai Madhopur Branch,74,705,589,190,18.09,3437.1
+PRD0069,Dairy Milk Chocolate,Main Godown,89,3526,2947,668,35.53,23734.04
+PRD0069,Dairy Milk Chocolate,Tonk Branch,45,1469,1228,286,35.26,10084.36
+PRD0069,Dairy Milk Chocolate,Sawai Madhopur Branch,36,881,736,181,35.61,6445.41
+PRD0070,Sunfeast Yumfills,Main Godown,110,3405,2874,641,11.9,7627.9
+PRD0070,Sunfeast Yumfills,Tonk Branch,13,1419,1197,235,12.08,2838.8
+PRD0070,Sunfeast Yumfills,Sawai Madhopur Branch,35,851,718,168,12.12,2036.16
+PRD0071,Aashirvaad Atta,Main Godown,63,3655,3044,674,205.01,138176.74
+PRD0071,Aashirvaad Atta,Tonk Branch,12,1523,1268,267,201.45,53787.15
+PRD0071,Aashirvaad Atta,Sawai Madhopur Branch,41,913,761,193,202.58,39097.94
+PRD0072,Fortune Chakki Atta,Main Godown,135,3376,2804,707,196.68,139052.76
+PRD0072,Fortune Chakki Atta,Tonk Branch,74,1407,1168,313,195.41,61163.33
+PRD0072,Fortune Chakki Atta,Sawai Madhopur Branch,52,844,701,195,196.69,38354.55
+PRD0073,Saffola Gold Oil,Main Godown,31,3391,2796,626,145.53,91101.78
+PRD0073,Saffola Gold Oil,Tonk Branch,6,1413,1165,254,143.86,36540.44
+PRD0073,Saffola Gold Oil,Sawai Madhopur Branch,9,847,699,157,145.87,22901.59
+PRD0074,Fortune Sunflower Oil,Main Godown,81,3079,2574,586,125.36,73460.96
+PRD0074,Fortune Sunflower Oil,Tonk Branch,30,1283,1072,241,126.35,30450.35
+PRD0074,Fortune Sunflower Oil,Sawai Madhopur Branch,30,769,643,156,126.52,19737.12
+PRD0075,Tata Salt,Main Godown,98,3346,2781,663,18.19,12059.97
+PRD0075,Tata Salt,Tonk Branch,36,1394,1158,272,18.04,4906.88
+PRD0075,Tata Salt,Sawai Madhopur Branch,18,836,695,159,17.83,2834.97
+PRD0076,Captain Cook Salt,Main Godown,51,4015,3319,747,16.24,12131.28
+PRD0076,Captain Cook Salt,Tonk Branch,95,1673,1383,385,16.24,6252.4
+PRD0076,Captain Cook Salt,Sawai Madhopur Branch,24,1003,829,198,16.02,3171.96
+PRD0077,Catch Black Pepper,Main Godown,317,3291,2713,895,38.14,34135.3
+PRD0077,Catch Black Pepper,Tonk Branch,92,1371,1130,333,38.35,12770.55
+PRD0077,Catch Black Pepper,Sawai Madhopur Branch,43,822,678,187,38.0,7106.0
+PRD0078,Everest Garam Masala,Main Godown,164,3448,2894,718,54.6,39202.8
+PRD0078,Everest Garam Masala,Tonk Branch,10,1436,1206,240,55.13,13231.2
+PRD0078,Everest Garam Masala,Sawai Madhopur Branch,10,862,723,149,54.74,8156.26
+PRD0079,MDH Kitchen King,Main Godown,33,3217,2697,553,58.42,32306.26
+PRD0079,MDH Kitchen King,Tonk Branch,35,1340,1124,251,59.15,14846.65
+PRD0079,MDH Kitchen King,Sawai Madhopur Branch,17,804,674,147,58.97,8668.59
+PRD0080,Rajdhani Besan,Main Godown,126,3714,3047,793,63.06,50006.58
+PRD0080,Rajdhani Besan,Tonk Branch,12,1547,1269,290,61.81,17924.9
+PRD0080,Rajdhani Besan,Sawai Madhopur Branch,41,928,761,208,61.66,12825.28
+PRD0081,Patanjali Ghee,Main Godown,63,3316,2786,593,385.65,228690.45
+PRD0081,Patanjali Ghee,Tonk Branch,49,1382,1161,270,380.98,102864.6
+PRD0081,Patanjali Ghee,Sawai Madhopur Branch,35,829,696,168,387.02,65019.36
+PRD0082,Amul Butter,Main Godown,118,3061,2554,625,212.38,132737.5
+PRD0082,Amul Butter,Tonk Branch,17,1275,1064,228,214.65,48940.2
+PRD0082,Amul Butter,Sawai Madhopur Branch,26,765,638,153,215.2,32925.6
+PRD0083,Amul Cheese,Main Godown,156,2781,2319,618,129.61,80098.98
+PRD0083,Amul Cheese,Tonk Branch,30,1159,966,223,130.12,29016.76
+PRD0083,Amul Cheese,Sawai Madhopur Branch,65,695,579,181,130.65,23647.65
+PRD0084,Knorr Soup,Main Godown,287,3651,3021,917,33.9,31086.3
+PRD0084,Knorr Soup,Tonk Branch,74,1521,1259,336,33.77,11346.72
+PRD0084,Knorr Soup,Sawai Madhopur Branch,86,912,755,243,34.03,8269.29
+PRD0085,Maggi Masala,Main Godown,87,3155,2659,583,22.32,13012.56
+PRD0085,Maggi Masala,Tonk Branch,6,1314,1108,212,22.04,4672.48
+PRD0085,Maggi Masala,Sawai Madhopur Branch,25,788,664,149,21.88,3260.12
+PRD0086,Amul Milk 1L Pouch,Main Godown,229,3445,2854,820,55.76,45723.2
+PRD0086,Amul Milk 1L Pouch,Tonk Branch,78,1435,1189,324,54.66,17709.84
+PRD0086,Amul Milk 1L Pouch,Sawai Madhopur Branch,42,861,713,190,55.57,10558.3
+PRD0087,Amul Dahi,Main Godown,47,3786,3143,690,38.16,26330.4
+PRD0087,Amul Dahi,Tonk Branch,25,1577,1309,293,38.63,11318.59
+PRD0087,Amul Dahi,Sawai Madhopur Branch,11,946,785,172,37.72,6487.84
+PRD0088,Mother Dairy Curd,Main Godown,18,3592,3052,558,35.39,19747.62
+PRD0088,Mother Dairy Curd,Tonk Branch,51,1497,1271,277,34.66,9600.82
+PRD0088,Mother Dairy Curd,Sawai Madhopur Branch,62,898,763,197,34.67,6829.99
+PRD0089,Amul Paneer,Main Godown,66,2979,2465,580,85.13,49375.4
+PRD0089,Amul Paneer,Tonk Branch,26,1241,1027,240,84.51,20282.4
+PRD0089,Amul Paneer,Sawai Madhopur Branch,20,744,616,148,86.52,12804.96
+PRD0090,Amul Gold Milk,Main Godown,223,4119,3411,931,62.72,58392.32
+PRD0090,Amul Gold Milk,Tonk Branch,85,1716,1421,380,62.64,23803.2
+PRD0090,Amul Gold Milk,Sawai Madhopur Branch,72,1029,852,249,61.59,15335.91
+PRD0091,Nestle Milkmaid,Main Godown,15,3371,2770,616,88.5,54516.0
+PRD0091,Nestle Milkmaid,Tonk Branch,5,1404,1154,255,87.89,22411.95
+PRD0091,Nestle Milkmaid,Sawai Madhopur Branch,12,842,692,162,89.33,14471.46
+PRD0092,Amul Mozzarella Cheese,Main Godown,18,3539,2932,625,145.44,90900.0
+PRD0092,Amul Mozzarella Cheese,Tonk Branch,54,1474,1222,306,146.08,44700.48
+PRD0092,Amul Mozzarella Cheese,Sawai Madhopur Branch,29,884,733,180,145.08,26114.4
+PRD0093,Kwality Walls Cornetto,Main Godown,100,4163,3454,809,28.29,22886.61
+PRD0093,Kwality Walls Cornetto,Tonk Branch,45,1734,1439,340,27.92,9492.8
+PRD0093,Kwality Walls Cornetto,Sawai Madhopur Branch,44,1040,863,221,28.03,6194.63
+PRD0094,Amul Cone Ice Cream,Main Godown,154,3432,2856,730,22.3,16279.0
+PRD0094,Amul Cone Ice Cream,Tonk Branch,42,1430,1190,282,21.91,6178.62
+PRD0094,Amul Cone Ice Cream,Sawai Madhopur Branch,35,858,714,179,22.3,3991.7
+PRD0095,Havmor Ice Cream,Main Godown,206,3107,2566,747,95.34,71218.98
+PRD0095,Havmor Ice Cream,Tonk Branch,69,1294,1069,294,94.65,27827.1
+PRD0095,Havmor Ice Cream,Sawai Madhopur Branch,84,776,641,219,95.38,20888.22
+PRD0096,Dettol Handwash,Main Godown,153,3573,3048,678,64.57,43778.46
+PRD0096,Dettol Handwash,Tonk Branch,81,1489,1270,300,65.0,19500.0
+PRD0096,Dettol Handwash,Sawai Madhopur Branch,33,893,762,164,65.45,10733.8
+PRD0097,Savlon Antiseptic,Main Godown,32,3516,2881,667,55.4,36951.8
+PRD0097,Savlon Antiseptic,Tonk Branch,44,1465,1200,309,55.77,17232.93
+PRD0097,Savlon Antiseptic,Sawai Madhopur Branch,40,879,720,199,55.74,11092.26
+PRD0098,Burnol Cream,Main Godown,86,3565,2950,701,35.34,24773.34
+PRD0098,Burnol Cream,Tonk Branch,9,1485,1229,265,35.26,9343.9
+PRD0098,Burnol Cream,Sawai Madhopur Branch,33,891,737,187,34.91,6528.17
+PRD0099,Band-Aid Strips,Main Godown,28,2845,2398,475,21.92,10412.0
+PRD0099,Band-Aid Strips,Tonk Branch,86,1185,999,272,22.4,6092.8
+PRD0099,Band-Aid Strips,Sawai Madhopur Branch,23,711,599,135,21.9,2956.5
+PRD0100,ORS Oral Rehydration,Main Godown,129,2838,2379,588,12.1,7114.8
+PRD0100,ORS Oral Rehydration,Tonk Branch,20,1182,991,211,12.19,2572.09
+PRD0100,ORS Oral Rehydration,Sawai Madhopur Branch,8,709,594,123,12.1,1488.3
+PRD0101,Vicks VapoRub,Main Godown,39,3200,2690,549,97.5,53527.5
+PRD0101,Vicks VapoRub,Tonk Branch,48,1333,1121,260,97.11,25248.6
+PRD0101,Vicks VapoRub,Sawai Madhopur Branch,40,800,672,168,97.02,16299.36
+PRD0102,Eno Fruit Salt,Main Godown,81,3497,2892,686,61.62,42271.32
+PRD0102,Eno Fruit Salt,Tonk Branch,33,1457,1205,285,60.41,17216.85
+PRD0102,Eno Fruit Salt,Sawai Madhopur Branch,25,874,723,176,61.3,10788.8
+PRD0103,Hajmola Tablets,Main Godown,100,3114,2626,588,35.19,20691.72
+PRD0103,Hajmola Tablets,Tonk Branch,57,1297,1094,260,34.85,9061.0
+PRD0103,Hajmola Tablets,Sawai Madhopur Branch,33,778,656,155,35.04,5431.2
+PRD0104,Pudin Hara,Main Godown,97,2983,2445,635,28.48,18084.8
+PRD0104,Pudin Hara,Tonk Branch,9,1243,1019,233,28.16,6561.28
+PRD0104,Pudin Hara,Sawai Madhopur Branch,18,745,611,152,28.33,4306.16
+PRD0105,Reynolds Pen,Main Godown,5,3594,2983,616,45.24,27867.84
+PRD0105,Reynolds Pen,Tonk Branch,16,1497,1243,270,45.18,12198.6
+PRD0105,Reynolds Pen,Sawai Madhopur Branch,19,898,745,172,44.98,7736.56
+PRD0106,Classmate Notebook,Main Godown,45,3370,2824,591,37.67,22262.97
+PRD0106,Classmate Notebook,Tonk Branch,51,1404,1176,279,38.43,10721.97
+PRD0106,Classmate Notebook,Sawai Madhopur Branch,12,842,706,148,38.02,5626.96
+PRD0107,Natraj Pencil,Main Godown,12,2739,2323,428,28.31,12116.68
+PRD0107,Natraj Pencil,Tonk Branch,44,1141,968,217,28.53,6191.01
+PRD0107,Natraj Pencil,Sawai Madhopur Branch,12,684,580,116,27.96,3243.36
+PRD0108,Stayfree Pads,Main Godown,5,3455,2856,604,65.3,39441.2
+PRD0108,Stayfree Pads,Tonk Branch,57,1439,1190,306,64.87,19850.22
+PRD0108,Stayfree Pads,Sawai Madhopur Branch,80,863,714,229,65.54,15008.66
+PRD0109,Whisper Ultra,Main Godown,169,3196,2666,699,68.85,48126.15
+PRD0109,Whisper Ultra,Tonk Branch,28,1331,1111,248,67.55,16752.4
+PRD0109,Whisper Ultra,Sawai Madhopur Branch,7,799,666,140,67.5,9450.0
+PRD0110,Carefree Liner,Main Godown,215,3165,2614,766,54.51,41754.66
+PRD0110,Carefree Liner,Tonk Branch,85,1318,1089,314,54.98,17263.72
+PRD0110,Carefree Liner,Sawai Madhopur Branch,30,791,653,168,54.76,9199.68
+PRD0111,Bisleri Water 1L,Main Godown,69,3271,2738,602,12.08,7272.16
+PRD0111,Bisleri Water 1L,Tonk Branch,37,1363,1141,259,12.17,3152.03
+PRD0111,Bisleri Water 1L,Sawai Madhopur Branch,58,817,684,191,12.14,2318.74
+PRD0112,Bisleri Water 500ml,Main Godown,35,3041,2497,579,8.03,4649.37
+PRD0112,Bisleri Water 500ml,Tonk Branch,98,1267,1040,325,8.02,2606.5
+PRD0112,Bisleri Water 500ml,Sawai Madhopur Branch,26,760,624,162,8.06,1305.72
+PRD0113,Aquaguard Filter Candle,Main Godown,158,3217,2677,698,143.95,100477.1
+PRD0113,Aquaguard Filter Candle,Tonk Branch,50,1340,1115,275,145.03,39883.25
+PRD0113,Aquaguard Filter Candle,Sawai Madhopur Branch,75,804,669,210,144.79,30405.9
+PRD0114,Comfort Fabric Softener,Main Godown,60,3892,3195,757,96.45,73012.65
+PRD0114,Comfort Fabric Softener,Tonk Branch,69,1621,1331,359,94.96,34090.64
+PRD0114,Comfort Fabric Softener,Sawai Madhopur Branch,9,973,798,184,96.4,17737.6
+PRD0115,Dynamo Liquid Detergent,Main Godown,238,3475,2865,848,115.75,98156.0
+PRD0115,Dynamo Liquid Detergent,Tonk Branch,28,1448,1194,282,115.82,32661.24
+PRD0115,Dynamo Liquid Detergent,Sawai Madhopur Branch,88,868,716,240,116.28,27907.2
+PRD0116,Fevicol SH Adhesive,Main Godown,80,3352,2764,668,61.62,41162.16
+PRD0116,Fevicol SH Adhesive,Tonk Branch,27,1396,1151,272,62.24,16929.28
+PRD0116,Fevicol SH Adhesive,Sawai Madhopur Branch,13,838,691,160,62.48,9996.8
+PRD0117,Pidilite M-Seal,Main Godown,181,3026,2485,722,48.12,34742.64
+PRD0117,Pidilite M-Seal,Tonk Branch,30,1261,1035,256,48.42,12395.52
+PRD0117,Pidilite M-Seal,Sawai Madhopur Branch,20,756,621,155,47.68,7390.4
+PRD0118,Castrol Oil,Main Godown,22,3211,2710,523,244.19,127711.37
+PRD0118,Castrol Oil,Tonk Branch,5,1338,1129,214,243.96,52207.44
+PRD0118,Castrol Oil,Sawai Madhopur Branch,55,802,677,180,249.67,44940.6
+PRD0119,Battery Duracell AA,Main Godown,100,3369,2819,650,58.22,37843.0
+PRD0119,Battery Duracell AA,Tonk Branch,33,1403,1174,262,58.2,15248.4
+PRD0119,Battery Duracell AA,Sawai Madhopur Branch,22,842,704,160,59.06,9449.6
+PRD0120,Battery Eveready AA,Main Godown,73,3511,2941,643,42.3,27198.9
+PRD0120,Battery Eveready AA,Tonk Branch,8,1463,1225,246,41.86,10297.56
+PRD0120,Battery Eveready AA,Sawai Madhopur Branch,5,877,735,147,42.14,6194.58
+PRD0121,Sarpan Hybrid Seeds,Main Godown,143,3200,2686,657,185.31,121748.67
+PRD0121,Sarpan Hybrid Seeds,Tonk Branch,26,1333,1119,240,187.55,45012.0
+PRD0121,Sarpan Hybrid Seeds,Sawai Madhopur Branch,16,800,671,145,186.69,27070.05
+PRD0122,Parle Groundnut Oil,Main Godown,82,3578,2953,707,111.54,78858.78
+PRD0122,Parle Groundnut Oil,Tonk Branch,11,1491,1230,272,111.48,30322.56
+PRD0122,Parle Groundnut Oil,Sawai Madhopur Branch,15,894,738,171,110.72,18933.12
+PRD0123,Ruchi Soya Oil,Main Godown,189,2746,2298,637,121.6,77459.2
+PRD0123,Ruchi Soya Oil,Tonk Branch,48,1144,957,235,121.51,28554.85
+PRD0123,Ruchi Soya Oil,Sawai Madhopur Branch,55,686,574,167,121.65,20315.55
+PRD0124,Naturefresh Oil,Main Godown,134,3188,2638,684,117.14,80123.76
+PRD0124,Naturefresh Oil,Tonk Branch,30,1328,1099,259,115.11,29813.49
+PRD0124,Naturefresh Oil,Sawai Madhopur Branch,27,797,659,165,114.6,18909.0
+PRD0125,Dhara Mustard Oil,Main Godown,202,3519,2918,803,105.43,84660.29
+PRD0125,Dhara Mustard Oil,Tonk Branch,88,1466,1216,338,105.52,35665.76
+PRD0125,Dhara Mustard Oil,Sawai Madhopur Branch,34,879,729,184,105.71,19450.64
+PRD0126,Sunfeast Bounce,Main Godown,25,3033,2523,535,27.93,14942.55
+PRD0126,Sunfeast Bounce,Tonk Branch,76,1264,1051,289,28.0,8092.0
+PRD0126,Sunfeast Bounce,Sawai Madhopur Branch,15,758,630,143,28.46,4069.78
+PRD0127,Jim Jam Biscuit,Main Godown,250,3496,2906,840,21.92,18412.8
+PRD0127,Jim Jam Biscuit,Tonk Branch,19,1457,1211,265,22.04,5840.6
+PRD0127,Jim Jam Biscuit,Sawai Madhopur Branch,26,874,726,174,21.89,3808.86
+PRD0128,Hide & Seek Biscuit,Main Godown,91,3548,2956,683,32.45,22163.35
+PRD0128,Hide & Seek Biscuit,Tonk Branch,45,1478,1231,292,32.51,9492.92
+PRD0128,Hide & Seek Biscuit,Sawai Madhopur Branch,39,887,739,187,31.82,5950.34
+PRD0129,Nutrichoice Biscuit,Main Godown,22,3474,2900,596,35.11,20925.56
+PRD0129,Nutrichoice Biscuit,Tonk Branch,21,1447,1208,260,35.34,9188.4
+PRD0129,Nutrichoice Biscuit,Sawai Madhopur Branch,14,868,725,157,35.16,5520.12
+PRD0130,Tiger Biscuit,Main Godown,105,2807,2296,616,18.1,11149.6
+PRD0130,Tiger Biscuit,Tonk Branch,41,1169,956,254,18.13,4605.02
+PRD0130,Tiger Biscuit,Sawai Madhopur Branch,40,701,574,167,18.13,3027.71
+PRD0131,Harpic Bathroom Cleaner,Main Godown,165,3519,2920,764,78.36,59867.04
+PRD0131,Harpic Bathroom Cleaner,Tonk Branch,121,1466,1217,370,78.49,29041.3
+PRD0131,Harpic Bathroom Cleaner,Sawai Madhopur Branch,49,879,730,198,77.58,15360.84
+PRD0132,Lizol Disinfectant Spray,Main Godown,33,3854,3204,683,68.42,46730.86
+PRD0132,Lizol Disinfectant Spray,Tonk Branch,21,1606,1335,292,69.25,20221.0
+PRD0132,Lizol Disinfectant Spray,Sawai Madhopur Branch,30,963,801,192,68.3,13113.6
+PRD0133,Mortein Insect Spray,Main Godown,149,3276,2775,650,140.92,91598.0
+PRD0133,Mortein Insect Spray,Tonk Branch,62,1365,1156,271,143.38,38855.98
+PRD0133,Mortein Insect Spray,Sawai Madhopur Branch,55,819,693,181,141.97,25696.57
+PRD0134,Colin Multipurpose Cleaner,Main Godown,41,3189,2695,535,62.49,33432.15
+PRD0134,Colin Multipurpose Cleaner,Tonk Branch,8,1328,1123,213,61.92,13188.96
+PRD0134,Colin Multipurpose Cleaner,Sawai Madhopur Branch,18,797,673,142,61.74,8767.08
+PRD0135,Dettol Antiseptic Liquid,Main Godown,63,3807,3155,715,76.14,54440.1
+PRD0135,Dettol Antiseptic Liquid,Tonk Branch,16,1586,1314,288,74.91,21574.08
+PRD0135,Dettol Antiseptic Liquid,Sawai Madhopur Branch,50,951,788,213,75.49,16079.37
