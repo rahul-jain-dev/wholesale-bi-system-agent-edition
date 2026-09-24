@@ -4,7 +4,7 @@ FROM python:3.11-slim
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV STREAMLIT_SERVER_PORT=8501
+ENV STREAMLIT_SERVER_PORT=7860
 ENV STREAMLIT_SERVER_ADDRESS=0.0.0.0
 
 # Set working directory
@@ -27,10 +27,10 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY . .
 
 # Expose the port Streamlit runs on
-EXPOSE 8501
+EXPOSE 7860
 
 # Healthcheck to help hosting providers know when the app is ready
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+HEALTHCHECK CMD curl --fail http://localhost:7860/_stcore/health || exit 1
 
 # Command to run the application
 CMD ["streamlit", "run", "app/streamlit_app.py"]
